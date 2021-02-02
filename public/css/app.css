@@ -295,6 +295,7 @@ ul {
   padding: 8px 11px;
   line-height: 1;
   background-color: #fff;
+  border: 0;
 }
 
 @media (min-width: 71.875em) {
@@ -324,15 +325,14 @@ ul {
 }
 
 .button__icon {
-  font-size: 18px;
-}
-
-.button__icon:first-child {
+  font-size: 13px;
   margin-right: 6px;
 }
 
-.button__icon:last-child {
-  margin-left: 6px;
+@media (min-width: 71.875em) {
+  .button__icon {
+    font-size: 22.5px;
+  }
 }
 
 .button--big {
@@ -365,6 +365,16 @@ ul {
 }
 
 .button--blue:hover {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.button--blue-cian {
+  background-color: #00588E;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  color: #fff;
+}
+
+.button--blue-cian:hover {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
@@ -1446,11 +1456,20 @@ ul {
   max-width: 1108px;
   width: 100%;
   margin: auto;
-  background: #fff;
+  background-color: #fff;
   padding: 28px 37px 30px 56px;
   box-sizing: border-box;
-  border-radius: 4px;
+  border-radius: 41px;
   position: relative;
+}
+
+@media (max-width: 71.865em) {
+  .modal__container {
+    height: 90%;
+    overflow: auto;
+    width: 90%;
+    padding: 28px 26px 30px 26px;
+  }
 }
 
 .modal-close {
@@ -1479,16 +1498,27 @@ ul {
 .form__title {
   color: #5E728A;
   font-family: "poppinsbold";
-  font-size: 30px;
+  font-size: 18px;
   margin-bottom: 33px;
   width: 100%;
 }
 
+@media (min-width: 71.875em) {
+  .form__title {
+    font-size: 30px;
+  }
+}
+
 .form__item {
-  max-width: 475px;
   width: 100%;
   margin: 0 0 17px;
   position: relative;
+}
+
+@media (min-width: 46.875em) {
+  .form__item--50d {
+    width: calc(50% - 30px);
+  }
 }
 
 .form__item-icon {
@@ -1501,8 +1531,14 @@ ul {
 
 .form__label {
   color: #5E728A;
-  font-size: 22px;
+  font-size: 14px;
   font-family: "poppinsbold";
+}
+
+@media (min-width: 71.875em) {
+  .form__label {
+    font-size: 22px;
+  }
 }
 
 .form input[type=time]::-webkit-calendar-picker-indicator,
@@ -1529,9 +1565,18 @@ ul {
 .form__input,
 .form__select {
   color: #838383;
-  font-size: 18px;
+  font-size: 12px;
   font-family: "poppinslight";
-  margin-top: 12px;
+  margin-top: 5px;
+}
+
+@media (min-width: 71.875em) {
+  .form__textarea,
+  .form__input,
+  .form__select {
+    margin-too: 12px;
+    font-size: 18px;
+  }
 }
 
 .form__textarea {
@@ -1608,5 +1653,15 @@ ul {
 .form-file__result-delete:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+@media (min-width: 46.875em) {
+  .form-controls .button:first-of-type {
+    margin-right: 30px;
+  }
+}
+
+.form-controls .button:first-of-type .button__icon {
+  transform: rotate(45deg);
 }
 

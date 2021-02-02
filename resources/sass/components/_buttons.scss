@@ -14,6 +14,7 @@
     padding: 8px 11px;
     line-height: 1;
     background-color: $color-white;
+    border: 0;
    
     @include mq($from: desktop) {
         height: 50px;
@@ -38,13 +39,10 @@
         }
     }
     &__icon {
-        font-size: 18px;
-        &:first-child {
-            margin-right: 6px;
-        }
-
-        &:last-child {
-            margin-left: 6px;
+        font-size: 13px;
+        margin-right: 6px;
+        @include mq($from: desktop) {
+            font-size: 22.5px;
         }
     }
 
@@ -68,6 +66,16 @@
 
     &--blue {
         background-color: $color-blue;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        color: #fff;
+
+        &:hover {
+            //background-color: #1558c5;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+    }
+    &--blue-cian {
+        background-color: $color-blue-cian;
         transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
         color: #fff;
 
