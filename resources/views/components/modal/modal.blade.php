@@ -1,0 +1,72 @@
+<div id="modal" class="modal">
+    <div class="modal__container">
+        <div class="modal-form form">
+            <h2 class="form__title">Registrar nueva cita</h2>
+            <form action="#" class="form">
+                <div class="form__item">
+                    <label for="" class="form__label">Nro de documento paciente</label>
+                    <input type="text" class="form__input">
+                </div>
+                <div class="form__item">
+                    <label for="" class="form__label">Nombre paciente</label>
+                    <input type="text" class="form__input">
+                </div>
+                <div class="form__item">
+                    <label for="" class="form__label">Correo electrónico</label>
+                    <input type="email" class="form__input">
+                </div>
+                <div class="form__item">
+                    <label for="" class="form__label">Número de Celular</label>
+                    <input type="text" class="form__input">
+                </div>
+                <div class="form__item">
+                    <label for="" class="form__label">Día de la cita</label>
+                    <input type="date" class="form__input">
+                    <span class="form__item-icon icon-date"></span>
+                </div>
+                <div class="form__item">
+                    <label for="" class="form__label">Hora de la cita</label>
+                    <input type="time" class="form__input">
+                    <span class="form__item-icon icon-time"></span>
+                </div>
+                <div class="form__item">
+                    <label for="" class="form__label">Tipo de consulta</label>
+                    <select name="" id="" class="form__select">
+                        <option value="">Control</option>
+                        <option value="">Control 2</option>
+                    </select>
+                </div>
+                <div class="form__item">
+                    <label for="" class="form__label">Modalidad de consulta</label>
+                    <select name="" id="" class="form__select">
+                        <option value="">Presencial</option>
+                        <option value="">Teleconsulta</option>
+                    </select>
+                </div>
+                <div class="form__item">
+                    <label for="" class="form__label">Motivo de la consulta</label>
+                    <textarea name="" id="" cols="30" rows="10" class="form__textarea"></textarea>
+
+                </div>
+                <div class="form__item">
+                    <label for="" class="form__label">Cita Asociada</label>
+                    <select name="" id="" class="form__select">
+                        <option value="">#8.1 - vie. 15/01 2021 20:00 pm</option>
+                        <option value="">#8.2 - vie. 15/01 2021 20:00 pm</option>
+                    </select>
+                    <div class="form-file">
+                        <label for="" class="form-file__label"><span class="form-file__icon icon-attach"></span>Adjuntar archivos</label>
+                        <input type="file" class="form-file__input">
+                        <ul class="form-file__result">
+                            <li class="form-file__result-item">aca va el archivo <button class="form-file__result-delete"><span>Eliminar</span></button></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+        <div class="modal-close">
+            <a href="#diary" class="modal-close__btn"><span>X</span></a>
+        </div>
+    </div>
+</div>

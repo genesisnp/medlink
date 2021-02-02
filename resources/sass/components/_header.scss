@@ -1,0 +1,40 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include mq($from: desktop) {
+        margin: $margin-component;
+    }
+    
+    
+    &__title {
+        font-size: 18px;
+        font-weight: normal;
+        margin: 20px 0 35px;
+        @include mq($from: tablet) {
+            font-size: 36px;
+         }
+    }
+    &__logo {
+        width: 218px;
+        @include mq($until: desktop) {
+            display: none;
+         }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__info {
+        color: $color-blue-green;
+        text-align: right;
+        @include mq($until: tablet) {
+            display: none;
+         }
+        p {
+            font-size: 20px;
+            font-family: $font-poppins-light;
+            line-height: 1.4;
+        }
+    }
+}

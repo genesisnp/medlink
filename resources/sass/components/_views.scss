@@ -1,0 +1,56 @@
+.views {
+    background-color: $color-white;
+    max-width: 258px;
+    padding: 19px 9px 14px 8px;
+    border-radius: $border-radius;
+    text-align: center;
+    box-shadow: $box-shadow;
+    display: inline-block;
+    width: 161px;
+    @include mq($from: 375px){
+        width: 100%;
+        margin: $margin-component;
+    }
+
+    @include mq($from: tablet) {
+        padding: 22px 30px 14px 29px;
+    }
+
+    &__icon {
+        width: 100%;
+    }
+    
+    &__title {
+        margin-bottom: 15px;
+        .heading__title {
+            justify-content: center;
+            padding: 0 5px;
+        }
+    }
+
+    &__text {
+        font-size: 11px;
+        margin: 10px 0;
+        line-height: 1.4;
+        @include mq($from: desktop) {
+            font-size: 14px;
+        }
+
+        &--blue {
+            font-size: 6.5px;
+            color: $color-blue;
+            line-height: 1.45;
+            margin: 0;
+            @include mq($from: desktop) {
+                font-size: 9px;
+            }
+        }
+    }
+    &__number {
+        font-size: 35px;
+        color: #AFB8C4;
+        @include mq($from: desktop) {
+            font-size: 50px;
+        }
+    }
+}

@@ -1,0 +1,125 @@
+.form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &__title {
+        color: $color-blue-green;
+        font-family: $font-poppins-bold;
+        font-size: 30px;
+        margin-bottom: 33px;
+        width: 100%;
+    }
+
+    &__item {
+        max-width: 475px;
+        width: 100%;
+        margin: 0 0 17px;
+        position: relative;
+        
+        &-icon {
+            color: $color-blue-green;
+            font-size: 20px;
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
+    }
+    &__label {
+        color: $color-blue-green;
+        font-size: 22px;
+        font-family: $font-poppins-bold;
+
+    }
+    input[type="time"],input[type="date"] {
+        &::-webkit-calendar-picker-indicator {
+            background: none;
+        }
+    }
+    &__input, &__select {
+        border: 0;
+        border-bottom: 1px solid $color-blue-green;
+        width: 100%;
+        height: 30px;
+        padding-top: 6px;
+        padding-bottom: 2px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+    
+    &__textarea, &__input , &__select {
+        color: $color-grey3;
+        font-size: 18px;
+        font-family: $font-poppins-light;
+        margin-top: 12px;
+
+    }
+    &__textarea {
+        border: 1px solid $color-blue-green;
+        width: 100%;
+        height: 118px;
+        padding: 10px;
+    }
+    &-file {
+        position: relative;
+        text-align: center;
+        margin: 22px 0;
+
+        &__label {
+            position: relative;
+            z-index: 0;
+            display: inline-block;
+            width: 193px;
+            background-color: #00588E;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+            cursor: pointer;
+            color: #fff;
+            padding: 6px 0;
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__input {
+            display: inline-block;
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 50px;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            cursor: pointer;
+        }
+        &__icon {
+            font-size: 23px;
+            padding-right: 10px;
+        }
+        &__result {
+            margin-top: 16px;
+            color: $color-grey3;
+            font-size: 18px;
+            font-family: $font-poppins-light;
+            &-item {
+                display: flex;
+                align-items: center;
+            }
+            &-delete {
+                color: $color-red;
+                margin-left: 10px;
+                background: transparent;
+                border: 0;
+                span {
+                    font-weight: 500;
+                    font-size: 12px;
+                }
+                &:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

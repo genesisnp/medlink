@@ -1,0 +1,40 @@
+.modal {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ccccccc4;
+    opacity: 0;
+    z-index: -1;
+    transition: all 300ms ease;
+    &:target {
+        opacity: 1;
+        z-index: 100;
+      }
+    &__container {
+        max-width: 1108px;
+        width: 100%;
+        margin: auto;
+        background: #fff;
+        padding: 28px 37px 30px 56px;
+        box-sizing: border-box;
+        border-radius: 4px;
+        position: relative;
+    }
+    &-close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        &__btn {
+            text-decoration: none;
+            font-family: $font-poppins-bold;
+            color: $color-blue;
+            font-size: 20px;
+            &:hover {
+                opacity: .8;
+            }
+        }
+    }
+}

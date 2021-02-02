@@ -1,0 +1,139 @@
+.next-appointment {
+    background-color: $color-white;
+    padding: 9px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: $box-shadow;
+    max-width: 100%;
+    border-radius: 7px;
+
+    @include mq($from: desktop) {
+        margin: $margin-component;
+        padding: 30px 23px;
+        border-radius: $border-radius;
+     }
+
+    &__icon {
+        @include mq($until: tablet) {
+            display: none;
+         }
+        &-icon {
+            color: $color-blue-green;
+            font-size: 78px;
+        }
+    }
+    &__title {
+        margin-bottom: 5px;
+        @include mq($from: tablet) {
+            margin-bottom: 15px;
+        }
+    }
+
+    &-info {
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+        @include mq($until: tablet) {
+            flex-direction: column-reverse;
+        }
+        
+        &__item {
+            @include mq($until: tablet) {
+                line-height: 1.8;
+            }
+            &:first-child {
+                display: flex;
+                .next-appointment-info__item--time,
+                .next-appointment-info__item--modality {
+                    margin-right: 20px;
+                    position: relative;
+                    span:first-child  {
+                        font-size: 12px;
+                    }
+                    @include mq($from: tablet) {
+                        margin-right: 40px;
+                        span:first-child {
+                            font-size: 16px;
+                        }
+                    }
+                    @include mq($from: desktop) {
+                        margin-right: 72px;
+                        &:before {
+                            position: absolute;
+                            content: "";
+                            width: 50px;
+                            height: 0;
+                            border: 1px dashed rgba(0, 0, 0, 0.2);
+                            right: -60px;
+                            top: 10px;
+                        }
+                    }
+                    @include mq($from: wide) {
+
+                        span:first-child  {
+                            font-size: 20px;
+                        }
+                    }
+                    
+                }
+                .next-appointment-info__item--modality {
+                    text-align: center;
+                }
+            }
+            span {
+                display: block;
+                font-size: 16px;
+                @include mq($from: wide) {
+                    font-size: 20px;
+                }
+                &:last-of-type {
+                    text-align: center;
+                    color: rgba(94, 114, 138, 0.5);
+                    font-family: $font-poppins-extrabold;
+                    padding-top: 10px;
+                    font-size: 14px;
+                    @include mq($until: tablet) {
+                        display: none;
+                    }
+                }
+            }
+           
+            &:last-of-type {
+                margin-right: 0;
+                &:before {
+                    display: none;
+                }
+            }
+            &--name {
+                
+                @include mq($until: tablet) {
+                    span {
+                        color: $color-blue-green;
+                        font-size: 14px;
+                        font-weight: 600;
+                        text-align: left;
+                    }
+
+                }
+            }
+            
+           
+        }
+    }
+    &__controls {
+        .button {
+            &:first-child {
+                margin-right: 23px;
+            }
+            @include mq($until: desktop) {
+                display: none;
+            }
+        }
+        .dropdwn{
+            @include mq($from: desktop) {
+                display: none;
+            }
+        }
+    }
+}

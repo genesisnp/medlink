@@ -1,0 +1,55 @@
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__title {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        line-height: 1.4;
+        
+        
+        &--blue {
+            color: $color-blue;
+            font-size: 14px;
+            font-family: $font-poppins-bold;
+            @include mq($from: tablet) {
+                font-size: 20px;
+            }
+        }
+        &--icon {
+            color: $color-blue-green;
+            font-size: 25px;
+            @include mq($from: tablet) {
+                font-size: 50px;
+            }
+        }
+    }
+    
+}
+
+.hidden-visually {
+    border: 0!important;
+    clip: rect(0 0 0 0)!important;
+    clip-path: inset(50%)!important;
+    height: 1px!important;
+    margin: -1px!important;
+    overflow: hidden!important;
+    padding: 0!important;
+    position: absolute!important;
+    white-space: nowrap!important;
+    width: 1px!important;
+}
+
+.section {
+    padding-bottom: 9px;
+    @include mq($from: 700px) {
+        padding-bottom: $margin-bottom;
+    }
+
+    &--flex {
+        display: flex;
+        justify-content: space-between;
+    }
+}
