@@ -1,0 +1,100 @@
+.diary-table {
+    padding: 17px 16px;
+
+    @include mq($from: 375px){
+        margin: $margin-component;
+    }
+
+    @include mq($from: desktop){
+        padding: 17px 29px;
+    }
+
+    &__title {
+        &--desktop {
+            @include mq($until: tablet){
+                display: none;
+            }
+        }
+        &--mobile {
+            text-align: center;
+            margin-bottom: 10px;
+            @include mq($from: tablet){
+                display: none;
+            }
+        }
+    }
+
+    &__table {
+        width: 100%;
+        border-spacing: 0;
+        margin-top: 24px;
+
+        tr {
+            th {
+                color: $color-blue-green__light;
+                font-size: 20px;
+                font-weight: 500;
+                height: 45px;
+            }
+            td {
+                text-align: center;
+                font-family: $font-poppins-light;
+                font-size: 12px;
+                width: 200px;
+                height: 39px;
+                border-bottom: $border-line;
+                border-right: $border-line;
+
+                &:first-of-type {
+                    font-family: $font-poppins-regular;
+                    font-size: 20px;
+                    color: $color-blue-green__light;
+                    text-align: left;
+                    font-weight: 500;
+                    border-right: 0;
+                    width: 100px;
+                }
+                &:last-of-type {
+                    border-right: 0;
+                }
+               
+            }
+            &:last-of-type {
+                td {
+                    border-bottom: 0;
+                }
+                
+            }
+        }
+        @include mq($until: desktop){
+            display: none;
+        }
+    }
+    
+
+    &-list {
+        
+        @include mq($from: desktop){
+            display: none;
+        }
+        &-content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__item {
+            width: 50%;
+            line-height: 1.7;
+            span {
+                font-size: 11px;
+            }
+        }
+        &__time {
+            font-weight: 600;
+        }
+    }
+    &__controls {
+        @include mq($until: desktop){
+            display: none;
+        }
+    }
+}

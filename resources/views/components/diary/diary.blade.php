@@ -1,88 +1,25 @@
-<div class="diary" id="diary">
-    <div class="diary__title heading">
-        <h2 class="heading__title diary__title--desktop heading__title--blue"><span class="icon-patient heading__title--icon"></span>Agenda</h2>
-        <h2 class="heading__title diary__title--mobile heading__title--blue"><span class="icon-patient heading__title--icon"></span>Agenda de hoy</h2>
-        <div class="diary__controls heading__controls">
-            <a href="#" class="button button--medium button--blue">
-                <span>Ver Calendario</span>
-            </a>
-            <a href="#modal" class="button button--medium button--blue show-modal open-modal">
-                <span>Nueva Cita</span>
-            </a>
-        </div>
+@push('styles')
+    <link rel="stylesheet" href={{ mix('css/diary.css') }}>
+@endpush
+
+<div class="diary bg-white">
+    <h2 class="diary__title">Duración de la cita</h2>
+    <p class="diary__text">Por favor selecciona un tiempo de duración para personalizar tu horario.</p>
+    <p class="diary__text"><strong>Recuerda que si no seleccionas el tiempo de duración de tu cita, no podrás ver la parrilla de horarios.</strong></p>
+    <div class="diary__select">
+        <select name="select-duration" id="select-duration" aria-label="Seleccionar duración de consulta">
+            <option value="">15 minutos</option>
+            <option value="">30 minutos</option>
+            <option value="">45 minutos</option>
+            <option value="">1 hora</option>
+        </select>
     </div>
-    <div class="diary-table">
-        <table class="diary-table__table">
-            <tr>
-                <th class="hidden-visually"></th>
-                <th>Lun 11</th>
-                <th>Mar 12</th>
-                <th>Mie 13</th>
-                <th>Jue 14</th>
-                <th>Vie 15</th>
-                <th>Sab 16</th>
-                <th>Dom 17</th>
-            </tr>
-            <tr>
-                <td>10:00</td>
-                <td>Rodrigo Murillo</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>11:00</td>
-                <td></td>
-                <td>Adriana Gamarra</td>
-                <td></td>
-                <td></td>
-                <td>Valeria Arica</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>12:00</td>
-                <td>Erick Mendoza</td>
-                <td></td>
-                <td>Anibal Ventura</td>
-                <td></td>
-                <td></td>
-                <td>Rodrigo Murillo</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>13:00</td>
-                <td></td>
-                <td></td>
-                <td>Katherine Chuco</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
-    </div>
-    <div class="diary-list">
-        <ul class="diary-list-content">
-            <li class="diary-list__item">
-                <span class="diary-list__time">10:00 - </span>
-                <span class="diary-list__name">Erick Mendoza</span>
-            </li>
-            <li class="diary-list__item">
-                <span class="diary-list__time">11:00 - </span>
-                <span class="diary-list__name">Adriana Gamarra</span>
-            </li>
-            <li class="diary-list__item">
-                <span class="diary-list__time">15:00 - </span>
-                <span class="diary-list__name">Anibal Ventura</span>
-            </li>
-            <li class="diary-list__item">
-                <span class="diary-list__time">18:00 - </span>
-                <span class="diary-list__name">Katherine Chuco</span>
-            </li>
-        </ul>
+
+    <h2 class="diary__title">Tiempo mínimo para agendar una consulta.</h2>
+    <p class="diary__text"><strong>Recomendamos un mínimo de 6 horas para garantizar una buena experiencia para el paciente.</strong></p>
+    <div class="diary__input">
+        <input type="text" aria-label="Ingresar tiempo minimo para agendar consulta">
     </div>
 </div>
+
+

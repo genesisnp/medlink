@@ -37,8 +37,8 @@
 
 @font-face {
   font-family: "icomoon";
-  src: url("/assets/fonts/icomoon/icomoon.eot?fapqu8");
-  src: url("/assets/fonts/icomoon/icomoon.eot?fapqu8#iefix") format("embedded-opentype"), url("/assets/fonts/icomoon/icomoon.ttf?fapqu8") format("truetype"), url("/assets/fonts/icomoon/icomoon.woff?fapqu8") format("woff"), url("/assets/fonts/icomoon/icomoon.svg?fapqu8#icomoon") format("svg");
+  src: url("/assets/fonts/icomoon/icomoon.eot?bdkqiy");
+  src: url("/assets/fonts/icomoon/icomoon.eot?bdkqiy#iefix") format("embedded-opentype"), url("/assets/fonts/icomoon/icomoon.ttf?bdkqiy") format("truetype"), url("/assets/fonts/icomoon/icomoon.woff?bdkqiy") format("woff"), url("/assets/fonts/icomoon/icomoon.svg?bdkqiy#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -58,6 +58,18 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/*******************
+    FONTS
+*******************/
+
+/*************
+    COLORS
+*************/
+
+/*******************
+    BREAKPOINTS
+*******************/
 
 * {
   margin: 0;
@@ -176,10 +188,6 @@ ul {
   content: "\E912";
 }
 
-/*************
-    COLORS
-*************/
-
 .heading {
   display: flex;
   align-items: center;
@@ -243,6 +251,12 @@ ul {
 .section--flex {
   display: flex;
   justify-content: space-between;
+}
+
+.bg-white {
+  background-color: #fff;
+  border-radius: 31px;
+  box-shadow: 0px 10px 15px rgba(94, 114, 138, 0.1);
 }
 
 /* ==========================================================================
@@ -738,7 +752,7 @@ ul {
   align-items: center;
 }
 
-@media (min-width: 71.875em) {
+@media (min-width: 23.4375em) {
   .header {
     margin: 0 15px;
   }
@@ -789,21 +803,28 @@ ul {
 }
 
 .next-appointment {
-  background-color: #fff;
   padding: 9px 8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0px 10px 15px rgba(94, 114, 138, 0.1);
   max-width: 100%;
-  border-radius: 7px;
+}
+
+@media (max-width: 71.865em) {
+  .next-appointment {
+    border-radius: 7px;
+  }
+}
+
+@media (min-width: 23.4375em) {
+  .next-appointment {
+    margin: 0 15px;
+  }
 }
 
 @media (min-width: 71.875em) {
   .next-appointment {
-    margin: 0 15px;
     padding: 30px 23px;
-    border-radius: 31px;
   }
 }
 
@@ -961,12 +982,9 @@ ul {
 }
 
 .views {
-  background-color: #fff;
   max-width: 258px;
   padding: 19px 9px 14px 8px;
-  border-radius: 31px;
   text-align: center;
-  box-shadow: 0px 10px 15px rgba(94, 114, 138, 0.1);
   display: inline-block;
   width: 161px;
 }
@@ -1034,9 +1052,6 @@ ul {
 }
 
 .last-patients {
-  background-color: #fff;
-  box-shadow: 0px 10px 15px rgba(94, 114, 138, 0.1);
-  border-radius: 31px;
   padding: 8px 6px 8px 10px;
   max-width: 1380px;
   width: 161px;
@@ -1146,44 +1161,43 @@ ul {
   }
 }
 
-.diary {
-  background-color: #fff;
-  box-shadow: 0px 10px 15px rgba(94, 114, 138, 0.1);
-  border-radius: 31px;
+.diary-table {
   padding: 17px 16px;
-  margin: 0 15px;
+}
+
+@media (min-width: 23.4375em) {
+  .diary-table {
+    margin: 0 15px;
+  }
 }
 
 @media (min-width: 71.875em) {
-  .diary {
+  .diary-table {
     padding: 17px 29px;
   }
 }
 
 @media (max-width: 46.865em) {
-  .diary__title--desktop {
+  .diary-table__title--desktop {
     display: none;
   }
 }
 
-.diary__title--mobile {
+.diary-table__title--mobile {
   text-align: center;
   margin-bottom: 10px;
 }
 
 @media (min-width: 46.875em) {
-  .diary__title--mobile {
+  .diary-table__title--mobile {
     display: none;
   }
-}
-
-.diary-table {
-  margin-top: 24px;
 }
 
 .diary-table__table {
   width: 100%;
   border-spacing: 0;
+  margin-top: 24px;
 }
 
 .diary-table__table tr th {
@@ -1222,37 +1236,37 @@ ul {
 }
 
 @media (max-width: 71.865em) {
-  .diary-table {
+  .diary-table__table {
     display: none;
   }
 }
 
 @media (min-width: 71.875em) {
-  .diary-list {
+  .diary-table-list {
     display: none;
   }
 }
 
-.diary-list-content {
+.diary-table-list-content {
   display: flex;
   flex-wrap: wrap;
 }
 
-.diary-list__item {
+.diary-table-list__item {
   width: 50%;
   line-height: 1.7;
 }
 
-.diary-list__item span {
+.diary-table-list__item span {
   font-size: 11px;
 }
 
-.diary-list__time {
+.diary-table-list__time {
   font-weight: 600;
 }
 
 @media (max-width: 71.865em) {
-  .diary__controls {
+  .diary-table__controls {
     display: none;
   }
 }

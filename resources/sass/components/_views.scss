@@ -1,10 +1,7 @@
 .views {
-    background-color: $color-white;
     max-width: 258px;
     padding: 19px 9px 14px 8px;
-    border-radius: $border-radius;
     text-align: center;
-    box-shadow: $box-shadow;
     display: inline-block;
     width: 161px;
     @include mq($from: 375px){

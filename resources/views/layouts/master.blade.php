@@ -21,7 +21,11 @@
         @component('components.footer.footer')
         @endcomponent
 
+
+        <script src={{ mix('js/app.js') }}></script>
         @stack('scripts')
+            
 
     </body>
+
 </html>

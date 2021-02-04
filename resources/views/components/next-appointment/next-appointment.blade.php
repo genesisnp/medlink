@@ -1,5 +1,5 @@
 
-<div class="next-appointment">
+<div class="next-appointment bg-white">
     <div class="next-appointment__icon">
         <span class="next-appointment__icon-icon icon-appointment"></span>
     </div>

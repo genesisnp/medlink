@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/summary', function () {
     return view('health_worker.summary');
 });
+
+Route::get('/calendar', function () {
+    return view('health_worker.calendar');
+});

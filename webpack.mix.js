@@ -12,7 +12,11 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
+    .js('resources/views/components/tabs-diary/tabs.js', 'public/js')
+    .js('resources/views/components/tabs-diary/carousel.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
+    .sass('resources/views/components/diary/diary.scss', 'public/css')
+    .sass('resources/views/components/tabs-diary/tabs-diary.scss', 'public/css')
     .copyDirectory('resources/assets/images', 'public/assets/images')
     .copyDirectory('resources/assets/fonts', 'public/assets/fonts')
     .version();

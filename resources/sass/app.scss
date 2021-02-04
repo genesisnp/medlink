@@ -1,17 +1,15 @@
 // SETTINGS
 @import 'settings/fonts';
+@import 'utils/variables';
 @import 'settings/config';
 @import 'settings/breakpoints';
-@import 'settings/global';
 
 //TOOLS
 @import './node_modules/sass-mq/mq';
 
 //UTILS
 @import 'utils/icons';
-@import 'utils/colors';
 @import 'utils/helpers';
-
 @import 'settings/wrapper';
 
 // COMPONENTS
@@ -21,7 +19,7 @@
 @import 'components/next-appointment';
 @import 'components/views';
 @import 'components/last-patients';
-@import 'components/diary';
+@import 'components/table-diary';
 @import 'components/footer';
 @import 'components/dropdown';
 @import 'components/modal';

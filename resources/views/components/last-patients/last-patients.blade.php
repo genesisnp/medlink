@@ -1,4 +1,4 @@
-<div class="last-patients">
+<div class="last-patients bg-white">
     <div class="last-patients__title heading">
         <h2 class="heading__title last-patients__title--desktop heading__title--blue"><span class="last-patients__icon icon-patient heading__title--icon"></span>Últimos pacientes</h2>
         <h2 class="heading__title last-patients__title--mobile heading__title--blue">Tus últimos pacientes</h2>

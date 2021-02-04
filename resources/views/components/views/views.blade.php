@@ -1,4 +1,4 @@
-<div class="views">
+<div class="views bg-white">
     <div class="views__title heading">
         <h2 class="heading__title heading__title--blue"><span class="views__icon icon-view heading__title--icon"></span>Vistas de tu página</h2>
     </div>

@@ -19,7 +19,7 @@
     </section>
     
     <section class="section">
-        @component('components.diary.diary')
+        @component('components.table-diary.table-diary')
         @endcomponent
     </section>
 
@@ -31,6 +31,6 @@
 @endsection
 
 @push('scripts')
-    
+
     
 @endpush

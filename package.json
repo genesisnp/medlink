@@ -22,6 +22,7 @@
     "dependencies": {
         "jquery": "^3.5.1",
         "sass-mediaqueries": "^1.6.1",
-        "sass-mq": "^5.0.1"
+        "sass-mq": "^5.0.1",
+        "slick-carousel": "^1.8.1"
     }
 }

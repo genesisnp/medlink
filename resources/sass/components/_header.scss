@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include mq($from: desktop) {
+    @include mq($from: 375px) {
         margin: $margin-component;
     }
     

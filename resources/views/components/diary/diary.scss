@@ -1,0 +1,53 @@
+@import '../../../sass/utils/variables';
+@import './node_modules/sass-mq/mq';
+
+.diary {
+    padding: 25px 31px 40px;
+
+    &__title {
+        color: $color-blue-green;
+        font-size: 12px;
+        font-family: $font-poppins-bold;
+        margin-bottom: 12px;
+        @include mq($from: tablet){
+            font-size: 22px;
+        }
+    }
+    &__text {
+        font-family: $font-poppins-light;
+        font-size: 11px;
+        margin-bottom: 5px;
+        line-height: 1.3;
+
+        @include mq($from: tablet){
+            font-size: 16px;
+        }
+        strong {
+            font-weight: 600;
+            font-family: $font-poppins-regular
+        }
+    }
+
+    &__input, &__select {
+        select, input {
+            border: 0;
+            border-bottom: 1px solid $color-blue-green;
+            max-width: 437px;
+            width: 100%;
+            outline: none;
+            height: 35px;
+            color: $color-grey3;
+            font-size: 11px;
+            font-family: $font-poppins-light;
+            @include mq($from: tablet){
+                font-size: 18px;
+            }
+        }
+    }
+    &__select {
+        margin-bottom: 20px;
+        @include mq($from: tablet){
+            font-size: 17px;
+        }
+    }
+}

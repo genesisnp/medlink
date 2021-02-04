@@ -1,9 +1,5 @@
 .last-patients {
-    background-color: $color-white;
-    box-shadow: $box-shadow;
-    border-radius: $border-radius;
     padding: 8px 6px 8px 10px;
-    //max-height: 263px;
     max-width: 1380px;
     width: 161px;
 
@@ -14,8 +10,6 @@
 
     @include mq($from: tablet) {
         padding: 18px 26px 18px 58px ;
-        
-        
     }
 
     &__icon {
