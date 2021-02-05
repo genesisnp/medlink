@@ -28,10 +28,10 @@
     </div>
     <div class="next-appointment__controls">
         <a href="#" class="button button--blue button--big">
-            <span>Historia Clínica</span>
+            <span class="button__text">Historia Clínica</span>
         </a>
         <a href="#" class="button button--blue button--big">
-            <span>Atender</span>
+            <span class="button__text">Atender</span>
         </a>
         <div class="dropdwn">
             <div class="dropdown-container">

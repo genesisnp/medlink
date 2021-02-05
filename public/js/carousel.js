@@ -95,7 +95,9 @@
 
 $('.tabs-timetable__content').slick({
   infinite: false,
-  slidesToShow: 7,
+  slidesToShow: 8,
+  nextArrow: '<button class="slick-next" type="button"><span class="icon-polygon"></span></button>',
+  prevArrow: '<button class="slick-prev" type="button"><span class="icon-polygon"></span></button>',
   responsive: [{
     breakpoint: 1200,
     settings: {
@@ -107,12 +109,12 @@ $('.tabs-timetable__content').slick({
       slidesToShow: 4
     }
   }, {
-    breakpoint: 600,
+    breakpoint: 700,
     settings: {
       slidesToShow: 3
     }
   }, {
-    breakpoint: 475,
+    breakpoint: 575,
     settings: {
       slidesToShow: 2,
       slidesToScroll: 2

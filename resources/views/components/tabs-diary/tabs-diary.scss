@@ -8,21 +8,31 @@
 
         &-link {
             display: inline-block;
-            padding: 15px 30px;
+            padding: 9px 10px;
             cursor: pointer;
             text-transform: uppercase;
             background-color: #E1E1E1;
             font-family: $font-poppins-light;
             border-radius: 17px;
-            max-width: 319px;
-            width: 100%;
+            width: 106px;
             text-align: center;
-            margin: 19px;
+            margin: 19px 8px;
+            font-size: 10px;
+            @include mq($from: 575px) {
+                width: 200px;
+                font-size: 16px;
+                padding: 12px 20px;
+                margin: 19px;
+            }
+            @include mq($from: desktop) {
+                max-width: 319px;
+                width: 100%;
+                padding: 15px 30px;
+            }
 
             &.current{
                 box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
                 font-weight: 600;
-                font-size: 16px;
                 background-color: $color-white;
                 font-family: $font-poppins-medium;
             }
@@ -33,15 +43,20 @@
 
 .tabs-content {
     background-color: $color-white;
-    padding: 32px 50px;
+    padding: 32px 10px;
     border-radius: $border-radius;
-    @include mq($from: desktop) {
+    @include mq($from: 575px) {
+        padding: 32px 20px;
+    }
+    @include mq($from: tablet) {
         padding: 32px 40px;
+    }
+    @include mq($from: desktop) {
+        padding: 32px 40px 28px;
     }
 
     &__item{
         display: none;
-        //padding: 15px;
         animation: fadein .8s;
 
         &.current{
@@ -54,6 +69,12 @@
             color: $color-white;
         }
     }  
+    #virtual {
+        .time-available {
+            background-color: $color-blue;
+            color: $color-white;
+        }
+    }
 }
 @keyframes fadein {
     from {opacity:0;}
@@ -61,24 +82,29 @@
 }
 
 .tabs-timetable {
+    //max-width: 1393px;
+    //margin: auto;
 
     &__day {
         font-family: $font-poppins-bold;
-        font-size: 16px;
-        margin-bottom: 20px;
+        font-size: 17px;
+        margin-bottom: 22px;
         text-align: center;
-    }
-
-    &__item {
-        //max-width: 136px;
-        //width: 100%;
+        text-transform: uppercase;
+        @include mq($from: tablet) {
+            margin-bottom: 20px;
+        }
+        @include mq($from: desktop) {
+            font-size: 16px;
+        }
+        
     }
 
     &__time {
         background-color: $color-white;
         box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.25);
         border-radius: 3px;
-        margin: 5px 4.5px;
+        margin: 7px 10px;
         color: $color-grey;
         height: 32px;
         display: flex;
@@ -86,9 +112,75 @@
         align-items: center;
         font-size: 17px;
         font-family: $font-poppins-light;
-        //width: 100%;
+        
+        @include mq($from: 575px) {
+            margin: 5px 4.5px;
+        }
     }
 
+    // .slick-track{
+    //     .slick-slide {
+    //         @include mq($until: 575px) {
+    //             &:nth-child(odd) {
+    //                 .tabs-timetable__day {
+    //                    text-align: right;
+    //                    padding-right: 15px;
+    //                 }
+    //             }
+    //             &:nth-child(even) {
+    //                 .tabs-timetable__day {
+    //                     text-align: left;
+    //                     padding-left: 15px;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+
+    .slick-next, .slick-prev {
+        background-color: $color-white;
+        border: 0;
+        position: absolute;
+        top: -6px;
+        z-index: 1;
+        span {
+            font-size: 25px;
+            color: $color-blue-green;
+        }
+        &.slick-disabled {
+            opacity: 0;
+        }
+    }
+    .slick-next {
+        right: 2%;
+        transform: rotate(180deg);
+    }
+    .slick-prev {
+        left: 2%;
+    }
    
 }
 
+.tabs-controls {
+    text-align: right;
+    padding-top: 17px;
+    .button {
+        height: 25px;
+        border-radius: 5px;
+        @include mq($from: desktop) {
+            height: 35px;
+        }
+        &__icon {
+            font-size: 15px;
+            @include mq($from: desktop) {
+                font-size: 22px;
+            }
+        }
+        &__text {
+            font-size: 10px;
+            @include mq($from: desktop) {
+                font-size: 15px;
+            }
+        }
+    }
+}

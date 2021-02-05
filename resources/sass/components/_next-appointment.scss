@@ -21,8 +21,15 @@
             display: none;
          }
         &-icon {
-            color: $color-blue-green;
             font-size: 78px;
+            color: $color-blue-green;
+            @include mq($from: desktop) {
+                font-size: 55px;
+                padding-right: 15px;
+            }
+            @include mq($from: wide) {
+                font-size: 78px;
+            }
         }
     }
     &__title {
@@ -35,9 +42,10 @@
     &-info {
         display: flex;
         list-style: none;
-        flex-wrap: wrap;
+
         @include mq($until: tablet) {
             flex-direction: column-reverse;
+            flex-wrap: wrap;
         }
         
         &__item {
@@ -72,7 +80,6 @@
                         }
                     }
                     @include mq($from: wide) {
-
                         span:first-child  {
                             font-size: 20px;
                         }
@@ -127,6 +134,10 @@
         .button {
             &:first-child {
                 margin-right: 23px;
+                margin-bottom: 6px;
+                @include mq($from: wide) {
+                    margin: 0;
+                }
             }
             @include mq($until: desktop) {
                 display: none;

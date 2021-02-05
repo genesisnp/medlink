@@ -15,6 +15,7 @@
     line-height: 1;
     background-color: $color-white;
     border: 0;
+    outline: none;
    
     @include mq($from: desktop) {
         height: 50px;
@@ -48,18 +49,38 @@
 
     &--big {
         height: 46px;
-        font-size: 16px;
-        @include mq($from: wide) {
-            font-size: 20px;
+        @include mq($from: tablet) {
+            height: 43px;
         }
+        @include mq($from: wide) {
+            height: 46px;
+        }
+        .button__text {
+            font-size: 16px;
+            @include mq($from: desktop) {
+                font-size: 16px;
+            }
+            @include mq($from: wide) {
+                font-size: 20px;
+            }
+        }
+        
     }
 
     &--medium {
         height: 31px;
-        font-size: 11px;
+        
         @include mq($from: desktop) {
-            font-size: 14px;
             height: 37px;
+        }
+        .button__text {
+            font-size: 11px;
+            @include mq($from: desktop) {
+                font-size: 12px;
+            }
+            @include mq($from: wide) {
+                font-size: 14px;
+            }
         }
     }
 
