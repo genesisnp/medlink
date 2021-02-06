@@ -634,7 +634,7 @@ ul {
     position: relative;
     z-index: 1;
     transition: 400ms;
-    background-color: #C4C4C4;
+    background-color: #AFB8C4;
     width: 52px;
     height: 52px;
     display: flex;
@@ -721,7 +721,7 @@ ul {
     position: relative;
     z-index: 1;
     transition: 400ms;
-    background-color: #C4C4C4;
+    background-color: #AFB8C4;
     width: 41px;
     height: 41px;
     display: flex;
