@@ -18,6 +18,7 @@ mix.js('resources/js/app.js', 'public/js')
     .sass('resources/views/components/diary/diary.scss', 'public/css')
     .sass('resources/views/components/tabs-diary/tabs-diary.scss', 'public/css')
     .sass('resources/views/components/patients-attended/patients-attended.scss', 'public/css')
+    .sass('resources/views/components/progress/progress.scss', 'public/css')
     .copyDirectory('resources/assets/images', 'public/assets/images')
     .copyDirectory('resources/assets/fonts', 'public/assets/fonts')
     .version();

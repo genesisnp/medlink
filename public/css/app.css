@@ -448,6 +448,7 @@ ul {
   transition: width 400ms;
   width: 100%;
   padding: 15px 12px;
+  z-index: 10;
 }
 
 @media (min-width: 34.375em) {

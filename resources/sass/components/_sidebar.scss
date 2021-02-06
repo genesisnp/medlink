@@ -8,6 +8,7 @@ $pad:     0.925rem;
     transition: width 400ms;
     width: 100%;
     padding: 15px 12px;
+    z-index: 10;
 
     @include mq($from: 550px) {
         padding: 15px 15%;

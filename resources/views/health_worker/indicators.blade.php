@@ -11,6 +11,8 @@
     @component('components.views.views')
     @endcomponent
 
+    @component('components.progress.progress')
+    @endcomponent
 
 @endsection
 
