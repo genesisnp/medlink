@@ -201,6 +201,7 @@ ul {
 .heading__title {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   line-height: 1.4;
 }
@@ -209,12 +210,22 @@ ul {
   color: #0066A5;
   font-size: 14px;
   font-family: "poppinsbold";
+  margin-left: 8px;
 }
 
 @media (min-width: 43.75em) {
   .heading__title--blue {
     font-size: 20px;
   }
+}
+
+.heading__title--flex-column {
+  flex-direction: column;
+  margin: auto;
+}
+
+.heading__title--flex-column .heading__title--blue {
+  margin: 0;
 }
 
 .heading__title--icon {
@@ -286,20 +297,13 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 180px;
+  max-width: 1155px;
+  margin: auto;
 }
 
 @media (min-width: 61.25em) {
   .wrapper__content {
-    padding-left: 35px;
-    padding-right: 35px;
     padding-bottom: 0;
-  }
-}
-
-@media (min-width: 81.25em) {
-  .wrapper__content {
-    padding-right: 60px;
-    padding-left: 60px;
   }
 }
 
@@ -805,6 +809,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 @media (min-width: 23.4375em) {
@@ -1109,17 +1114,8 @@ ul {
   }
 }
 
-.views__icon {
-  width: 100%;
-}
-
 .views__title {
   margin-bottom: 15px;
-}
-
-.views__title .heading__title {
-  justify-content: center;
-  padding: 0 5px;
 }
 
 .views__text {

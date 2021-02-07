@@ -1,0 +1,35 @@
+@import '../../../sass/utils/variables';
+@import './node_modules/sass-mq/mq';
+
+.effectiveness-rate {
+    max-width: 625px;
+
+    &__container {
+        padding: 56px 35px;
+        text-align: center;
+    }
+    &__title {
+        color: $color-blue-cian;
+        text-align: center;
+        font-family: $font-poppins-bold;
+        font-size: 12px;
+        padding: 0 22px;
+        line-height: 1.4;
+        margin-bottom: 5px;
+        @include mq($from: tablet){
+            font-size: 16px;
+        }
+        @include mq($from: desktop){
+            font-size: 30px;
+        }
+    }
+    &__text {
+        font-size: 19px;
+        margin: 14px 0;
+
+        &--blue {
+            font-size: 14px;
+            color: $color-blue;
+        }
+    }
+}

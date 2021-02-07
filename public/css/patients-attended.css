@@ -14,12 +14,6 @@
   max-width: 787px;
 }
 
-@media (min-width: 87.5em) {
-  .patients-attended {
-    max-width: 1040px;
-  }
-}
-
 .patients-attended__container {
   display: flex;
   flex-wrap: wrap;
@@ -35,12 +29,6 @@
 @media (min-width: 61.25em) {
   .patients-attended__container {
     padding: 36px 68px 42px 74px;
-  }
-}
-
-@media (min-width: 87.5em) {
-  .patients-attended__container {
-    padding: 36px 78px 42px 78px;
   }
 }
 
@@ -119,12 +107,6 @@
   }
 }
 
-@media (min-width: 87.5em) {
-  .patients-attended__item {
-    max-width: 326px;
-  }
-}
-
 @media (min-width: 46.25em) {
   .patients-attended__item .patients-attended__text {
     padding: 0 6px;
@@ -152,6 +134,12 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+
+@media (min-width: 61.25em) {
+  .patients-attended__input {
+    flex-direction: column;
+  }
 }
 
 .patients-attended__input:last-child {

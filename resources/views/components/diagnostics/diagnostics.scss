@@ -1,0 +1,31 @@
+@import '../../../sass/utils/variables';
+@import './node_modules/sass-mq/mq';
+
+.diagnostics {
+    &__container {
+        padding: 30px 77px 31px;
+    }
+    &__list {
+        list-style: decimal;
+        list-style-position: inside;
+        @include mq($from: tablet) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    &__item {
+        font-size: 20px;
+        margin-top:26px;
+
+        @include mq($from: tablet) {
+            width: 50%;
+        }
+        &::marker {
+            font-family: $font-poppins-bold;
+        }
+        strong {
+            font-weight: normal;
+            font-family: $font-poppins-bold;
+        }
+    }
+}

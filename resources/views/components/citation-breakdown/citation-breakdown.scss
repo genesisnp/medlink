@@ -1,0 +1,33 @@
+@import '../../../sass/utils/variables';
+@import './node_modules/sass-mq/mq';
+
+.citation-breakdown {
+    max-width: 438px;
+
+    &__container {
+        padding: 26px 77px 35px 75px;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+    }
+    &__item {
+        width: calc(50% - 10px);
+        text-align: center;
+    }
+    &__number {
+        color: $color-grey;
+        font-size: 30px;
+        @include mq($from: desktop) {
+            font-size: 50px;
+        }
+    }
+    &__text {
+        line-height: 1.4;
+        font-size: 11px;
+        @include mq($from: tablet) {
+            font-size: 14px;
+        }
+    }
+}

@@ -14,6 +14,15 @@
     @component('components.progress.progress')
     @endcomponent
 
+    @component('components.citation-breakdown.citation-breakdown')
+    @endcomponent
+
+    @component('components.effectiveness-rate.effectiveness-rate')
+    @endcomponent
+
+    @component('components.diagnostics.diagnostics')
+    @endcomponent
+
 @endsection
 
 @push('scripts')

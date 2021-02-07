@@ -18,16 +18,18 @@
             padding-left: 15px;
             padding-right: 15px;
             padding-bottom: 180px;
+            max-width: 1155px;
+            margin: auto;
 
             @include mq($from: desktop) {
-                padding-left: 35px;
-                padding-right: 35px;
+                // padding-left: 35px;
+                // padding-right: 35px;
                 padding-bottom: 0;
              }
             
             @include mq($from: wide) {
-                padding-right: $wrapper-padding;
-                padding-left:  $wrapper-padding;
+                // padding-right: $wrapper-padding;
+                // padding-left:  $wrapper-padding;
             }
         }
         

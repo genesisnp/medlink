@@ -4,9 +4,6 @@
 .patients-attended {
     max-width: 787px;
 
-    @include mq($from: 1400px){
-        max-width: 1040px;
-    }
     &__container {
         display: flex;
         flex-wrap: wrap;
@@ -16,9 +13,6 @@
         }
         @include mq($from: desktop){
             padding: 36px 68px 42px 74px;
-        }
-        @include mq($from: 1400px){
-            padding: 36px 78px 42px 78px;
         }
     }
 
@@ -73,17 +67,13 @@
     }
     &__item {
         text-align: center;
-        //width: 100%;
         margin: 0 3px;
         max-width: 127px;
         @include mq($from: tablet){
             max-width: 197px;
         }
-        @include mq($from: 1400px){
-            max-width: 326px;
-        }
+
         .patients-attended__text {
-            //padding: 0 6px;
             @include mq($from: tablet) {
                 padding: 0 6px;
             }
@@ -111,6 +101,9 @@
        width: 100%;
         display: flex;
         justify-content: space-between;
+        @include mq($from: desktop) {
+            flex-direction: column;
+        }
         
         &:last-child {
             margin-bottom: 0;
@@ -127,7 +120,6 @@
                 width: 100%;
                 height: 22px;
                 margin: 23px 0 13px;
-
             }
     
             @include mq($from: 1400px){

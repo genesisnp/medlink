@@ -1,0 +1,53 @@
+/*******************
+    FONTS
+*******************/
+
+/*************
+    COLORS
+*************/
+
+/*******************
+    BREAKPOINTS
+*******************/
+
+.effectiveness-rate {
+  max-width: 625px;
+}
+
+.effectiveness-rate__container {
+  padding: 56px 35px;
+  text-align: center;
+}
+
+.effectiveness-rate__title {
+  color: #00588E;
+  text-align: center;
+  font-family: "poppinsbold";
+  font-size: 12px;
+  padding: 0 22px;
+  line-height: 1.4;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 46.25em) {
+  .effectiveness-rate__title {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .effectiveness-rate__title {
+    font-size: 30px;
+  }
+}
+
+.effectiveness-rate__text {
+  font-size: 19px;
+  margin: 14px 0;
+}
+
+.effectiveness-rate__text--blue {
+  font-size: 14px;
+  color: #0066A5;
+}
+
