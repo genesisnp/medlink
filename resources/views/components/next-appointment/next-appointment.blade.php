@@ -33,15 +33,16 @@
         <a href="#" class="button button--blue button--big">
             <span class="button__text">Atender</span>
         </a>
-        <div class="dropdwn">
-            <div class="dropdown-container">
-                <input type="checkbox" id="drop" />
-                <label for="drop">Acciones</label>
-                <ul class="content">
-                  <li><a href="#">Historia Médica</a></li>
-                  <li><a href="#">Atender</a></li>     
-                </ul>
-            </div>
+        
+    </div>
+    <div class="dropdwn">
+        <div class="dropdown-container">
+            <input type="checkbox" id="drop" />
+            <label for="drop">Acciones</label>
+            <ul class="content">
+              <li><a href="#">Historia Médica</a></li>
+              <li><a href="#">Atender</a></li>     
+            </ul>
         </div>
     </div>
 </div>

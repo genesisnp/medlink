@@ -3,6 +3,7 @@
 @import './node_modules/slick-carousel/slick/slick';
 
 .tabs {
+    width: 100%;
     &-header  {
         text-align: center;
 
@@ -48,9 +49,11 @@
     @include mq($from: 575px) {
         padding: 32px 20px;
     }
+
     @include mq($from: tablet) {
         padding: 32px 40px;
     }
+
     @include mq($from: desktop) {
         padding: 32px 40px 28px;
     }
@@ -82,8 +85,6 @@
 }
 
 .tabs-timetable {
-    //max-width: 1393px;
-    //margin: auto;
 
     &__day {
         font-family: $font-poppins-bold;
@@ -118,25 +119,6 @@
         }
     }
 
-    // .slick-track{
-    //     .slick-slide {
-    //         @include mq($until: 575px) {
-    //             &:nth-child(odd) {
-    //                 .tabs-timetable__day {
-    //                    text-align: right;
-    //                    padding-right: 15px;
-    //                 }
-    //             }
-    //             &:nth-child(even) {
-    //                 .tabs-timetable__day {
-    //                     text-align: left;
-    //                     padding-left: 15px;
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
-
     .slick-next, .slick-prev {
         background-color: $color-white;
         border: 0;
@@ -164,6 +146,15 @@
 .tabs-controls {
     text-align: right;
     padding-top: 17px;
+
+    @include mq($from: desktop) {
+        transform: translate(-4px, 6px);
+    }
+    
+    @include mq($from: 1200px) {
+        transform: translate(-65px, 6px);
+    }
+
     .button {
         height: 25px;
         border-radius: 5px;

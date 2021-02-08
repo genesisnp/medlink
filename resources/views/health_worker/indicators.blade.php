@@ -2,7 +2,7 @@
 @section('title', 'INDICATOR')
 
 @section('content')
-    @component('components.header.header')
+    @component('components.header.header', [ 'title' => 'Indicadores', 'showCenterLogo' => false ])
     @endcomponent
 
     @component('components.patients-attended.patients-attended')

@@ -22,6 +22,7 @@ mix.js('resources/js/app.js', 'public/js')
     .sass('resources/views/components/citation-breakdown/citation-breakdown.scss', 'public/css')
     .sass('resources/views/components/effectiveness-rate/effectiveness-rate.scss', 'public/css')
     .sass('resources/views/components/diagnostics/diagnostics.scss', 'public/css')
+    .sass('resources/views/components/finances/finances.scss', 'public/css')
     .copyDirectory('resources/assets/images', 'public/assets/images')
     .copyDirectory('resources/assets/fonts', 'public/assets/fonts')
     .version();

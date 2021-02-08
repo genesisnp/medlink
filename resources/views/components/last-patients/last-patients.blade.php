@@ -9,42 +9,42 @@
             <span class="last-patients-list__name">Karina Belledone</span>
             <div class="last-patients-list__line"></div>
             <a href="#" class="button button--medium button--blue">
-                <span>Ver más</span>
+                <span class="button__text">Ver más</span>
             </a>
         </li>
         <li class="last-patients-list__item">
             <span class="last-patients-list__name">Adriana Cangahuala</span>
             <div class="last-patients-list__line"></div>
             <a href="#" class="button button--medium button--blue">
-                <span>Ver más</span>
+                <span class="button__text">Ver más</span>
             </a>
         </li>
         <li class="last-patients-list__item">
             <span class="last-patients-list__name">Pedro Oliveira Cruz</span>
             <div class="last-patients-list__line"></div>
             <a href="#" class="button button--medium button--blue">
-                <span>Ver más</span>
+                <span class="button__text">Ver más</span>
             </a>
         </li>
         <li class="last-patients-list__item">
             <span class="last-patients-list__name">Adriana Cangahuala</span>
             <div class="last-patients-list__line"></div>
             <a href="#" class="button button--medium button--blue">
-                <span>Ver más</span>
+                <span class="button__text">Ver más</span>
             </a>
         </li>
         <li class="last-patients-list__item">
             <span class="last-patients-list__name">Pedro Oliveira Cruz</span>
             <div class="last-patients-list__line"></div>
             <a href="#" class="button button--medium button--blue">
-                <span>Ver más</span>
+                <span class="button__text">Ver más</span>
             </a>
         </li>
         <li class="last-patients-list__item">
             <span class="last-patients-list__name">Adriana Cangahuala</span>
             <div class="last-patients-list__line"></div>
             <a href="#" class="button button--medium button--blue">
-                <span>Ver más</span>
+                <span class="button__text">Ver más</span>
             </a>
         </li>
     </ul>

@@ -2,15 +2,13 @@
 @import './node_modules/sass-mq/mq';
 
 .patients-attended {
-    max-width: 787px;
+    max-width: 830px;
 
     &__container {
         display: flex;
         flex-wrap: wrap;
         padding: 16px 20px 20px;
-        @include mq($from: 375px){
-            margin: $margin-component;
-        }
+
         @include mq($from: desktop){
             padding: 36px 68px 42px 74px;
         }
@@ -75,7 +73,7 @@
 
         .patients-attended__text {
             @include mq($from: tablet) {
-                padding: 0 6px;
+                padding: 12px 6px 2px;
             }
 
         }
@@ -122,7 +120,7 @@
                 margin: 23px 0 13px;
             }
     
-            @include mq($from: 1400px){
+            @include mq($from: desktop){
                 margin: 15px 0 13px;
             }
         }

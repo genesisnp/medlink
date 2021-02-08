@@ -11,8 +11,25 @@
         @include mq($from: desktop) {
             font-size: 30px;
         }
+        &--small {
+            font-size: 15px;
+            margin-bottom: 18px;
+            @include mq($from: desktop) {
+                font-size: 20px;
+            }
+        }
     }
-
+    &__items {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        + .form__items {
+            margin-top: 20px;
+            border-top: 1px solid rgba(0,0,0,.1);
+            padding-top: 35px;
+        }
+    }
     &__item {
         width: 100%;
         margin: 0 0 17px;
@@ -41,6 +58,13 @@
             font-size: 22px;
         }
 
+        &--small {
+            font-size: 12px;
+            @include mq($from: desktop) {
+                font-size: 16px;
+            }
+        }
+
     }
     input[type="time"],input[type="date"] {
         &::-webkit-calendar-picker-indicator {
@@ -66,7 +90,7 @@
         font-family: $font-poppins-light;
         margin-top: 5px;
         @include mq($from: desktop) {
-            margin-too: 12px;
+            margin-top: 8px;
             font-size: 18px;
         }
     }
@@ -141,15 +165,16 @@
     }
 
     &-controls {
+        width: 100%;
         .button {
             &:first-of-type {
                 
                 @include mq($from: tablet) {
                     margin-right: 30px;
                 }
-                .button__icon {
-                    transform: rotate(45deg);
-                }
+            }
+            .icon-close {
+                transform: rotate(45deg);
             }
         }
     }

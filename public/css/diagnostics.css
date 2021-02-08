@@ -10,6 +10,10 @@
     BREAKPOINTS
 *******************/
 
+.diagnostics {
+  width: 100%;
+}
+
 .diagnostics__container {
   padding: 30px 77px 31px;
 }

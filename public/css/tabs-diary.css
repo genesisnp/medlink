@@ -111,6 +111,10 @@
   display: none;
 }
 
+.tabs {
+  width: 100%;
+}
+
 .tabs-header {
   text-align: center;
 }
@@ -289,6 +293,18 @@
 .tabs-controls {
   text-align: right;
   padding-top: 17px;
+}
+
+@media (min-width: 61.25em) {
+  .tabs-controls {
+    transform: translate(-4px, 6px);
+  }
+}
+
+@media (min-width: 75em) {
+  .tabs-controls {
+    transform: translate(-65px, 6px);
+  }
 }
 
 .tabs-controls .button {

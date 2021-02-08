@@ -1,0 +1,140 @@
+/*******************
+    FONTS
+*******************/
+
+/*************
+    COLORS
+*************/
+
+/*******************
+    BREAKPOINTS
+*******************/
+
+.finances__item {
+  padding: 24px 23px;
+}
+
+@media (min-width: 46.25em) {
+  .finances__item {
+    padding: 24px 20px;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .finances__item {
+    padding: 24px 34px;
+  }
+}
+
+.finances__container {
+  padding-top: 24px;
+}
+
+@media (min-width: 61.25em) {
+  .finances__container {
+    padding-top: 105px;
+  }
+}
+
+.finances__title {
+  font-size: 30px;
+  font-family: "poppinsbold";
+  margin-bottom: 23px;
+  margin: 0 8px 30px;
+}
+
+@media (min-width: 35.9375em) {
+  .finances__title {
+    margin: 0 15px 30px;
+  }
+}
+
+@media (max-width: 61.24em) {
+  .finances__title {
+    display: none;
+  }
+}
+
+.finances .electronic-wallets__title {
+  color: #5E728A;
+  font-size: 14px;
+  font-family: "poppinsbold";
+}
+
+@media (min-width: 61.25em) {
+  .finances .electronic-wallets__title {
+    font-size: 20px;
+  }
+}
+
+.finances .electronic-wallets__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 21px;
+}
+
+.finances .electronic-wallets__item > * {
+  width: 25%;
+  text-align: center;
+}
+
+.finances .electronic-wallets__item > span {
+  font-family: "poppinsbold";
+  color: #5E728A;
+  font-size: 16px;
+}
+
+@media (max-width: 61.24em) {
+  .finances .electronic-wallets__item > span {
+    width: 15%;
+    font-size: 12px;
+  }
+}
+
+.finances .electronic-wallets__item a {
+  font-family: "poppinsbold";
+  color: #5E728A;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.finances .electronic-wallets__item a span {
+  color: #000;
+}
+
+@media (max-width: 61.24em) {
+  .finances .electronic-wallets__item a {
+    display: none;
+  }
+}
+
+.finances .electronic-wallets__item .button {
+  max-width: 128px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.finances .electronic-wallets__item .button:last-child {
+  max-width: 80px;
+  width: 100%;
+}
+
+@media (max-width: 46.24em) {
+  .finances .electronic-wallets__item .button {
+    padding: 8px 6px;
+  }
+}
+
+@media (min-width: 46.25em) {
+  .finances .electronic-wallets__item .button {
+    max-width: 203px;
+  }
+
+  .finances .electronic-wallets__item .button:last-child {
+    max-width: 139px;
+    width: 100%;
+  }
+}
+

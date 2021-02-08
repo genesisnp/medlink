@@ -1,8 +1,8 @@
 <div id="modal" class="modal">
     <div class="modal__container">
-        <div class="modal-form form">
-            <h2 class="form__title">Registrar nueva cita</h2>
+        <div class="modal-form">
             <form action="#" class="form">
+                <h2 class="form__title">Registrar nueva cita</h2>
                 <div class="form__item form__item--50d">
                     <label for="" class="form__label">Nro de documento paciente</label>
                     <input type="text" class="form__input">

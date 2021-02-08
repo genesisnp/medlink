@@ -1,15 +1,29 @@
 .last-patients {
     padding: 8px 6px 8px 10px;
-    max-width: 1380px;
-    width: 161px;
+    width: 100%;
 
-    @include mq($from: 375px){
-        width: 100%;
-        margin: $margin-component;
+    @include mq($from: mobile){
+        max-width: 161px;
+        width: auto;
+    }
+    @include mq($from: 400px){
+        max-width: 200px;
     }
 
     @include mq($from: tablet) {
         padding: 18px 26px 18px 58px ;
+        width: 100%;
+        max-width: 352px;
+    }
+    @include mq($from: desktop) {
+        max-width: 502px;
+    }
+    @include mq($from: desktoplg) {
+        max-width: 730px;
+    }
+    @include mq($from: wide) {
+        padding: 18px 26px 18px 58px ;
+        max-width: 817px;
     }
 
     &__icon {
@@ -78,10 +92,17 @@
             }
         }
         &__line {
-            width: calc(100% - 300px);
-            border: $border-line;
-            @include mq($until: tablet) {
-                display: none;
+            display: none;
+            @include mq($from: tablet) {
+                display: block;
+                width: calc(100% - 178px);
+                border: $border-line;
+            }
+            @include mq($from: desktop) {
+                width: calc(100% - 275px);
+            }
+            @include mq($from: desktoplg) {
+                width: calc(100% - 300px);
             }
         }
     }

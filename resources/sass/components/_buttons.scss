@@ -66,6 +66,14 @@
         }
         
     }
+    &--small {
+        height: 23px;
+        font-size: 10px;
+        @include mq($from: desktop) {
+            height: 35px;
+            font-size: 15px;
+        }
+    }
 
     &--medium {
         height: 31px;
@@ -74,7 +82,7 @@
             height: 37px;
         }
         .button__text {
-            font-size: 11px;
+            font-size: 10px;
             @include mq($from: desktop) {
                 font-size: 12px;
             }
@@ -97,6 +105,24 @@
 
     &--blue-cian {
         background-color: $color-blue-cian;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        color: #fff;
+
+        &:hover {
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+    }
+    &--green-light {
+        background-color: $color-green-light;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        color: #fff;
+
+        &:hover {
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+    }
+    &--red {
+        background-color: $color-red;
         transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
         color: #fff;
 

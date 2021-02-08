@@ -33330,6 +33330,17 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/views/components/finances/finances.scss":
+/*!***********************************************************!*\
+  !*** ./resources/views/components/finances/finances.scss ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/views/components/patients-attended/patients-attended.scss":
 /*!*****************************************************************************!*\
   !*** ./resources/views/components/patients-attended/patients-attended.scss ***!
@@ -33364,9 +33375,9 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /***/ }),
 
 /***/ 0:
-/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/views/components/diary/diary.scss ./resources/views/components/tabs-diary/tabs-diary.scss ./resources/views/components/patients-attended/patients-attended.scss ./resources/views/components/progress/progress.scss ./resources/views/components/citation-breakdown/citation-breakdown.scss ./resources/views/components/effectiveness-rate/effectiveness-rate.scss ./resources/views/components/diagnostics/diagnostics.scss ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/views/components/diary/diary.scss ./resources/views/components/tabs-diary/tabs-diary.scss ./resources/views/components/patients-attended/patients-attended.scss ./resources/views/components/progress/progress.scss ./resources/views/components/citation-breakdown/citation-breakdown.scss ./resources/views/components/effectiveness-rate/effectiveness-rate.scss ./resources/views/components/diagnostics/diagnostics.scss ./resources/views/components/finances/finances.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -33378,7 +33389,8 @@ __webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\patien
 __webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\progress\progress.scss */"./resources/views/components/progress/progress.scss");
 __webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\citation-breakdown\citation-breakdown.scss */"./resources/views/components/citation-breakdown/citation-breakdown.scss");
 __webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\effectiveness-rate\effectiveness-rate.scss */"./resources/views/components/effectiveness-rate/effectiveness-rate.scss");
-module.exports = __webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\diagnostics\diagnostics.scss */"./resources/views/components/diagnostics/diagnostics.scss");
+__webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\diagnostics\diagnostics.scss */"./resources/views/components/diagnostics/diagnostics.scss");
+module.exports = __webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\finances\finances.scss */"./resources/views/components/finances/finances.scss");
 
 
 /***/ })

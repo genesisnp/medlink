@@ -2,19 +2,15 @@
 @section('title', 'DIARY AND CALENDAR')
 
 @section('content')
-    @component('components.header.header')
+    @component('components.header.header', [ 'title' => 'Agenda y Calendario', 'showCenterLogo' => false ])
     @endcomponent
 
-    <section class="section">
-        @component('components.diary.diary')
-        @endcomponent
-    </section>
-    <section class="section">
-        @component('components.tabs-diary.tabs-diary')
-        @endcomponent
-    </section>
-    
+    @component('components.diary.diary')
+    @endcomponent
 
+    @component('components.tabs-diary.tabs-diary')
+    @endcomponent
+    
 @endsection
 
 @push('scripts')

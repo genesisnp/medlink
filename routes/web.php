@@ -27,3 +27,6 @@ Route::get('/calendar', function () {
 Route::get('/indicators', function () {
     return view('health_worker.indicators');
 });
+Route::get('/finances', function () {
+    return view('health_worker.finances');
+});

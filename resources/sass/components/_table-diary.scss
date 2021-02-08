@@ -1,9 +1,6 @@
 .diary-table {
     padding: 17px 16px;
-
-    @include mq($from: 375px){
-        margin: $margin-component;
-    }
+    width: 100%;
 
     @include mq($from: desktop){
         padding: 17px 29px;

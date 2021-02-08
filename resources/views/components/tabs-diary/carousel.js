@@ -5,7 +5,7 @@ $('.tabs-timetable__content').slick({
 	prevArrow:'<button class="slick-prev" type="button"><span class="icon-polygon"></span></button>',
     responsive: [
         {
-            breakpoint: 1200,
+            breakpoint: 1250,
             settings: {
                 slidesToShow: 5,
             }
