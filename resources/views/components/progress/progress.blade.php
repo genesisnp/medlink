@@ -3,31 +3,16 @@
 @endpush
 
 <div class="progress">
-    <div class="progress__container bg-white">
-        <h3 class="progress__title">¡Tu perfil está completado a un 80%!</h3>
-        <div class="progress-percentage">
-            <ul class="progress-percentage__list">
-                <li class="progress-percentage__item">
-                    <span>Perfil<br>completo</span>
-                    <div>20%</div>
-                </li>
-                <li class="progress-percentage__item">
-                    <span>Firma<br>digital</span>
-                    <div>40%</div>
-                </li>
-                <li class="progress-percentage__item">
-                    <span>Métodos<br>de Pago</span>
-                    <div>60%</div>
-                </li>
-                <li class="progress-percentage__item">
-                    <span>Horarios<br>configurados</span>
-                    <div>80%</div>
-                </li>
-                <li class="progress-percentage__item">
-                    <span>Primera cita<br>realizada</span>
-                    <div class="disabled">100%</div>
-                </li>
-            </ul>
+    <div class="progress__container">
+        <div class="progress__img">
+            <img src="/assets/images/icon/icon-trophy.svg" alt="Illustration of a trophy">
+        </div>
+        <div class="progress__text">
+            <p>¡Felicidades Doctora Frances!</p>
+            <span>Su perfil ha sido completado a un 100%</span>
+        </div>
+        <div class="progress__img">
+            <img src="/assets/images/icon/icon-trophy.svg" alt="Illustration of a trophy">
         </div>
     </div>
 </div>

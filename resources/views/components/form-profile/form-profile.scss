@@ -1,0 +1,49 @@
+@import '../../../sass/utils/variables';
+@import './node_modules/sass-mq/mq';
+
+.form-profile {
+    max-width: 586px;
+
+    &__container {
+        padding: 20px 18px 25px;
+        position: relative;
+        @include mq($from: tablet) {
+            padding: 62px 61px 34px;
+        }
+    }
+
+    .form {
+        padding: 15px 10px 0;
+
+        &__title {
+            @include mq($until: tablet) {
+                justify-content: initial;
+                .button {
+                    margin-left: 12px;
+                }
+            }
+            
+        }
+
+        .button {
+            cursor: pointer;
+            border-radius: 5px;
+            &__text {
+                @include mq($until: tablet) {
+                    display: none;
+                }
+            }
+        }
+        #button-save {
+            opacity: 0;
+            transition: opacity 400ms;
+            margin-top: 10px;
+
+            @include mq($until: tablet) {
+                position: absolute;
+                top: 23px;
+                right: calc(100% - 280px);
+            }
+        }
+    }
+}

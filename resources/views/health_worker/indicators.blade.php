@@ -11,7 +11,7 @@
     @component('components.views.views')
     @endcomponent
 
-    @component('components.progress.progress')
+    @component('components.line-progress.line-progress')
     @endcomponent
 
     @component('components.citation-breakdown.citation-breakdown')

@@ -11,6 +11,7 @@
     color: $color-white;
     text-decoration: none;
     font-family: $font-poppins-light;
+    font-weight: normal;
     padding: 8px 11px;
     line-height: 1;
     background-color: $color-white;
@@ -41,9 +42,12 @@
     }
     &__icon {
         font-size: 13px;
-        margin-right: 6px;
+        //margin-right: 6px;
         @include mq($from: desktop) {
             font-size: 22.5px;
+        }
+        + .button__text {
+            margin-left: 6px;
         }
     }
 
@@ -72,6 +76,12 @@
         @include mq($from: desktop) {
             height: 35px;
             font-size: 15px;
+        }
+        .button__icon {
+            font-size: 11px;
+            @include mq($from: desktop) {
+                font-size: 17px;
+            }
         }
     }
 

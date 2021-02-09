@@ -30,3 +30,6 @@ Route::get('/indicators', function () {
 Route::get('/finances', function () {
     return view('health_worker.finances');
 });
+Route::get('/my-profile', function () {
+    return view('health_worker.my-profile');
+});

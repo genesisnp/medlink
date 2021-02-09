@@ -5,12 +5,11 @@
     @component('components.header.header', [ 'title' => 'Mi Perfil', 'showCenterLogo' => false ])
     @endcomponent
 
-    @component('components.finances.finances')
+    @component('components.progress.progress')
+    @endcomponent
+
+    @component('components.form-profile.form-profile')
     @endcomponent
 
 @endsection
 
-@push('scripts')
-    
-    
-@endpush

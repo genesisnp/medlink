@@ -1,0 +1,66 @@
+/*******************
+    FONTS
+*******************/
+
+/*************
+    COLORS
+*************/
+
+/*******************
+    BREAKPOINTS
+*******************/
+
+.form-profile {
+  max-width: 586px;
+}
+
+.form-profile__container {
+  padding: 20px 18px 25px;
+  position: relative;
+}
+
+@media (min-width: 46.25em) {
+  .form-profile__container {
+    padding: 62px 61px 34px;
+  }
+}
+
+.form-profile .form {
+  padding: 15px 10px 0;
+}
+
+@media (max-width: 46.24em) {
+  .form-profile .form__title {
+    justify-content: initial;
+  }
+
+  .form-profile .form__title .button {
+    margin-left: 12px;
+  }
+}
+
+.form-profile .form .button {
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@media (max-width: 46.24em) {
+  .form-profile .form .button__text {
+    display: none;
+  }
+}
+
+.form-profile .form #button-save {
+  opacity: 0;
+  transition: opacity 400ms;
+  margin-top: 10px;
+}
+
+@media (max-width: 46.24em) {
+  .form-profile .form #button-save {
+    position: absolute;
+    top: 23px;
+    right: calc(100% - 280px);
+  }
+}
+
