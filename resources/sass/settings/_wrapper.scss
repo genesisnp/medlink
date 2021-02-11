@@ -35,7 +35,7 @@
                 max-width: 850px;
                 padding-bottom: 0;
             }
-            @include mq($from: desktoplg) {
+            @include mq($from: 1250px) {
                 max-width: 1080px;
             }
             @include mq($from: wide) {

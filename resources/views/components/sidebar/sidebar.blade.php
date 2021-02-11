@@ -1,7 +1,7 @@
 
 <div class="sidebar">
     <div class="sidebar__logo">
-        <img src="/assets/images/logo-medlink.svg" alt="MedLink Logo">
+        <img src="/assets/images/logo-medlink.png" alt="MedLink Logo">
     </div>
     <div class="sidebar-user">
         <div class="sidebar-user__img">
@@ -64,7 +64,7 @@
     </div>
     <div class="sidebar-footer">
         <div class="sidebar-footer__logo">
-            <img src="/assets/images/logo-medlink.svg" alt="MedLink Logo">
+            <img src="/assets/images/logo-medlink.png" alt="MedLink Logo">
         </div>
         <div class="sidebar-footer__social-media">
             <a href="#" class="sidebar-footer__social-media--icon icon-facebook"></a>

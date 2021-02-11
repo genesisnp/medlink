@@ -4,14 +4,14 @@
     align-items: center;
     width: 100%;
     @include mq($from: 375px) {
-        margin: 0 7px;
+        margin: 20px 7px 35px;
     }
     
     
     &__title {
         font-size: 18px;
         font-weight: normal;
-        margin: 20px 0 35px;
+
         @include mq($from: tablet) {
             font-size: 32px;
         }

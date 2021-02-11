@@ -2,7 +2,7 @@
     <div class="footer__container">
         <div class="footer__content">
             <div class="footer__logo">
-                <img src="/assets/images/logo-medlink.svg" alt="MedLink Logo">
+                <img src="/assets/images/logo-medlink.png" alt="MedLink Logo">
             </div>
             <div class="footer-info">
                 <div class="footer-info__item">

@@ -2,6 +2,7 @@
 @section('title', 'DIARY AND CALENDAR')
 
 @section('content')
+
     @component('components.header.header', [ 'title' => 'Agenda y Calendario', 'showCenterLogo' => false ])
     @endcomponent
 

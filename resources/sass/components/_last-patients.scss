@@ -18,7 +18,7 @@
     @include mq($from: desktop) {
         max-width: 502px;
     }
-    @include mq($from: desktoplg) {
+    @include mq($from: 1250px) {
         max-width: 730px;
     }
     @include mq($from: wide) {
@@ -101,7 +101,7 @@
             @include mq($from: desktop) {
                 width: calc(100% - 275px);
             }
-            @include mq($from: desktoplg) {
+            @include mq($from: 1250px) {
                 width: calc(100% - 300px);
             }
         }

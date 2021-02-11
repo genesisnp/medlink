@@ -11,7 +11,25 @@
 *******************/
 
 .form-profile {
-  max-width: 586px;
+  max-width: 100%;
+}
+
+@media (min-width: 46.25em) {
+  .form-profile {
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .form-profile {
+    max-width: 460px;
+  }
+}
+
+@media (min-width: 81.25em) {
+  .form-profile {
+    max-width: 586px;
+  }
 }
 
 .form-profile__container {
@@ -20,6 +38,12 @@
 }
 
 @media (min-width: 46.25em) {
+  .form-profile__container {
+    padding: 37px 30px 34px;
+  }
+}
+
+@media (min-width: 61.25em) {
   .form-profile__container {
     padding: 62px 61px 34px;
   }
@@ -37,6 +61,17 @@
   .form-profile .form__title .button {
     margin-left: 12px;
   }
+}
+
+@media (min-width: 61.25em) {
+  .form-profile .form__title {
+    font-size: 30px;
+  }
+}
+
+.form-profile .form input:disabled,
+.form-profile .form select:disabled {
+  background-color: #fff;
 }
 
 .form-profile .form .button {

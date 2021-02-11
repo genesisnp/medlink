@@ -1,0 +1,94 @@
+/*******************
+    FONTS
+*******************/
+
+/*************
+    COLORS
+*************/
+
+/*******************
+    BREAKPOINTS
+*******************/
+
+.card-digital-file {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.card-digital-file__label {
+  font-family: "poppinsbold";
+  font-size: 12px;
+  color: #5E728A;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 61.25em) {
+  .card-digital-file__label {
+    font-size: 22px;
+  }
+}
+
+.card-digital-file__wrapper {
+  height: 165px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 9px;
+}
+
+.card-digital-file__input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.card-digital-file__background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(196, 196, 196, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 14px;
+  font-size: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.card-digital-file__background span {
+  width: 46px;
+  height: 46px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #A9A9A9;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.card-digital-file__preview-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+  border-radius: 14px;
+}
+

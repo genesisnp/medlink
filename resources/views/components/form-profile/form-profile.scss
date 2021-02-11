@@ -2,12 +2,24 @@
 @import './node_modules/sass-mq/mq';
 
 .form-profile {
-    max-width: 586px;
+    max-width: 100%;
+    @include mq($from: tablet) {
+        max-width: 350px;
+    }
+    @include mq($from: desktop) {
+        max-width: 460px;
+    }
+    @include mq($from: wide) {
+        max-width: 586px;
+    }
 
     &__container {
         padding: 20px 18px 25px;
         position: relative;
         @include mq($from: tablet) {
+            padding: 37px 30px 34px;
+        }
+        @include mq($from: desktop) {
             padding: 62px 61px 34px;
         }
     }
@@ -22,7 +34,15 @@
                     margin-left: 12px;
                 }
             }
+            @include mq($from: desktop) {
+                font-size: 30px;
+            }
             
+        }
+        input, select {
+            &:disabled {
+                background-color: $color-white;
+            }
         }
 
         .button {

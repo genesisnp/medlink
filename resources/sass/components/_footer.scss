@@ -18,7 +18,7 @@
         height: 100%;
         @include mq($from: wide) {
             width: 280px;
-            height: auto;
+            //height: auto;
         }
         img {
             width: 100%;

@@ -14,7 +14,7 @@
     }
 
     &__icon {
-        @include mq($until: desktoplg) {
+        @include mq($until: 1250px) {
             display: none;
          }
         &-icon {
@@ -138,7 +138,7 @@
                 }
             }
         }
-        @include mq($from: desktoplg) {
+        @include mq($from: 1250px) {
             width: auto;
             text-align: initial;
             .button {

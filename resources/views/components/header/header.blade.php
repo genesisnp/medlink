@@ -7,7 +7,7 @@
     <h1 class="header__title">{{ $title }}</h1>
     @if ($showCenterLogo)
         <div class="header__logo">
-            <img src="/assets/images/logo-medlink.svg" alt="MedLink Logo">
+            <img src="/assets/images/logo-medlink.png" alt="MedLink Logo">
         </div>
     @endif
     <div class="header__info">
