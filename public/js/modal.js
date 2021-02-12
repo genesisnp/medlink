@@ -81,19 +81,37 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 4:
-/*!************************************************************************!*\
-  !*** multi ./resources/views/components/card-digital/fcard-digital.js ***!
-  \************************************************************************/
+/***/ "./resources/views/components/modal/modal.js":
+/*!***************************************************!*\
+  !*** ./resources/views/components/modal/modal.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$('.open-modal').on('click', function () {
+  var modalTarget = $(this).data('modal-link');
+  var modal = document.querySelector('.' + modalTarget);
+  $(modal).toggleClass('is-show');
+});
+$('.modal-close').on('click', function () {
+  $(this).parents('.modal').toggleClass('is-show');
+});
+
+/***/ }),
+
+/***/ 6:
+/*!*********************************************************!*\
+  !*** multi ./resources/views/components/modal/modal.js ***!
+  \*********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-!(function webpackMissingModule() { var e = new Error("Cannot find module 'C:\\laragon\\www\\medlink\\resources\\views\\components\\card-digital\\fcard-digital.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+module.exports = __webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\modal\modal.js */"./resources/views/components/modal/modal.js");
 
 
 /***/ })

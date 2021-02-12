@@ -86,10 +86,6 @@
         height: 33px;
         padding-top: 6px;
         padding-bottom: 5px;
-
-        &:focus {
-            outline: none;
-        }
     }
     
     &__textarea, &__input , &__select {
@@ -200,9 +196,7 @@
             font-size: 11px;
             padding-left: 20px;
             cursor: pointer;
-            @include mq($from: tablet) {
-                font-size: 18px;
-            }
+            @include font-increment(11px, 18px);
         }
         >div {
             width: 100%;

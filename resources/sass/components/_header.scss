@@ -3,10 +3,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    @include mq($from: 375px) {
-        margin: 20px 7px 35px;
-    }
-    
+    margin: 20px 7px 35px;
     
     &__title {
         font-size: 18px;

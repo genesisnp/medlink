@@ -144,10 +144,6 @@
             .button {
                 &:first-child {
                     margin-right: 23px;
-                   // margin-bottom: 6px;
-                    @include mq($from: wide) {
-                        margin: 0;
-                    }
                 }
                 @include mq($until: desktop) {
                     display: none;

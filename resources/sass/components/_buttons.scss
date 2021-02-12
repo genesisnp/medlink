@@ -16,7 +16,7 @@
     line-height: 1;
     background-color: $color-white;
     border: 0;
-    outline: none;
+    cursor: pointer;
    
     @include mq($from: desktop) {
         height: 50px;
@@ -101,8 +101,7 @@
             }
         }
     }
-
-
+    
     &--blue {
         background-color: $color-blue;
         transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;

@@ -6,9 +6,9 @@
             <a href="#" class="button button--medium button--blue">
                 <span>Ver Calendario</span>
             </a>
-            <a href="#modal" class="button button--medium button--blue show-modal open-modal">
+            <button class="button button--medium button--blue show-modal open-modal" data-modal-link="form-appointment">
                 <span>Nueva Cita</span>
-            </a>
+            </button>
         </div>
     </div>
     <table class="diary-table__table">

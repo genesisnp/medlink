@@ -9,6 +9,9 @@
     @component('components.header.header', [ 'title' => 'Mi Perfil', 'showCenterLogo' => false ])
     @endcomponent
 
+    @component('components.card-profile.card-profile')
+    @endcomponent
+
     <div class="progress">
         <div class="progress__container">
             <div class="progress__img">
@@ -56,6 +59,84 @@
             </div>
         </div>
     </div>
+
+    @component('components.modal.modal', [ 'dataLink' => 'form-appointment' ])
+        @slot('modal_body')
+            <div class="modal-form">
+                <form action="#" class="form">
+                    <div class="form__item form__item--50d">
+                        <label for="" class="form__label">Nombre(s)</label>
+                        <input type="text" class="form__input">
+                    </div>
+                    <div class="form__item form__item--50d">
+                        <label for="" class="form__label">Apellido(s)</label>
+                        <input type="text" class="form__input">
+                    </div>
+                    <div class="form__item form__item--50d">
+                        <label for="" class="form__label">Especialidad</label>
+                        <select name="" id="" class="form__select">
+                            <option value="">Carnet de extrangería</option>
+                            <option value="">Dni</option>
+                        </select>
+                    </div>
+                    <div class="form__item form__item--50d">
+                        <label for="" class="form__label">CMP</label>
+                        <input type="text" class="form__input">
+                    </div>
+                    <div class="form__item form__item--50d">
+                        <label for="" class="form__label">RNE</label>
+                        <input type="text" class="form__input">
+                    </div>
+                    <div class="form__item form__item--50d">
+                        <label for="" class="form__label">Página de Facebook</label>
+                        <input type="text" class="form__input">
+                    </div>
+                    <div class="form__item form__item--50d">
+                        <label for="" class="form__label">Página de Instagram</label>
+                        <input type="text" class="form__input">
+                    </div>
+                    <div class="form__item form__item--50d">
+                        <label for="" class="form__label">Página de Linkedin</label>
+                        <input type="text" class="form__input">
+                    </div>
+                    <div class="form__item form__item--50d">
+                        <label for="" class="form__label">Página Web</label>
+                        <input type="text" class="form__input">
+                    </div>
+                    <div class="form__item form__item--50d">
+                        <label for="" class="form__label">Página de Youtube</label>
+                        <input type="text" class="form__input">
+                    </div>
+                    <div class="form__item form__item--50d">
+                        <label for="" class="form__label">Página de Instagram</label>
+                        <input type="text" class="form__input">
+                    </div>
+                    <div class="form__item form__item--50d">
+                        <label for="" class="form__label">Costo de cita presencial</label>
+                        <input type="text" class="form__input">
+                    </div>
+                    <div class="form__item form__item--50d">
+                        <label for="" class="form__label">Costo de cita virtual</label>
+                        <input type="text" class="form__input">
+                    </div>
+                    <div class="form__item">
+                        <label for="" class="form__label">Mi resumen</label>
+                        <textarea name="" id="" cols="30" rows="10" class="form__textarea"></textarea>
+                    </div>
+                    <div class="form-controls">
+                        <button class="button button--blue-cian button--medium">
+                            <span class="button__icon icon-close"></span>
+                            <span class="button__text">Añadir otra cita</span> 
+                        </button>
+                        <button class="button button--blue-cian button--medium">
+                            <span class="button__icon icon-save"></span>
+                            <span class="button__text">Añadir otra cita</span> 
+                        </button>
+                    </div>
+                </form>
+            </div>
+        @endslot
+    @endcomponent
 
 @endsection
 

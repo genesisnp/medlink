@@ -2,15 +2,16 @@
 @import 'settings/fonts';
 @import 'utils/variables';
 @import 'settings/config';
-@import 'settings/breakpoints';
 
 //TOOLS
-@import './node_modules/sass-mq/mq';
+@import 'node_modules/sass-mq/mq';
 
 //UTILS
+// @import 'settings/breakpoints';
 @import 'utils/icons';
 @import 'utils/helpers';
 @import 'settings/wrapper';
+@import 'utils/mixins';
 
 // COMPONENTS
 @import 'components/buttons';
@@ -22,5 +23,4 @@
 @import 'components/table-diary';
 @import 'components/footer';
 @import 'components/dropdown';
-@import 'components/modal';
 @import 'components/forms';

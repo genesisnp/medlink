@@ -1,0 +1,211 @@
+@import './node_modules/sass-mq/mq';
+@import '../../../sass/utils/mixins';
+@import '../../../sass/utils/variables';
+
+.card-profile {
+    width: 100%;
+    margin: 0 7px 35px;
+    overflow: hidden;
+    &-image {
+        &__input {
+            visibility: hidden;
+            position: absolute;
+        }
+        &__label {
+            position: absolute;
+            background-color: $color-blue-cian;
+            color: $color-white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 10px;
+            span {
+                font-size: 10px;
+                @include mq($from: desktop) {
+                    font-size: 17px;
+                    padding-right: 5px;
+                }
+            }
+        }
+
+    }
+
+    &-front{
+        height: 114px;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        border-radius: 31px;
+        
+        @include mq($from: desktop) {
+            height: 237px;
+        }
+        &__wrapper {
+            height: 100%;
+        }
+        .card-profile-image__label  {
+            height: 35px;
+            padding: 0 7px;
+            border-radius: 5px;
+            left: 16px;
+            top: 17px;
+            span {
+                padding-right: 5px;
+            }
+        }
+        .card-profile-image {
+            height: 100%;
+            &__preview-img {
+                width: 100%;
+                height: 100%;
+                display: block;
+                object-fit: cover
+            }
+        }
+    }
+
+    &-info {
+        padding: 5px 15px 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+        position: relative;
+        @include mq($from: desktop) {
+            padding: 20px 40px 32px;
+        }
+        &__left {
+            h2 {
+                font-size: 11px;
+                font-family: $font-poppins-bold;
+                @include font-increment(11px, 30px);
+            }
+            h3 {
+                font-size: 9px;
+                font-family: $font-poppins-light;
+                line-height: 1.4;
+                @include font-increment(9px, 25px);
+            }
+            span {
+                color: $color-blue-green;
+                font-size: 9px;
+                font-family: $font-poppins-light;
+                padding-right: 5px;
+                line-height: 2;
+                @include font-increment(9px, 18px);
+            }
+        }
+        &__right {
+            display: flex;
+            padding-right: 92px;
+            @include mq($from: desktop) {
+                padding-right: 212px;
+            }
+        }
+        &-image {
+            width: 84px;
+            height: 84px;
+            border-radius: 50%;
+            position: absolute;
+            top: -58px;
+            right: 21px;
+            @include mq($from: desktop) {
+                width: 207px;
+                height: 207px;
+                top: -148px;
+                right: 55px;
+            }
+            
+            .card-profile-image__label {
+                bottom: 0;
+                right: 0;
+                width: 20px;
+                height: 20px;
+                bottom: 4px;
+                right: 7px;
+                z-index: 2;
+                @include mq($from: desktop) {
+                    width: 34px;
+                    height: 34px;
+                    bottom: 20px;
+                    right: 29px;
+                }
+            }
+            .card-profile-image__preview-img  {
+                position: absolute;
+                width: 84px;
+                height: 84px;
+                border-radius: 50%;
+                @include mq($from: desktop) {
+                    width: 207px;
+                    height: 207px;
+                }
+            }
+            
+        }
+        
+        &__description {
+            line-height: 1.4;
+            font-family: $font-poppins-light;
+            margin: 16px 0 5px;
+            @include font-increment(10px, 16px);
+        }
+        &__costs {
+            display: none;
+            @include mq($from: desktop) {
+                display: block;
+            }
+            li {
+                font-family: $font-poppins-light;
+                line-height: 1.5;
+                strong {
+                    font-family: $font-poppins-bold;
+                    font-weight: bold;
+                }
+            }
+        }
+        &__social-media {
+            display: flex;
+           
+            a {
+                color: $color-blue-green;
+                text-decoration: none;
+                font-size: 14px;
+                margin: 0 4.5px;
+                @include font-increment(14px, 33px);
+            }
+        }
+        &__controls {
+            @include mq($until: desktop) {
+                width: 100%;
+                text-align: right;
+            }
+            .button {
+                height: 20px;
+                border-radius: 5px;
+                padding: 0 6px;
+                @include mq($from: desktop) {
+                    height: 42px;
+                    padding: 8px 11px;
+                }
+                &__icon {
+                    font-size: 10px;
+                    @include mq($from: desktop) {
+                        display: block;
+                        font-size: 17px
+                    }
+                }
+                &__text{
+                    display: none;
+                    @include mq($from: desktop) {
+                        display: block;
+                        font-size: 15px
+                    }
+                }
+            }
+        }
+        
+    }
+}

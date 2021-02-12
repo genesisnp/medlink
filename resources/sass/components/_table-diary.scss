@@ -93,5 +93,11 @@
         @include mq($until: desktop){
             display: none;
         }
+        .button {
+            font-size: 14px;
+            &:last-child {
+                margin-left: 15px;
+            }
+        }
     }
 }

@@ -17,9 +17,9 @@
         @component('components.table-diary.table-diary')
         @endcomponent
 
-        @component('components.modal.modal')
+        @component('components.modal.modal', [ 'dataLink' => 'form-appointment' ])
             @slot('modal_body')
-                <div class="modal-form">
+                <div class="modal-form form-appointment">
                     <form action="#" class="form">
                         <h2 class="form__title">Registrar nueva cita</h2>
                         <div class="form__item form__item--50d">

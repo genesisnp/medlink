@@ -33308,6 +33308,17 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/views/components/card-profile/card-profile.scss":
+/*!*******************************************************************!*\
+  !*** ./resources/views/components/card-profile/card-profile.scss ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/views/components/citation-breakdown/citation-breakdown.scss":
 /*!*******************************************************************************!*\
   !*** ./resources/views/components/citation-breakdown/citation-breakdown.scss ***!
@@ -33385,6 +33396,17 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/views/components/modal/modal.scss":
+/*!*****************************************************!*\
+  !*** ./resources/views/components/modal/modal.scss ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/views/components/patients-attended/patients-attended.scss":
 /*!*****************************************************************************!*\
   !*** ./resources/views/components/patients-attended/patients-attended.scss ***!
@@ -33408,9 +33430,9 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /***/ }),
 
 /***/ 0:
-/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/my-profile.scss ./resources/views/components/diary/diary.scss ./resources/views/components/tabs-diary/tabs-diary.scss ./resources/views/components/patients-attended/patients-attended.scss ./resources/views/components/line-progress/line-progress.scss ./resources/views/components/citation-breakdown/citation-breakdown.scss ./resources/views/components/effectiveness-rate/effectiveness-rate.scss ./resources/views/components/diagnostics/diagnostics.scss ./resources/views/components/finances/finances.scss ./resources/views/components/form-profile/form-profile.scss ./resources/views/components/card-digital/card-digital.scss ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/my-profile.scss ./resources/views/components/diary/diary.scss ./resources/views/components/tabs-diary/tabs-diary.scss ./resources/views/components/patients-attended/patients-attended.scss ./resources/views/components/line-progress/line-progress.scss ./resources/views/components/citation-breakdown/citation-breakdown.scss ./resources/views/components/effectiveness-rate/effectiveness-rate.scss ./resources/views/components/diagnostics/diagnostics.scss ./resources/views/components/finances/finances.scss ./resources/views/components/form-profile/form-profile.scss ./resources/views/components/card-digital/card-digital.scss ./resources/views/components/card-profile/card-profile.scss ./resources/views/components/modal/modal.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -33426,7 +33448,9 @@ __webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\effect
 __webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\diagnostics\diagnostics.scss */"./resources/views/components/diagnostics/diagnostics.scss");
 __webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\finances\finances.scss */"./resources/views/components/finances/finances.scss");
 __webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\form-profile\form-profile.scss */"./resources/views/components/form-profile/form-profile.scss");
-module.exports = __webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\card-digital\card-digital.scss */"./resources/views/components/card-digital/card-digital.scss");
+__webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\card-digital\card-digital.scss */"./resources/views/components/card-digital/card-digital.scss");
+__webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\card-profile\card-profile.scss */"./resources/views/components/card-profile/card-profile.scss");
+module.exports = __webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\modal\modal.scss */"./resources/views/components/modal/modal.scss");
 
 
 /***/ })
