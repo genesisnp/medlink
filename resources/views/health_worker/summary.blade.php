@@ -84,7 +84,7 @@
                         </div>
                         <div class="form-controls">
                             <button class="button button--blue-cian button--medium">
-                                <span class="button__icon icon-close"></span>
+                                <span class="button__icon icon-add"></span>
                                 <span class="button__text">Añadir otra cita</span> 
                             </button>
                             <button class="button button--blue-cian button--medium">

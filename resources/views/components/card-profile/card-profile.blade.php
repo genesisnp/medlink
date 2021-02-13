@@ -55,6 +55,10 @@
                         <span class="button__icon icon-edit"></span>
                         <span class="button__text">Editar</span>
                     </button>
+                    <button class="button button--blue-cian open-modal" data-modal-link="modal-attach">
+                        <span class="button__icon icon-attach"></span>
+                        <span class="button__text">Agregar adjuntos</span>
+                    </button>
                 </div>
             </div>
         </div>

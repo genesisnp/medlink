@@ -247,3 +247,95 @@
   height: 100%;
 }
 
+/*************************
+    FORM MODAL ADJUNTAR
+*************************/
+
+.modal-attach .modal__container {
+  max-width: 926px;
+  height: auto;
+}
+
+@media (min-width: 46.25em) {
+  .modal-attach .form__item--50d {
+    width: calc(60% - 24px);
+  }
+}
+
+@media (min-width: 61.25em) {
+  .modal-attach .form__select {
+    margin-bottom: 10px;
+  }
+}
+
+.form-attach-list__title {
+  color: #5E728A;
+  font-size: 14px;
+  font-family: "poppinsbold";
+  font-size: 14px;
+}
+
+@media (min-width: 46.25em) {
+  .form-attach-list__title {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .form-attach-list__title {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 81.25em) {
+  .form-attach-list__title {
+    font-size: 22px;
+  }
+}
+
+.form-attach-list ul {
+  margin-top: 20px;
+}
+
+.form-attach-list ul li {
+  margin-bottom: 32px;
+}
+
+.form-attach-list ul li > span {
+  font-family: "poppinslight";
+  font-size: 14px;
+}
+
+@media (min-width: 46.25em) {
+  .form-attach-list ul li > span {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .form-attach-list ul li > span {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 81.25em) {
+  .form-attach-list ul li > span {
+    font-size: 18px;
+  }
+}
+
+.form-attach-list ul li button {
+  background: transparent;
+  border: 0;
+  font-family: "poppinsmedium";
+  margin-left: 5px;
+}
+
+.form-attach-list ul li button span {
+  color: #C70000;
+}
+
+.form-attach-list ul li button:hover {
+  opacity: 0.8;
+}
+

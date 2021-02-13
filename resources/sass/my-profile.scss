@@ -188,3 +188,57 @@
         }
     }
 }
+
+/*************************
+    FORM MODAL ADJUNTAR
+*************************/
+.modal-attach {
+    .modal__container {
+        max-width: 926px;
+        height: auto;
+        @include mq($from: tablet) {
+            
+        }
+    }
+    .form__item--50d {
+        
+        @include mq($from: tablet) {
+            width: calc(60% - 24px);
+        }
+    }
+    .form__select {
+        @include mq($from: desktop) {
+            margin-bottom: 10px;
+        }
+    }
+}
+.form-attach-list {
+    &__title {
+        color: $color-blue-green;
+        font-size: 14px;
+        font-family: $font-poppins-bold;
+        @include font-increment(14px, 22px)
+    }
+    ul {
+        margin-top: 20px;
+        li {
+            margin-bottom: 32px;
+            >span {
+                font-family: $font-poppins-light;
+                @include font-increment(14px, 18px)
+            }
+            button {
+                background: transparent;
+                border: 0;
+                font-family: $font-poppins-medium;
+                margin-left: 5px;
+                span {
+                    color: $color-red;
+                }
+                &:hover {
+                    opacity: .8;
+                }
+            }
+        }
+    }
+}

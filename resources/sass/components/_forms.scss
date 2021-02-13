@@ -60,9 +60,7 @@
         color: $color-blue-green;
         font-size: 14px;
         font-family: $font-poppins-bold;
-        @include mq($from: desktop) {
-            font-size: 22px;
-        }
+        @include font-increment(14px, 22px);
 
         &--small {
             font-size: 12px;
@@ -98,6 +96,7 @@
             font-size: 18px;
         }
     }
+    
 
     &__textarea {
         border: 1px solid $color-blue-green;
@@ -177,9 +176,9 @@
                     margin-right: 30px;
                 }
             }
-            .icon-close {
-                transform: rotate(45deg);
-            }
+        }
+        &__right {
+            text-align: right;
         }
     }
 

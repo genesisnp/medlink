@@ -60,7 +60,7 @@
         </div>
     </div>
 
-    @component('components.modal.modal', [ 'dataLink' => 'form-appointment' ])
+    {{-- @component('components.modal.modal', [ 'dataLink' => 'form-appointment' ])
         @slot('modal_body')
             <div class="modal-form">
                 <form action="#" class="form">
@@ -123,16 +123,62 @@
                         <label for="" class="form__label">Mi resumen</label>
                         <textarea name="" id="" cols="30" rows="10" class="form__textarea"></textarea>
                     </div>
-                    <div class="form-controls">
-                        <button class="button button--blue-cian button--medium">
+                    <div class="form-controls form-controls__right">
+                        <button class="button button--red button--medium">
                             <span class="button__icon icon-close"></span>
-                            <span class="button__text">Añadir otra cita</span> 
+                            <span class="button__text">Cancelar</span> 
                         </button>
                         <button class="button button--blue-cian button--medium">
                             <span class="button__icon icon-save"></span>
-                            <span class="button__text">Añadir otra cita</span> 
+                            <span class="button__text">Guardar</span> 
                         </button>
                     </div>
+                </form>
+            </div>
+        @endslot
+    @endcomponent --}}
+
+    @component('components.modal.modal', [ 'dataLink' => 'modal-attach' ])
+        @slot('modal_body')
+            <div class="form-attach">
+                <form action="#" class="form">
+                    <div class="form__item">
+                        <div class="form-file">
+                            <label for="" class="form-file__label"><span class="form-file__icon icon-attach"></span>Adjuntar archivos</label>
+                            <input type="file" class="form-file__input">
+                        </div>
+                    </div>
+                    
+                    <div class="form-attach-list">
+                        <span class="form-attach-list__title">Nombre del adjunto</span>
+                        <ul>
+                            <li><span>Imagen.jpg</span><button><span>eliminar</span></button></li>
+                            <li><span>Imagen.jpg</span><button><span>eliminar</span></button></li>
+                            <li><span>Imagen.jpg</span><button><span>eliminar</span></button></li>
+                        </ul>
+                    </div>
+
+                    <div class="form__item form__item--50d">
+                        <label for="" class="form__label">Tipo de adjunto</label>
+                        <select name="" id="" class="form__select">
+                            <option value="">Carnet de extrangería</option>
+                            <option value="">Foto</option>
+                            <option value="">Artículo de investigación</option>
+                        </select>
+                        <label for="" class="form__label hidden-visually">Tipo de adjunto</label>
+                        <select name="" id="" class="form__select">
+                            <option value="">Foto</option>
+                            <option value="">Carnet de extrangería</option>
+                            <option value="">Artículo de investigación</option>
+                        </select>
+                        <label for="" class="form__label hidden-visually">Tipo de adjunto</label>
+                        <select name="" id="" class="form__select">
+                            <option value="">Artículo de investigación</option>
+                            <option value="">Carnet de extrangería</option>
+                            <option value="">Foto</option>
+                        </select>
+                    </div>
+                    
                 </form>
             </div>
         @endslot

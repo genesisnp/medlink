@@ -37,8 +37,8 @@
 
 @font-face {
   font-family: "icomoon";
-  src: url("/assets/fonts/icomoon/icomoon.eot?ej254i");
-  src: url("/assets/fonts/icomoon/icomoon.eot?ej254i#iefix") format("embedded-opentype"), url("/assets/fonts/icomoon/icomoon.ttf?ej254i") format("truetype"), url("/assets/fonts/icomoon/icomoon.woff?ej254i") format("woff"), url("/assets/fonts/icomoon/icomoon.svg?ej254i#icomoon") format("svg");
+  src: url("/assets/fonts/icomoon/icomoon.eot?szd554");
+  src: url("/assets/fonts/icomoon/icomoon.eot?szd554#iefix") format("embedded-opentype"), url("/assets/fonts/icomoon/icomoon.ttf?szd554") format("truetype"), url("/assets/fonts/icomoon/icomoon.woff?szd554") format("woff"), url("/assets/fonts/icomoon/icomoon.svg?szd554#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -92,6 +92,14 @@ ul {
   list-style: none;
 }
 
+.icon-add:before {
+  content: "\E91B";
+}
+
+.icon-close:before {
+  content: "\E91C";
+}
+
 .icon-web:before {
   content: "\E91A";
 }
@@ -142,10 +150,6 @@ ul {
 
 .icon-clock:before {
   content: "\E904";
-}
-
-.icon-close:before {
-  content: "\E905";
 }
 
 .icon-config:before {
@@ -1813,9 +1817,24 @@ ul {
   color: #5E728A;
   font-size: 14px;
   font-family: "poppinsbold";
+  font-size: 14px;
+}
+
+@media (min-width: 46.25em) {
+  .form__label,
+  .form legend {
+    font-size: 17px;
+  }
 }
 
 @media (min-width: 61.25em) {
+  .form__label,
+  .form legend {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 81.25em) {
   .form__label,
   .form legend {
     font-size: 22px;
@@ -1953,8 +1972,8 @@ ul {
   }
 }
 
-.form-controls .button .icon-close {
-  transform: rotate(45deg);
+.form-controls__right {
+  text-align: right;
 }
 
 .form fieldset {
