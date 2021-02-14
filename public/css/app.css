@@ -512,6 +512,16 @@ ul {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
+.button--blue-whale {
+  background-color: #002D48;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  color: #fff;
+}
+
+.button--blue-whale:hover {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
 .button--green-light {
   background-color: #30AB9E;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -1726,11 +1736,17 @@ ul {
   border-radius: 7px;
 }
 
+.dropdwn .dropdown-container .content li button {
+  background-color: transparent;
+  border: 0;
+}
+
 .dropdwn .dropdown-container .content li a {
   text-decoration: none;
   padding: 8px 5px;
   text-align: center;
   display: block;
+  color: #5E728A;
 }
 
 .dropdwn .dropdown-container #drop {

@@ -1,0 +1,196 @@
+@import 'utils/variables';
+@import './node_modules/sass-mq/mq';
+@import 'utils/mixins';
+
+.tabs-appointment {
+    min-height: 60vh;
+    width: 100%;
+
+    .tabs {
+        width: auto;
+
+        &-content {
+            background-color: transparent;
+            @include mq($until: 1250px) {
+                border-radius: 7px;
+                padding: 0!important;
+            }
+            @include mq($from: 1250px) {
+                background-color: $color-white;
+            }
+            &__item {
+                &:nth-of-type(2) {
+                    tr {
+                        
+                        th , td{
+                            width: 11%;
+                
+                            &:first-of-type,
+                            &:last-of-type {
+                                text-align: left;
+                                width: 15%;
+                            }
+                            &:last-of-type {
+                                text-align: center;
+                            }
+                        }
+                        td {
+                            .button {
+                                &:last-child {
+                                    width: 144px;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+.table-appointment {
+    width: 100%;
+
+    @include mq($until: 1250px) {
+        display: none;
+    }
+
+    tr {
+        th {
+            font-family: $font-poppins-bold;
+            color: $color-blue-green;
+            font-size: 20px;
+            height: 45px;
+        }
+        
+        th , td{
+            text-align: center;
+            width: 22%;
+
+            &:first-of-type,
+            &:last-of-type {
+                text-align: left;
+                width: 27%;
+            }
+            &:last-of-type {
+                text-align: center;
+            }
+        }
+        td {
+            .button {
+                margin: 0 17px 9px 0;
+                &:hover {
+                    background-color: $color-grey5;
+                }
+                &:last-child {
+                    width: 125px;
+                    margin: 0 0 9px 0;
+                }
+            }
+        }
+        
+    }
+
+}
+.table-appointment-mobile {
+
+    @include mq($from: 1250px) {
+        display: none;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 9px;
+        padding: 20px 0px 20px 7px;
+        border-radius: 7px;
+        background-color: $color-white;
+        @include mq($from: 400px) {
+            padding: 20px 7px 20px 7px;
+        }
+    }
+
+    &__info {
+        &--name {
+            color: $color-blue-green;
+            font-weight: 600;
+            @include font-increment(14px, 20px);
+            margin-bottom: 5px;
+        }
+        span {
+            @include font-increment(12px, 18px);
+            margin-right: 12px;
+
+            &:first-of-type {
+                width: 50px;
+            }
+            &:nth-last-of-type(2) {
+                width: 15px;
+            }
+        }
+    }
+}
+
+/**********************
+    MODAL PAYMENTS
+**********************/
+.modal.modal-payment {
+    .modal__container {
+        max-width: 926px;
+    }
+}
+.modal-payment {
+
+    &__content {
+        h2 {
+            color: $color-blue-green;
+            margin-bottom: 8px;
+            @include font-increment(15px, 30px)
+        }
+        p {
+            line-height: 1.3;
+            margin-bottom: 20px;
+            @include font-increment(12px, 18px)
+        }
+    }
+
+    &-message {
+        width: 100%;
+        label {
+            color: $color-blue-green;
+            @include font-increment(15px, 22px);
+            font-weight: 700;
+            display: block;
+            padding-bottom: 10px;
+        }
+        textarea {
+            width: 100%;
+            padding: 5px;
+        }
+    }
+    &-img {
+        width: 357px;
+        height: 357px;
+        margin: auto;
+        @include mq($until: desktop) {
+            width: 247px;
+            height: 247px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__controls {
+        text-align: center;
+        margin: 40px 0 15px;
+        .button {
+            margin: 0 7px;
+        }
+    }
+    &__control {
+        text-align: right;
+        margin-top: 10px;
+    }
+
+}

@@ -144,8 +144,8 @@
                 <form action="#" class="form">
                     <div class="form__item">
                         <div class="form-file">
-                            <label for="" class="form-file__label"><span class="form-file__icon icon-attach"></span>Adjuntar archivos</label>
-                            <input type="file" class="form-file__input">
+                            <label for="adjuntar" class="form-file__label"><span class="form-file__icon icon-attach"></span>Adjuntar archivos</label>
+                            <input type="file" class="form-file__input" id="adjuntar">
                         </div>
                     </div>
                     
@@ -159,20 +159,20 @@
                     </div>
 
                     <div class="form__item form__item--50d">
-                        <label for="" class="form__label">Tipo de adjunto</label>
-                        <select name="" id="" class="form__select">
+                        <label for="tipo-de-adjunto" class="form__label">Tipo de adjunto</label>
+                        <select name="tipo-de-adjunto" id="tipo-de-adjunto" class="form__select">
                             <option value="">Carnet de extrangería</option>
                             <option value="">Foto</option>
                             <option value="">Artículo de investigación</option>
                         </select>
-                        <label for="" class="form__label hidden-visually">Tipo de adjunto</label>
-                        <select name="" id="" class="form__select">
+                        <label for="tipo-de-adjunto2" class="form__label hidden-visually">Tipo de adjunto</label>
+                        <select name="" id="tipo-de-adjunto2" class="form__select">
                             <option value="">Foto</option>
                             <option value="">Carnet de extrangería</option>
                             <option value="">Artículo de investigación</option>
                         </select>
-                        <label for="" class="form__label hidden-visually">Tipo de adjunto</label>
-                        <select name="" id="" class="form__select">
+                        <label for="tipo-de-adjunto3" class="form__label hidden-visually">Tipo de adjunto</label>
+                        <select name="" id="tipo-de-adjunto3" class="form__select">
                             <option value="">Artículo de investigación</option>
                             <option value="">Carnet de extrangería</option>
                             <option value="">Foto</option>

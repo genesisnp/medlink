@@ -86,10 +86,10 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./resources/views/components/tabs-diary/carousel.js":
-/*!***********************************************************!*\
-  !*** ./resources/views/components/tabs-diary/carousel.js ***!
-  \***********************************************************/
+/***/ "./resources/views/components/tabs/carousel.js":
+/*!*****************************************************!*\
+  !*** ./resources/views/components/tabs/carousel.js ***!
+  \*****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -125,13 +125,13 @@ $('.tabs-timetable__content').slick({
 /***/ }),
 
 /***/ 2:
-/*!*****************************************************************!*\
-  !*** multi ./resources/views/components/tabs-diary/carousel.js ***!
-  \*****************************************************************/
+/*!***********************************************************!*\
+  !*** multi ./resources/views/components/tabs/carousel.js ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\tabs-diary\carousel.js */"./resources/views/components/tabs-diary/carousel.js");
+module.exports = __webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\tabs\carousel.js */"./resources/views/components/tabs/carousel.js");
 
 
 /***/ })

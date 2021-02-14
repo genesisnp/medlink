@@ -4,8 +4,12 @@
 
 .tabs {
     width: 100%;
+    margin: 0 7px 45px;
+    min-width: 332px;
+
     &-header  {
-        text-align: center;
+        display: flex;
+        justify-content: center;
 
         &-link {
             display: inline-block;

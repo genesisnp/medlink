@@ -9,7 +9,7 @@
                 <div class="card-profile-image">
                     <label for="front-profile" class="card-profile-image__label"><span class="icon-edit"></span>Editar imagen de portada</label>
                     <input type="file" name="front-profile" id="front-profile" class="card-profile-image__input"/> 
-                    <img src="assets/images/bg-my-perfil.jpg" class="card-profile-image__preview-img front-profile"/>
+                    <img src="assets/images/bg-my-perfil.jpg" class="card-profile-image__preview-img front-profile" alt="Image front profile"/>
                 </div>
             </div>
         </div>
@@ -39,9 +39,9 @@
                     <div class="card-profile-info-image">
                         {{-- <img src="assets/images/imagen-dr.png" alt="Imagen de la Dra Frances Mujica"> --}}
                         <div class="card-profile-image">
-                            <label for="img-profile" class="card-profile-image__label"><span class="icon-edit"></span></label>
+                            <label for="img-profile" class="card-profile-image__label"><span class="icon-edit"></span><span class="hidden-visually">Editar</span></label>
                             <input type="file" name="img-profile" id="img-profile" class="card-profile-image__input"/> 
-                            <img src="assets/images/imagen-dr.png" class="card-profile-image__preview-img img-profile"/>
+                            <img src="assets/images/imagen-dr.png" class="card-profile-image__preview-img img-profile" alt="Image profile doctor"/>
                         </div>
                     </div>
                 </div>

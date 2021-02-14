@@ -86,10 +86,10 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./resources/views/components/tabs-diary/tabs.js":
-/*!*******************************************************!*\
-  !*** ./resources/views/components/tabs-diary/tabs.js ***!
-  \*******************************************************/
+/***/ "./resources/views/components/tabs/tabs.js":
+/*!*************************************************!*\
+  !*** ./resources/views/components/tabs/tabs.js ***!
+  \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -105,13 +105,13 @@ $('.tabs-header .tabs-header-link').click(function () {
 /***/ }),
 
 /***/ 1:
-/*!*************************************************************!*\
-  !*** multi ./resources/views/components/tabs-diary/tabs.js ***!
-  \*************************************************************/
+/*!*******************************************************!*\
+  !*** multi ./resources/views/components/tabs/tabs.js ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\tabs-diary\tabs.js */"./resources/views/components/tabs-diary/tabs.js");
+module.exports = __webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\tabs\tabs.js */"./resources/views/components/tabs/tabs.js");
 
 
 /***/ })

@@ -67,9 +67,9 @@
             <img src="/assets/images/logo-medlink.png" alt="MedLink Logo">
         </div>
         <div class="sidebar-footer__social-media">
-            <a href="#" class="sidebar-footer__social-media--icon icon-facebook"></a>
-            <a href="#" class="sidebar-footer__social-media--icon icon-instagram2"></a>
-            <a href="#" class="sidebar-footer__social-media--icon icon-linkedin"></a>
+            <a href="#" class="sidebar-footer__social-media--icon icon-facebook"><span class="hidden-visually">Icon Facebook</span></a>
+            <a href="#" class="sidebar-footer__social-media--icon icon-instagram2"><span class="hidden-visually">Icon Instagram</span></a>
+            <a href="#" class="sidebar-footer__social-media--icon icon-linkedin"><span class="hidden-visually">Icon Linkedin</span></a>
         </div>
         <div class="sidebar-footer-legal">
             <p class="sidebar-footer-legal__text">© 2020 © Copyright Medlink. Todos los derechos reservados.</p>

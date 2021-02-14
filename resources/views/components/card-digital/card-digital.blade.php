@@ -3,11 +3,11 @@
 @endpush
 
 <div class="card-digital-file">
-    <label for="imageUpload" class="card-digital-file__label">{{ $title }}</label>
+    <div class="card-digital-file__label">{{ $title }}</div>
     <div class="card-digital-file__wrapper">
-      <input type="file" name="{{ $name }}" class="card-digital-file__input"/> 
+      <input type="file" name="{{ $name }}" class="card-digital-file__input" aria-label="seleccionar imagen"/> 
       <div class="card-digital-file__background {{ $name }}"><span>+</span></div>
-      <img src="" width="200px" class="card-digital-file__preview-img {{ $name }}"/>
+      <img src="" width="200px" class="card-digital-file__preview-img {{ $name }}" alt="Image card digital"/>
     </div>
 </div>
 

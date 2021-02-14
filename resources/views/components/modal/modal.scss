@@ -28,12 +28,30 @@
         border-radius: 41px;
         position: relative;
         max-height: 849px;
-        overflow: auto;
-        @include mq($until: desktop) {
+        //overflow: auto;
+        
+        @include mq($until: wide) {
             height: 90%;
             overflow: auto;
             width: 90%;
             padding: 28px 26px 30px 26px;
+        }
+    }
+    &__body {
+        max-height: 793px;
+        overflow: auto;
+        &::-webkit-scrollbar {
+            -webkit-appearance: none;
+        }
+        
+        &::-webkit-scrollbar:vertical {
+            width: 5px;
+        } 
+        
+        
+        &::-webkit-scrollbar-thumb {
+            background-color: #79797954;
+            border-radius: 20px;
         }
     }
     &-close {

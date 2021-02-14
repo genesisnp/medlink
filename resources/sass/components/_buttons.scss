@@ -121,6 +121,15 @@
             transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
         }
     }
+    &--blue-whale {
+        background-color: $color-blue-whale;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        color: #fff;
+
+        &:hover {
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+    }
     &--green-light {
         background-color: $color-green-light;
         transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;

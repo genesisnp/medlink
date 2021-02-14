@@ -36,16 +36,33 @@
   border-radius: 41px;
   position: relative;
   max-height: 849px;
-  overflow: auto;
 }
 
-@media (max-width: 61.24em) {
+@media (max-width: 81.24em) {
   .modal__container {
     height: 90%;
     overflow: auto;
     width: 90%;
     padding: 28px 26px 30px 26px;
   }
+}
+
+.modal__body {
+  max-height: 793px;
+  overflow: auto;
+}
+
+.modal__body::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.modal__body::-webkit-scrollbar:vertical {
+  width: 5px;
+}
+
+.modal__body::-webkit-scrollbar-thumb {
+  background-color: #79797954;
+  border-radius: 20px;
 }
 
 .modal-close {

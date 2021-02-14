@@ -13,7 +13,7 @@
     </div>
     <table class="diary-table__table">
         <tr>
-            <th class="hidden-visually"></th>
+            <th class="hidden-visually">Time</th>
             <th>Lun 11</th>
             <th>Mar 12</th>
             <th>Mie 13</th>

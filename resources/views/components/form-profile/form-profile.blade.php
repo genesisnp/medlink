@@ -12,32 +12,32 @@
                 </div>
             </h2>
             <div class="form__item">
-                <label for="" class="form__label">Email</label>
-                <input type="text" class="form__input" disabled>
+                <label for="email" class="form__label">Email</label>
+                <input type="text" class="form__input" id="email" disabled>
             </div>
             <div class="form__item">
-                <label for="" class="form__label">Tipo de Documento</label>
-                <select name="" id="" class="form__select" disabled>
+                <label for="type-document" class="form__label">Tipo de Documento</label>
+                <select name="" id="" class="form__select" id="type-document" disabled>
                     <option value="">Carnet de extrangería</option>
                     <option value="">Dni</option>
                 </select>
             </div>
             <div class="form__item">
-                <label for="" class="form__label">Número de Documento</label>
-                <input type="text" class="form__input" disabled>
+                <label for="number-document" class="form__label">Número de Documento</label>
+                <input type="text" class="form__input" id="number-document" disabled>
             </div>
             <div class="form__item">
-                <label for="" class="form__label">Fecha de Nacimiento</label>
-                <input type="date" class="form__input" disabled>
+                <label for="date" class="form__label">Fecha de Nacimiento</label>
+                <input type="date" class="form__input" id="date" disabled>
                 <span class="form__item-icon icon-date"></span>
             </div>
             <div class="form__item">
-                <label for="" class="form__label">Número de Celular</label>
-                <input type="text" class="form__input" disabled>
+                <label for="phone" class="form__label">Número de Celular</label>
+                <input type="text" class="form__input" id="phone" disabled>
             </div>
             <div class="form__item">
-                <label for="" class="form__label">Dirección de Consultorio</label>
-                <input type="text" class="form__input" disabled>
+                <label for="address" class="form__label">Dirección de Consultorio</label>
+                <input type="text" class="form__input" id="address" disabled>
             </div>
             <div class="form__item">
                 <fieldset>

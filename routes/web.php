@@ -33,3 +33,7 @@ Route::get('/finances', function () {
 Route::get('/my-profile', function () {
     return view('health_worker.my-profile');
 });
+Route::get('/appointments', function () {
+    return view('health_worker.appointments');
+});
+

@@ -8,9 +8,9 @@
                 <div class="footer-info__item">
                     <div class="footer-info__title">Síguenos</div>
                     <ul class="footer-social-media">
-                        <li class="footer-social-media__item"><a href="#" class="footer-social-media__icon icon-facebook"></a></li>
-                        <li class="footer-social-media__item"><a href="#" class="footer-social-media__icon icon-instagram2"></a></li>
-                        <li class="footer-social-media__item"><a href="#" class="footer-social-media__icon icon-linkedin"></a></li>
+                        <li class="footer-social-media__item"><a href="#" class="footer-social-media__icon icon-facebook"><span class="hidden-visually">Icon Facebook</span></a></li>
+                        <li class="footer-social-media__item"><a href="#" class="footer-social-media__icon icon-instagram2"><span class="hidden-visually">Icon Instagram</span></a></li>
+                        <li class="footer-social-media__item"><a href="#" class="footer-social-media__icon icon-linkedin"><span class="hidden-visually">Icon Linkedin</span></a></li>
                     </ul>
                 </div>
                 <div class="footer-info__item">
