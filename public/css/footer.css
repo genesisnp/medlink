@@ -6,10 +6,6 @@
     COLORS
 *************/
 
-/*******************
-    BREAKPOINTS
-*******************/
-
 .footer {
   position: relative;
   padding: 35px 70px 35px 90px;
@@ -32,7 +28,14 @@
 }
 
 .footer__logo {
-  width: 280px;
+  width: 260px;
+  height: 100%;
+}
+
+@media (min-width: 81.25em) {
+  .footer__logo {
+    width: 280px;
+  }
 }
 
 .footer__logo img {
@@ -51,10 +54,21 @@
 
 .footer-info__title {
   color: #0066A5;
-  font-size: 22px;
   text-align: center;
   font-weight: 600;
   margin-bottom: 25px;
+}
+
+@media (min-width: 61.25em) {
+  .footer-info__title {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 81.25em) {
+  .footer-info__title {
+    font-size: 22px;
+  }
 }
 
 .footer-info__item {
@@ -86,6 +100,18 @@
   line-height: 1.4;
 }
 
+@media (min-width: 61.25em) {
+  .footer-info-list__link {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 81.25em) {
+  .footer-info-list__link {
+    font-size: 22px;
+  }
+}
+
 .footer-info-list__link span {
   color: #30AB9E;
   text-decoration: underline;
@@ -97,16 +123,34 @@
 }
 
 .footer-social-media__icon {
-  font-size: 33px;
   color: #5E728A;
   text-decoration: none;
   padding: 0 5px;
+}
+
+@media (min-width: 61.25em) {
+  .footer-social-media__icon {
+    font-size: 29px;
+  }
+}
+
+@media (min-width: 81.25em) {
+  .footer-social-media__icon {
+    font-size: 33px;
+  }
 }
 
 .footer-legal {
   border-top: 1px solid rgba(0, 0, 0, 0.12);
   padding-top: 10px;
   font-family: "poppinslight";
+  margin-top: 10px;
+}
+
+@media (min-width: 81.25em) {
+  .footer-legal {
+    margin-top: 3px;
+  }
 }
 
 .footer-legal__text {
@@ -115,6 +159,12 @@
 }
 
 @media (min-width: 61.25em) {
+  .footer-legal__text {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 81.25em) {
   .footer-legal__text {
     font-size: 20px;
   }

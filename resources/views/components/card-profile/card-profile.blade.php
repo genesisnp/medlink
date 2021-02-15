@@ -2,13 +2,19 @@
     <link rel="stylesheet" href={{ mix('css/card-profile.css') }}>
 @endpush
 
+@php
+    $showControls = isset($showControls) ? $showControls : true;
+@endphp
+
 <div class="card-profile bg-white">
     <div class="card-profile__container">
         <div class="card-profile-front">
             <div class="card-profile-front__wrapper">
                 <div class="card-profile-image">
-                    <label for="front-profile" class="card-profile-image__label"><span class="icon-edit"></span>Editar imagen de portada</label>
-                    <input type="file" name="front-profile" id="front-profile" class="card-profile-image__input"/> 
+                    @if ($showControls)
+                        <label for="front-profile" class="card-profile-image__label"><span class="icon-edit"></span>Editar imagen de portada</label>
+                        <input type="file" name="front-profile" id="front-profile" class="card-profile-image__input"/> 
+                    @endif
                     <img src="assets/images/bg-my-perfil.jpg" class="card-profile-image__preview-img front-profile" alt="Image front profile"/>
                 </div>
             </div>
@@ -39,8 +45,10 @@
                     <div class="card-profile-info-image">
                         {{-- <img src="assets/images/imagen-dr.png" alt="Imagen de la Dra Frances Mujica"> --}}
                         <div class="card-profile-image">
-                            <label for="img-profile" class="card-profile-image__label"><span class="icon-edit"></span><span class="hidden-visually">Editar</span></label>
-                            <input type="file" name="img-profile" id="img-profile" class="card-profile-image__input"/> 
+                            @if ($showControls)
+                                <label for="img-profile" class="card-profile-image__label"><span class="icon-edit"></span><span class="hidden-visually">Editar</span></label>
+                                <input type="file" name="img-profile" id="img-profile" class="card-profile-image__input"/> 
+                            @endif
                             <img src="assets/images/imagen-dr.png" class="card-profile-image__preview-img img-profile" alt="Image profile doctor"/>
                         </div>
                     </div>
@@ -50,16 +58,19 @@
                     <li>COSTO DE CITA VIRTUAL: <strong>S/100</strong></li>
                     <li>COSTO DE CITA PRESENCIAL: <strong>S/210</strong></li>
                 </ul>
-                <div class="card-profile-info__controls">
-                    <button class="button button--blue-cian open-modal" data-modal-link="form-appointment">
-                        <span class="button__icon icon-edit"></span>
-                        <span class="button__text">Editar</span>
-                    </button>
-                    <button class="button button--blue-cian open-modal" data-modal-link="modal-attach">
-                        <span class="button__icon icon-attach"></span>
-                        <span class="button__text">Agregar adjuntos</span>
-                    </button>
-                </div>
+                @if ($showControls)
+                    <div class="card-profile-info__controls">
+                        <button class="button button--blue-cian open-modal" data-modal-link="form-appointment">
+                            <span class="button__icon icon-edit"></span>
+                            <span class="button__text">Editar</span>
+                        </button>
+                        <button class="button button--blue-cian open-modal" data-modal-link="modal-attach">
+                            <span class="button__icon icon-attach"></span>
+                            <span class="button__text">Agregar adjuntos</span>
+                        </button>
+                    </div>
+                @endif
+                
             </div>
         </div>
     </div>

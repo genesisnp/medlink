@@ -1,0 +1,90 @@
+/*******************
+    FONTS
+*******************/
+
+/*************
+    COLORS
+*************/
+
+.diary {
+  width: 100%;
+  padding: 25px 31px 40px;
+}
+
+.diary__title {
+  color: #5E728A;
+  font-size: 12px;
+  font-family: "poppinsbold";
+  margin-bottom: 12px;
+}
+
+@media (min-width: 46.25em) {
+  .diary__title {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .diary__title {
+    font-size: 22px;
+  }
+}
+
+.diary__text {
+  font-family: "poppinslight";
+  font-size: 11px;
+  margin-bottom: 5px;
+  line-height: 1.3;
+}
+
+@media (min-width: 46.25em) {
+  .diary__text {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .diary__text {
+    font-size: 16px;
+  }
+}
+
+.diary__text strong {
+  font-weight: 600;
+  font-family: "poppinsregular";
+}
+
+.diary__input select,
+.diary__input input,
+.diary__select select,
+.diary__select input {
+  border: 0;
+  border-bottom: 1px solid #5E728A;
+  max-width: 437px;
+  width: 100%;
+  outline: none;
+  height: 35px;
+  color: #838383;
+  font-size: 11px;
+  font-family: "poppinslight";
+}
+
+@media (min-width: 46.25em) {
+  .diary__input select,
+  .diary__input input,
+  .diary__select select,
+  .diary__select input {
+    font-size: 18px;
+  }
+}
+
+.diary__select {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 46.25em) {
+  .diary__select {
+    font-size: 17px;
+  }
+}
+

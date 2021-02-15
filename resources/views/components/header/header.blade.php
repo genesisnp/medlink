@@ -1,3 +1,7 @@
+@push('styles')
+    <link rel="stylesheet" href={{ mix('css/header.css') }}>
+@endpush
+
 @php
     $title = isset($title) ? $title : 'Resúmen';
     $showCenterLogo = isset($showCenterLogo) ? $showCenterLogo : true;

@@ -1,7 +1,8 @@
-@import '../../../sass/utils/variables';
+@import 'utils/variables';
 @import './node_modules/sass-mq/mq';
+@import 'utils/mixins';
 
-.progress {
+.line-progress {
     width: 100%;
     &__container {
         padding:  17px 20px 22px;
@@ -88,6 +89,100 @@
                     color: $color-black;
                 }
             }
+        }
+    }
+}
+
+.effectiveness-rate {
+    max-width: 625px;
+
+    &__container {
+        padding: 63px 35px;
+        text-align: center;
+    }
+    &__title {
+        color: $color-blue-cian;
+        text-align: center;
+        font-family: $font-poppins-bold;
+        font-size: 12px;
+        padding: 0 22px;
+        line-height: 1.4;
+        margin-bottom: 5px;
+        @include mq($from: tablet){
+            font-size: 16px;
+        }
+        @include mq($from: desktop){
+            font-size: 30px;
+        }
+    }
+    &__text {
+        font-size: 19px;
+        margin: 14px 0;
+
+        &--blue {
+            font-size: 14px;
+            color: $color-blue;
+        }
+    }
+}
+
+.diagnostics {
+    width: 100%;
+    &__container {
+        padding: 30px 77px 31px;
+    }
+    &__list {
+        list-style: decimal;
+        list-style-position: inside;
+        @include mq($from: tablet) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    &__item {
+        font-size: 20px;
+        margin-top:26px;
+
+        @include mq($from: tablet) {
+            width: 50%;
+        }
+        &::marker {
+            font-family: $font-poppins-bold;
+        }
+        strong {
+            font-weight: normal;
+            font-family: $font-poppins-bold;
+        }
+    }
+}
+
+.citation-breakdown {
+    max-width: 438px;
+
+    &__container {
+        padding: 26px 65px 35px 65px;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+    }
+    &__item {
+        width: calc(50% - 10px);
+        text-align: center;
+    }
+    &__number {
+        color: $color-grey;
+        font-size: 30px;
+        @include mq($from: desktop) {
+            font-size: 50px;
+        }
+    }
+    &__text {
+        line-height: 1.4;
+        font-size: 11px;
+        @include mq($from: tablet) {
+            font-size: 14px;
         }
     }
 }

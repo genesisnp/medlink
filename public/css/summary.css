@@ -1,0 +1,371 @@
+/*******************
+    FONTS
+*******************/
+
+/*************
+    COLORS
+*************/
+
+.next-appointment {
+  padding: 9px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+@media (max-width: 61.24em) {
+  .next-appointment {
+    border-radius: 7px;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .next-appointment {
+    padding: 30px 23px;
+  }
+}
+
+@media (max-width: 78.125em) {
+  .next-appointment__icon {
+    display: none;
+  }
+}
+
+.next-appointment__icon-icon {
+  font-size: 78px;
+  color: #5E728A;
+}
+
+@media (min-width: 61.25em) {
+  .next-appointment__icon-icon {
+    font-size: 55px;
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: 81.25em) {
+  .next-appointment__icon-icon {
+    font-size: 78px;
+  }
+}
+
+.next-appointment__title {
+  margin-bottom: 5px;
+}
+
+@media (min-width: 46.25em) {
+  .next-appointment__title {
+    margin-bottom: 15px;
+  }
+}
+
+.next-appointment-info {
+  display: flex;
+  list-style: none;
+}
+
+@media (max-width: 46.24em) {
+  .next-appointment-info {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 46.24em) {
+  .next-appointment-info__item {
+    line-height: 1.8;
+  }
+}
+
+.next-appointment-info__item:first-child {
+  display: flex;
+}
+
+.next-appointment-info__item:first-child .next-appointment-info__item--time,
+.next-appointment-info__item:first-child .next-appointment-info__item--modality {
+  margin-right: 20px;
+  position: relative;
+}
+
+.next-appointment-info__item:first-child .next-appointment-info__item--time span:first-child,
+.next-appointment-info__item:first-child .next-appointment-info__item--modality span:first-child {
+  font-size: 12px;
+}
+
+@media (min-width: 46.25em) {
+  .next-appointment-info__item:first-child .next-appointment-info__item--time,
+  .next-appointment-info__item:first-child .next-appointment-info__item--modality {
+    margin-right: 40px;
+  }
+
+  .next-appointment-info__item:first-child .next-appointment-info__item--time span:first-child,
+  .next-appointment-info__item:first-child .next-appointment-info__item--modality span:first-child {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .next-appointment-info__item:first-child .next-appointment-info__item--time,
+  .next-appointment-info__item:first-child .next-appointment-info__item--modality {
+    margin-right: 72px;
+  }
+
+  .next-appointment-info__item:first-child .next-appointment-info__item--time:before,
+  .next-appointment-info__item:first-child .next-appointment-info__item--modality:before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 0;
+    border: 1px dashed rgba(0, 0, 0, 0.2);
+    right: -60px;
+    top: 10px;
+  }
+}
+
+@media (min-width: 81.25em) {
+  .next-appointment-info__item:first-child .next-appointment-info__item--time span:first-child,
+  .next-appointment-info__item:first-child .next-appointment-info__item--modality span:first-child {
+    font-size: 20px;
+  }
+}
+
+.next-appointment-info__item:first-child .next-appointment-info__item--modality {
+  text-align: center;
+}
+
+.next-appointment-info__item span {
+  display: block;
+  font-size: 16px;
+}
+
+@media (min-width: 81.25em) {
+  .next-appointment-info__item span {
+    font-size: 20px;
+  }
+}
+
+.next-appointment-info__item span:last-of-type {
+  text-align: center;
+  color: rgba(94, 114, 138, 0.5);
+  font-family: "poppinsextrabold";
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+@media (max-width: 46.24em) {
+  .next-appointment-info__item span:last-of-type {
+    display: none;
+  }
+}
+
+.next-appointment-info__item:last-of-type {
+  margin-right: 0;
+}
+
+.next-appointment-info__item:last-of-type:before {
+  display: none;
+}
+
+@media (max-width: 46.24em) {
+  .next-appointment-info__item--name span {
+    color: #5E728A;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+  }
+}
+
+.next-appointment__controls {
+  display: none;
+}
+
+@media (min-width: 61.25em) {
+  .next-appointment__controls {
+    display: block;
+    width: 169px;
+    text-align: right;
+  }
+
+  .next-appointment__controls .button:first-child {
+    margin-right: 0;
+    margin-bottom: 6px;
+  }
+}
+
+@media (min-width: 78.125em) {
+  .next-appointment__controls {
+    width: auto;
+    text-align: initial;
+  }
+
+  .next-appointment__controls .button:first-child {
+    margin-right: 23px;
+  }
+}
+
+@media (min-width: 78.125em) and (max-width: 61.24em) {
+  .next-appointment__controls .button {
+    display: none;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .next-appointment .dropdwn {
+    display: none;
+  }
+}
+
+.next-appointment .dropdwn a {
+  color: #00588E;
+}
+
+.last-patients {
+  padding: 8px 6px 8px 10px;
+  width: 100%;
+}
+
+@media (min-width: 20em) {
+  .last-patients {
+    max-width: 161px;
+    width: auto;
+  }
+}
+
+@media (min-width: 25em) {
+  .last-patients {
+    max-width: 200px;
+  }
+}
+
+@media (min-width: 46.25em) {
+  .last-patients {
+    padding: 18px 26px 18px 58px;
+    width: 100%;
+    max-width: 352px;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .last-patients {
+    max-width: 502px;
+  }
+}
+
+@media (min-width: 78.125em) {
+  .last-patients {
+    max-width: 730px;
+  }
+}
+
+@media (min-width: 81.25em) {
+  .last-patients {
+    padding: 18px 26px 18px 58px;
+    max-width: 817px;
+  }
+}
+
+@media (max-width: 46.24em) {
+  .last-patients__icon {
+    display: none;
+  }
+}
+
+@media (max-width: 46.24em) {
+  .last-patients__title--desktop {
+    display: none;
+  }
+}
+
+.last-patients__title--mobile {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 27.5em) {
+  .last-patients__title--mobile {
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 46.25em) {
+  .last-patients__title--mobile {
+    display: none;
+  }
+}
+
+.last-patients-list {
+  list-style: none;
+  overflow: auto;
+  max-height: 127px;
+  padding-right: 2px;
+}
+
+@media (min-width: 61.25em) {
+  .last-patients-list {
+    max-height: 168px;
+    padding-right: 30px;
+  }
+}
+
+.last-patients-list::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.last-patients-list::-webkit-scrollbar:vertical {
+  width: 2px;
+}
+
+.last-patients-list::-webkit-scrollbar-thumb {
+  background: rgba(196, 196, 196, 0.5);
+}
+
+.last-patients-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+@media (min-width: 61.25em) {
+  .last-patients-list__item {
+    margin: 4px 0;
+  }
+}
+
+.last-patients-list__name {
+  font-size: 11px;
+  width: 69px;
+}
+
+@media (min-width: 61.25em) {
+  .last-patients-list__name {
+    width: 180px;
+    font-size: 14px;
+  }
+}
+
+.last-patients-list__line {
+  display: none;
+}
+
+@media (min-width: 46.25em) {
+  .last-patients-list__line {
+    display: block;
+    width: calc(100% - 178px);
+    border: 1px dashed rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (min-width: 61.25em) {
+  .last-patients-list__line {
+    width: calc(100% - 275px);
+  }
+}
+
+@media (min-width: 78.125em) {
+  .last-patients-list__line {
+    width: calc(100% - 300px);
+  }
+}
+

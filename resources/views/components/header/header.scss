@@ -1,3 +1,7 @@
+@import './node_modules/sass-mq/mq';
+@import '../../../sass/utils/mixins';
+@import '../../../sass/utils/variables';
+
 .header {
     display: flex;
     justify-content: space-between;

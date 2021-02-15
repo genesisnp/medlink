@@ -36,4 +36,8 @@ Route::get('/my-profile', function () {
 Route::get('/appointments', function () {
     return view('health_worker.appointments');
 });
+Route::get('/public-profile', function () {
+    return view('health_worker.public-profile');
+});
+
 

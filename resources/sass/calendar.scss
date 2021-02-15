@@ -1,5 +1,6 @@
-@import '../../../sass/utils/variables';
+@import 'utils/variables';
 @import './node_modules/sass-mq/mq';
+@import 'utils/mixins';
 
 .diary {
     width: 100%;
