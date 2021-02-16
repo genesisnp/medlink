@@ -1,0 +1,262 @@
+/*******************
+    FONTS
+*******************/
+
+/*************
+    COLORS
+*************/
+
+.patients-page {
+  width: 100%;
+  position: relative;
+}
+
+.patients-page__heading {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 7px 0;
+}
+
+@media (min-width: 46.25em) {
+  .patients-page__heading {
+    width: 96%;
+  }
+}
+
+@media (min-width: 78.125em) {
+  .patients-page__heading {
+    width: 100%;
+  }
+}
+
+.patients-page-search {
+  max-width: 242px;
+  width: 100%;
+  height: 19px;
+  margin: auto;
+  position: relative;
+}
+
+@media (min-width: 46.25em) {
+  .patients-page-search {
+    margin: 0;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .patients-page-search {
+    height: 40px;
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 78.125em) {
+  .patients-page-search {
+    height: 40px;
+    max-width: 471px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.patients-page-search__input {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  border: 0;
+  box-shadow: 0px 10px 15px rgba(94, 114, 138, 0.1);
+  border-radius: 31px;
+}
+
+.patients-page-search__button {
+  height: 100%;
+  width: 67px;
+  background-color: #00588E;
+  color: #fff;
+  border: 0;
+  position: absolute;
+  right: 0;
+  border-radius: 31px;
+  font-weight: 600;
+  font-size: 10px;
+}
+
+@media (min-width: 46.25em) {
+  .patients-page-search__button {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .patients-page-search__button {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 81.25em) {
+  .patients-page-search__button {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .patients-page-search__button {
+    width: 80px;
+  }
+}
+
+@media (min-width: 78.125em) {
+  .patients-page-search__button {
+    width: 112px;
+  }
+}
+
+@media (max-width: 46.24em) {
+  .patients-page-controls {
+    position: absolute;
+    right: 10px;
+    top: -56px;
+  }
+}
+
+@media (max-width: 78.125em) {
+  .patients-page-controls .button__icon {
+    display: none;
+  }
+}
+
+.patients-page-table {
+  margin: 0px 7px 22px;
+}
+
+@media (min-width: 78.125em) {
+  .patients-page-table {
+    width: 100%;
+    margin: 25px 7px 30px;
+  }
+}
+
+@media (max-width: 78.125em) {
+  .patients-page-table .bg-white {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+.patients-page-table__container {
+  padding: 25px 15px 40px;
+  position: relative;
+}
+
+@media (max-width: 78.125em) {
+  .patients-page-table__container {
+    padding: 0;
+  }
+}
+
+.patients-page-table__table {
+  width: 91%;
+  margin: auto;
+  text-align: center;
+}
+
+@media (max-width: 78.125em) {
+  .patients-page-table__table {
+    width: 100%;
+  }
+}
+
+.patients-page-table__table tr {
+  position: relative;
+}
+
+@media (max-width: 78.125em) {
+  .patients-page-table__table tr {
+    background-color: #fff;
+    padding: 8px 9px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 9px;
+    border-radius: 7px;
+  }
+
+  .patients-page-table__table tr:first-child {
+    background-color: transparent;
+  }
+}
+
+.patients-page-table__table tr th {
+  font-size: 20px;
+  color: #5E728A;
+  font-weight: 600;
+  height: 65px;
+}
+
+@media (max-width: 78.125em) {
+  .patients-page-table__table tr th {
+    display: none;
+  }
+}
+
+.patients-page-table__table tr td {
+  font-size: 9px;
+}
+
+@media (min-width: 46.25em) {
+  .patients-page-table__table tr td {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .patients-page-table__table tr td {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 81.25em) {
+  .patients-page-table__table tr td {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 78.125em) {
+  .patients-page-table__table tr td {
+    display: block;
+    text-align: left;
+    line-height: 1.4;
+    width: 100%;
+  }
+}
+
+@media (max-width: 78.125em) {
+  .patients-page-table__table tr td:first-child {
+    display: none;
+  }
+}
+
+@media (max-width: 78.125em) {
+  .patients-page-table__table tr td:nth-child(2) {
+    font-weight: 600;
+    color: #5E728A;
+    font-size: 14px;
+    width: 70%;
+  }
+}
+
+@media (max-width: 78.125em) {
+  .patients-page-table__table tr td:last-child {
+    position: absolute;
+    right: 5px;
+    text-align: right;
+  }
+}
+
+@media (max-width: 78.125em) {
+  .patients-page-table__table .button {
+    margin-bottom: 7px;
+  }
+}
+

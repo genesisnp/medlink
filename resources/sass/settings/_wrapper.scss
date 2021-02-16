@@ -9,6 +9,7 @@
         margin-top: 0;
         background-color: $color-blue-light;
         transition: transform 400ms, opacity 400ms;
+
         @include mq($until: desktop) {
             width: 100%;
             margin-left: 0;

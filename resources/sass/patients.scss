@@ -1,0 +1,182 @@
+@import 'utils/variables';
+@import './node_modules/sass-mq/mq';
+@import 'utils/mixins';
+
+.patients-page {
+    width: 100%;
+    position: relative;
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 7px 0;
+        @include mq($from: tablet) {
+           width: 96%;
+        }
+        @include mq($from: 1250px) {
+            width: 100%;
+         }
+    }
+    &-search {
+        max-width: 242px;
+        width: 100%;
+        height: 19px;
+        margin: auto;
+        position: relative;
+        @include mq($from: tablet) {
+            margin: 0;
+        }
+        @include mq($from: desktop) {
+            height: 40px;
+            max-width: 300px;
+        }
+        @include mq($from: 1250px){
+            height: 40px;
+            max-width: 471px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        &__input {
+            background-color: $color-white;
+            height: 100%;
+            width: 100%;
+            border: 0;
+            box-shadow: 0px 10px 15px rgba(94, 114, 138, 0.1);
+            border-radius: 31px;
+        }
+
+        &__button {
+            height: 100%;
+            width: 67px;
+            background-color: $color-blue-cian;
+            color: $color-white;
+            border: 0;
+            position: absolute;
+            right: 0;
+            border-radius: 31px;
+            font-weight: 600;
+            //font-size: 20px;
+            @include font-increment(10px, 20px);
+            @include mq($from: desktop) {
+                width: 80px;
+            }
+            @include mq($from: 1250px) {
+                width: 112px;
+            }
+        }
+    }
+
+    &-controls {
+
+        @include mq($until: tablet) {
+            position: absolute;  
+            right: 10px;
+            top: -56px;
+        }
+        .button {
+            &__icon {
+                @include mq($until: 1250px) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.patients-page-table {
+
+    margin: 0px 7px 22px;
+    @include mq($from: 1250px) {
+        width: 100%;
+        margin: 25px 7px 30px;
+    }
+
+    .bg-white {
+        @include mq($until: 1250px) {
+            background-color: transparent;
+            box-shadow: none;
+        }
+    }
+
+    &__container {
+        padding: 25px 15px 40px;
+        position: relative;
+        @include mq($until: 1250px) {
+            padding: 0;
+        }
+    }
+
+    &__table {
+        width: 91%;
+        margin: auto;
+        text-align: center;
+        @include mq($until: 1250px) {
+            width: 100%;
+        }
+        tr {
+            position: relative;
+            @include mq($until: 1250px) {
+                background-color: $color-white;
+                padding: 8px 9px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                margin-bottom: 9px;
+                border-radius: 7px;
+                &:first-child {
+                    background-color: transparent;
+                }
+            }
+
+            th {
+                font-size: 20px;
+                color: $color-blue-green;
+                font-weight: 600;
+                height: 65px;
+                @include mq($until: 1250px) {
+                    display: none;
+                }
+            }
+            td {
+                @include font-increment(9px , 17px);
+                @include mq($until: 1250px) {
+                    display: block;
+                    text-align: left;
+                    line-height: 1.4;
+                    width: 100%;
+                }
+
+                &:first-child {
+                    @include mq($until: 1250px) {
+                        display: none;
+                    }
+                }
+                &:nth-child(2) {
+                    @include mq($until: 1250px) {
+                        font-weight: 600;
+                        color: $color-blue-green;
+                        font-size: 14px;
+                        width: 70%;
+                        //display: block;
+                    }
+                }
+                &:last-child {
+
+                    //top: 7px;
+                    @include mq($until: 1250px) {
+                        position: absolute;
+                        right: 5px;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+
+        .button {
+            @include mq($until: 1250px) {
+                margin-bottom: 7px;
+            }
+        }
+    }
+}

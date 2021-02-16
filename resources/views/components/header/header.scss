@@ -41,7 +41,7 @@
     &__info {
         color: $color-blue-green;
         text-align: right;
-        @include mq($until: tablet) {
+        @include mq($until: desktop) {
             display: none;
          }
         p {

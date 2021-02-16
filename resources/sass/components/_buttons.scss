@@ -28,14 +28,14 @@
 
     &__text {
         &--mobile {
-            @include mq($from: desktop) {
+            @include mq($from: 1250px) {
                 display: none;
             }
         }
 
         &--desktop {
             display: none;
-            @include mq($from: desktop) {
+            @include mq($from: 1250px) {
                 display: inline-block;
             }
         }

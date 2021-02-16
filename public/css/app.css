@@ -74,7 +74,7 @@
 }
 
 *:focus {
-  outline: 2px solid orange;
+  outline: 2px solid #8dc8e8;
 }
 
 *:active {
@@ -382,7 +382,7 @@ ul {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-@media (min-width: 61.25em) {
+@media (min-width: 78.125em) {
   .button__text--mobile {
     display: none;
   }
@@ -392,7 +392,7 @@ ul {
   display: none;
 }
 
-@media (min-width: 61.25em) {
+@media (min-width: 78.125em) {
   .button__text--desktop {
     display: inline-block;
   }

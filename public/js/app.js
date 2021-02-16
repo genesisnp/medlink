@@ -33341,6 +33341,17 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/sass/patients.scss":
+/*!**************************************!*\
+  !*** ./resources/sass/patients.scss ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/public-profile.scss":
 /*!********************************************!*\
   !*** ./resources/sass/public-profile.scss ***!
@@ -33452,9 +33463,9 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /***/ }),
 
 /***/ 0:
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/my-profile.scss ./resources/sass/appointments.scss ./resources/sass/public-profile.scss ./resources/sass/indicators.scss ./resources/sass/calendar.scss ./resources/sass/summary.scss ./resources/sass/finances.scss ./resources/views/components/header/header.scss ./resources/views/components/tabs/tabs.scss ./resources/views/components/tabs-timetable/tabs-timetable.scss ./resources/views/components/patients-attended/patients-attended.scss ./resources/views/components/form-profile/form-profile.scss ./resources/views/components/card-digital/card-digital.scss ./resources/views/components/card-profile/card-profile.scss ./resources/views/components/modal/modal.scss ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/my-profile.scss ./resources/sass/appointments.scss ./resources/sass/public-profile.scss ./resources/sass/indicators.scss ./resources/sass/calendar.scss ./resources/sass/summary.scss ./resources/sass/finances.scss ./resources/sass/patients.scss ./resources/views/components/header/header.scss ./resources/views/components/tabs/tabs.scss ./resources/views/components/tabs-timetable/tabs-timetable.scss ./resources/views/components/patients-attended/patients-attended.scss ./resources/views/components/form-profile/form-profile.scss ./resources/views/components/card-digital/card-digital.scss ./resources/views/components/card-profile/card-profile.scss ./resources/views/components/modal/modal.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -33467,6 +33478,7 @@ __webpack_require__(/*! C:\laragon\www\medlink\resources\sass\indicators.scss */
 __webpack_require__(/*! C:\laragon\www\medlink\resources\sass\calendar.scss */"./resources/sass/calendar.scss");
 __webpack_require__(/*! C:\laragon\www\medlink\resources\sass\summary.scss */"./resources/sass/summary.scss");
 __webpack_require__(/*! C:\laragon\www\medlink\resources\sass\finances.scss */"./resources/sass/finances.scss");
+__webpack_require__(/*! C:\laragon\www\medlink\resources\sass\patients.scss */"./resources/sass/patients.scss");
 __webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\header\header.scss */"./resources/views/components/header/header.scss");
 __webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\tabs\tabs.scss */"./resources/views/components/tabs/tabs.scss");
 __webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\tabs-timetable\tabs-timetable.scss */"./resources/views/components/tabs-timetable/tabs-timetable.scss");
