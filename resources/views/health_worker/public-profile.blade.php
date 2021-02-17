@@ -10,12 +10,15 @@
     @component('components.card-profile.card-profile', [ 'showControls' => false ])
     @endcomponent
 
-    @component('components.tabs.tabs', [ 'data_tab' => 'presenciales', 'data_tab2' => 'virtuales', 'tab_text' => 'presenciales', 'tab_text2' => 'virtuales' ])
-        @slot('tabs_body')
-            @component('components.tabs-timetable.tabs-timetable', [ 'showControl' => false ])
-            @endcomponent    
-        @endslot
-    @endcomponent
+    <div class="tabs-timetable">
+        @component('components.tabs.tabs', [ 'data_tab' => 'presenciales', 'data_tab2' => 'virtuales', 'tab_text' => 'presenciales', 'tab_text2' => 'virtuales' ])
+            @slot('tabs_body')
+                @component('components.tabs-timetable.tabs-timetable', [ 'showControl' => false , 'showLegend' => true, 'date' => '16/11/21', 'showDate' => true, 'showArrows' => true])
+                @endcomponent    
+            @endslot
+        @endcomponent
+    </div>
+    
 
     <div class="public-attach">
         <div class="public-attach__container bg-white">

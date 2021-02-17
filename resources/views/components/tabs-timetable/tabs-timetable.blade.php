@@ -4,13 +4,33 @@
 
 @php
     $showControl = isset($showControl) ? $showControl : true;
+    $showLegend = isset($showLegend) ? $showLegend : false;
+    $showDate = isset($showDate) ? $showDate : false;
+    $showArrows = isset($showArrows) ? $showArrows : false;
 @endphp
 
 <div id="presenciales" class="tabs-content__item current">
-    <div class="tabs-timetable">
+    @if ($showLegend)
+        <div class="tabs-legend">
+            <div class="tabs-legend__item">
+                <span class="tabs-legend__text">Horarios Disponibles</span>
+                <div class="tabs-legend__color tabs-legend__color--green-light"></div>
+            </div>
+            <div class="tabs-legend__item">
+                <span class="tabs-legend__text">Horarios No Disponibles</span>
+                <div class="tabs-legend__color tabs-legend__color--white"></div>
+            </div>
+        </div>
+    @endif
+    
+    <div class="tabs-timetable-wrapper">
         <div class="tabs-timetable__content">
             <div class="tabs-timetable__item">
-                <h3 class="tabs-timetable__day">Lunes</h3>
+                <h3 class="tabs-timetable__day">Lunes 
+                    @if ($showDate)
+                        <span>{{ $date }}</span>
+                    @endif
+                </h3>
                 <div class="tabs-timetable__time time-available">09:00 am</div>
                 <div class="tabs-timetable__time">10:00 am</div>
                 <div class="tabs-timetable__time">11:00 am</div>
@@ -137,13 +157,41 @@
                 </a>
             </div>
         @endif
+        @if ($showArrows)
+            <div class="tabs-timetable-arrows">
+                <button class="tabs-timetable__arrow tabs-timetable__arrow--left">
+                    <span class="icon-polygon"></span>
+                </button>
+                <button class="tabs-timetable__arrow tabs-timetable__arrow--right">
+                    <span class="icon-polygon"></span>
+                </button>
+            </div> 
+        @endif
+        
     </div>
 </div>
 <div id="virtuales" class="tabs-content__item">
-    <div class="tabs-timetable">
+    @if ($showLegend)
+        <div class="tabs-legend">
+            <div class="tabs-legend__item">
+                <span class="tabs-legend__text">Horarios Disponibles</span>
+                <div class="tabs-legend__color tabs-legend__color--blue-cian"></div>
+            </div>
+            <div class="tabs-legend__item">
+                <span class="tabs-legend__text">Horarios No Disponibles</span>
+                <div class="tabs-legend__color tabs-legend__color--white"></div>
+            </div>
+        </div>
+    @endif
+    
+    <div class="tabs-timetable-wrapper">
         <div class="tabs-timetable__content">
             <div class="tabs-timetable__item">
-                <h3 class="tabs-timetable__day">Lunes</h3>
+                <h3 class="tabs-timetable__day">Lunes
+                    @if ($showDate)
+                        <span>{{ $date }}</span>
+                    @endif
+                </h3>
                 <div class="tabs-timetable__time time-available">09:00 am</div>
                 <div class="tabs-timetable__time">10:00 am</div>
                 <div class="tabs-timetable__time">11:00 am</div>
@@ -269,6 +317,16 @@
                     <span class="button__text">Guardar</span>
                 </a>
             </div>
+        @endif
+        @if ($showArrows)
+            <div class="tabs-timetable-arrows">
+                <button class="tabs-timetable__arrow tabs-timetable__arrow--left">
+                    <span class="icon-polygon"></span>
+                </button>
+                <button class="tabs-timetable__arrow tabs-timetable__arrow--right">
+                    <span class="icon-polygon"></span>
+                </button>
+            </div> 
         @endif
     </div>
 </div>

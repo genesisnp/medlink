@@ -30,12 +30,14 @@
         </div>
     </div>
     
-    @component('components.tabs.tabs', [ 'data_tab' => 'presenciales', 'data_tab2' => 'virtuales', 'tab_text' => 'presenciales', 'tab_text2' => 'virtuales' ])
-        @slot('tabs_body')
-            @component('components.tabs-timetable.tabs-timetable')
-            @endcomponent    
-        @endslot
-    @endcomponent
+    <div class="tabs-timetable">
+        @component('components.tabs.tabs', [ 'data_tab' => 'presenciales', 'data_tab2' => 'virtuales', 'tab_text' => 'presenciales', 'tab_text2' => 'virtuales' ])
+            @slot('tabs_body')
+                @component('components.tabs-timetable.tabs-timetable')
+                @endcomponent    
+            @endslot
+        @endcomponent
+    </div>
     
 @endsection
 

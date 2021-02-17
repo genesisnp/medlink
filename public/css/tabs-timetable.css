@@ -6,6 +6,42 @@
     COLORS
 *************/
 
+.tabs-timetable {
+  width: 100%;
+}
+
+.tabs-timetable-wrapper {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 31px;
+  padding: 32px 10px;
+  position: relative;
+}
+
+@media (min-width: 35.9375em) {
+  .tabs-timetable-wrapper {
+    padding: 32px 20px;
+  }
+}
+
+@media (min-width: 46.25em) {
+  .tabs-timetable-wrapper {
+    padding: 32px 40px;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .tabs-timetable-wrapper {
+    padding: 32px 40px 28px;
+  }
+}
+
+.tabs-timetable .tabs-content {
+  padding: 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+
 .tabs-timetable__day {
   font-family: "poppinsbold";
   font-size: 17px;
@@ -24,6 +60,14 @@
   .tabs-timetable__day {
     font-size: 16px;
   }
+}
+
+.tabs-timetable__day span {
+  font-family: "poppinslight";
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  display: block;
+  padding-top: 3px;
 }
 
 .tabs-timetable__time {
@@ -75,14 +119,50 @@
   left: 2%;
 }
 
+.tabs-timetable-arrows {
+  background: #ffc0cb94;
+  width: 87%;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabs-timetable__arrow {
+  background: transparent;
+  border: 0;
+  position: absolute;
+  color: #00588E;
+}
+
+.tabs-timetable__arrow span {
+  font-size: 25px;
+}
+
+.tabs-timetable__arrow--right {
+  transform: rotate(180deg);
+  right: 0;
+}
+
 #presenciales .time-available {
   background-color: #30AB9E;
   color: #fff;
 }
 
+#presenciales .tabs-timetable__arrow {
+  color: #30AB9E;
+}
+
 #virtuales .time-available {
   background-color: #0066A5;
   color: #fff;
+}
+
+#virtuales .tabs-timetable__arrow {
+  color: #00588E;
 }
 
 .tabs-timetable-controls {

@@ -2,6 +2,33 @@
 @import './node_modules/sass-mq/mq';
 
 .tabs-timetable {
+    width: 100%;
+    &-wrapper {
+        width: 100%;
+        background-color: $color-white;
+        border-radius: 31px;
+        padding: 32px 10px;
+        position: relative;
+        @include mq($from: 575px) {
+            padding: 32px 20px;
+        }
+    
+        @include mq($from: tablet) {
+            padding: 32px 40px;
+        }
+    
+        @include mq($from: desktop) {
+            padding: 32px 40px 28px;
+        }
+    }
+    .tabs {
+        
+        &-content {
+            padding: 0;
+            background-color: transparent;
+            border-radius: 0;
+        }
+    }
 
     &__day {
         font-family: $font-poppins-bold;
@@ -14,6 +41,13 @@
         }
         @include mq($from: desktop) {
             font-size: 16px;
+        }
+        span {
+            font-family: $font-poppins-light;
+            font-size: 12px;
+            color: rgba(0, 0, 0, 0.5);
+            display: block;
+            padding-top: 3px;
         }
         
     }
@@ -57,18 +91,47 @@
     .slick-prev {
         left: 2%;
     }
-   
+    &-arrows {
+        background: #ffc0cb94;
+        width: 87%;
+        position: absolute;
+        top: 25px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__arrow {
+        background: transparent;
+        border: 0;
+        position: absolute;
+        color: $color-blue-cian;
+        span {
+            font-size: 25px;
+        }
+        &--right {
+            transform: rotate(180deg);
+            right: 0;
+        }
+    }
 }
 #presenciales{
     .time-available {
         background-color: $color-green-light;
         color: $color-white;
     }
+    .tabs-timetable__arrow {
+        color: $color-green-light;
+    }
 }  
 #virtuales {
     .time-available {
         background-color: $color-blue;
         color: $color-white;
+    }
+    .tabs-timetable__arrow {
+        color: $color-blue-cian;
     }
 }
 .tabs-timetable-controls {

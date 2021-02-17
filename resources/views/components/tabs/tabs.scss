@@ -1,5 +1,6 @@
 @import '../../../sass/utils/variables';
 @import './node_modules/sass-mq/mq';
+@import '../../../sass/utils/mixins';
 @import './node_modules/slick-carousel/slick/slick';
 
 .tabs {
@@ -77,3 +78,48 @@
     to {opacity:1;}
 }
 
+.tabs-legend {
+    display: flex;
+    padding-right: 30px;
+    justify-content: center;
+    padding: 10px 0px 15px;
+    @include mq ($from: tablet)  {
+        justify-content: flex-end;
+    }
+    @include mq ($from: desktop)  {
+        padding: 10px 107px 15px;
+    }
+    &__item {
+        display: flex;
+        margin-left: 7px;
+        align-items: center;
+        @include mq ($from: tablet)  {
+            margin-left: 16px;
+        }
+    }
+    &__color {
+        width: 17px;
+        height: 17px;
+        margin-left: 5px;
+        @include mq ($from: desktop) {
+            width: 25px;
+            height: 25px;
+            margin-left: 12px;
+        }
+        &--white {
+            background-color: $color-white;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        }
+        &--green-light {
+            background-color: $color-green-light;
+        }
+        &--blue-cian {
+            background-color: $color-blue-cian
+        }
+    }
+    &__text {
+        @include font-increment(12px , 20px);
+        color: #AEAEAE;
+        font-family: $font-poppins-light;
+    }
+}
