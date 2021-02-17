@@ -10,8 +10,7 @@
     "/css/finances.css": "/css/finances.css?id=8dce9d4506abac938ecf",
     "/css/patients.css": "/css/patients.css?id=43e820c526116c8858a9",
     "/css/header.css": "/css/header.css?id=d901e15f246b5a57c230",
-    "/css/tabs.css": "/css/tabs.css?id=b2f0b0977b3052ff261f",
-    "/css/tabs-timetable.css": "/css/tabs-timetable.css?id=98db69cb0c8075d0df2a",
+    "/css/tabs.css": "/css/tabs.css?id=c98030a63a260f588682",
     "/css/patients-attended.css": "/css/patients-attended.css?id=edf560b1ea1c037d5e11",
     "/css/form-profile.css": "/css/form-profile.css?id=4b88f3ed1ad91ad86955",
     "/css/card-digital.css": "/css/card-digital.css?id=bd9d55448d010d7b9f4f",
@@ -23,5 +22,6 @@
     "/js/form-profile.js": "/js/form-profile.js?id=5826f7e550dddf3c4b4f",
     "/js/modal.js": "/js/modal.js?id=542e5bd9094deb23bce4",
     "/js/social-networks.js": "/js/social-networks.js?id=efb484fd04621fea6ffe",
-    "/js/tabs.js": "/js/tabs.js?id=d620126a8668cb7b1ceb"
+    "/js/tabs.js": "/js/tabs.js?id=d620126a8668cb7b1ceb",
+    "/css/tabs-timetable.css": "/css/tabs-timetable.css?id=bad7021031791225a8f2"
 }
