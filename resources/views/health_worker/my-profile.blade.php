@@ -60,68 +60,68 @@
         </div>
     </div>
 
-    {{-- @component('components.modal.modal', [ 'dataLink' => 'form-appointment' ])
+    @component('components.modal.modal', [ 'dataLink' => 'form-appointment' ])
         @slot('modal_body')
             <div class="modal-form">
                 <form action="#" class="form">
                     <div class="form__item form__item--50d">
-                        <label for="" class="form__label">Nombre(s)</label>
-                        <input type="text" class="form__input">
+                        <label for="name" class="form__label">Nombre(s)</label>
+                        <input type="text" class="form__input" id="name">
                     </div>
                     <div class="form__item form__item--50d">
-                        <label for="" class="form__label">Apellido(s)</label>
-                        <input type="text" class="form__input">
+                        <label for="last-name" class="form__label">Apellido(s)</label>
+                        <input type="text" class="form__input" id="last-name">
                     </div>
                     <div class="form__item form__item--50d">
-                        <label for="" class="form__label">Especialidad</label>
-                        <select name="" id="" class="form__select">
+                        <label for="specialty" class="form__label">Especialidad</label>
+                        <select name="" id="" class="form__select" id="specialty">
                             <option value="">Carnet de extrangería</option>
                             <option value="">Dni</option>
                         </select>
                     </div>
                     <div class="form__item form__item--50d">
-                        <label for="" class="form__label">CMP</label>
-                        <input type="text" class="form__input">
+                        <label for="cmp" class="form__label">CMP</label>
+                        <input type="text" class="form__input" id="cmp">
                     </div>
                     <div class="form__item form__item--50d">
-                        <label for="" class="form__label">RNE</label>
-                        <input type="text" class="form__input">
+                        <label for="rne" class="form__label">RNE</label>
+                        <input type="text" class="form__input" id="rne">
                     </div>
                     <div class="form__item form__item--50d">
-                        <label for="" class="form__label">Página de Facebook</label>
-                        <input type="text" class="form__input">
+                        <label for="page-facebook" class="form__label">Página de Facebook</label>
+                        <input type="text" class="form__input" id="page-facebook">
                     </div>
                     <div class="form__item form__item--50d">
-                        <label for="" class="form__label">Página de Instagram</label>
-                        <input type="text" class="form__input">
+                        <label for="page-instagram" class="form__label">Página de Instagram</label>
+                        <input type="text" class="form__input" id="page-instagram">
                     </div>
                     <div class="form__item form__item--50d">
-                        <label for="" class="form__label">Página de Linkedin</label>
-                        <input type="text" class="form__input">
+                        <label for="page-linkedin" class="form__label">Página de Linkedin</label>
+                        <input type="text" class="form__input" id="page-linkedin">
                     </div>
                     <div class="form__item form__item--50d">
-                        <label for="" class="form__label">Página Web</label>
-                        <input type="text" class="form__input">
+                        <label for="page-web" class="form__label">Página Web</label>
+                        <input type="text" class="form__input" id="page-web">
                     </div>
                     <div class="form__item form__item--50d">
-                        <label for="" class="form__label">Página de Youtube</label>
-                        <input type="text" class="form__input">
+                        <label for="page-youtube" class="form__label">Página de Youtube</label>
+                        <input type="text" class="form__input" id="page-youtube">
                     </div>
                     <div class="form__item form__item--50d">
-                        <label for="" class="form__label">Página de Instagram</label>
-                        <input type="text" class="form__input">
+                        <label for="page-instagram" class="form__label">Página de Instagram</label>
+                        <input type="text" class="form__input" id="page-instagram">
                     </div>
                     <div class="form__item form__item--50d">
-                        <label for="" class="form__label">Costo de cita presencial</label>
-                        <input type="text" class="form__input">
+                        <label for="costs-presencial" class="form__label">Costo de cita presencial</label>
+                        <input type="text" class="form__input" id="costs-presencial">
                     </div>
                     <div class="form__item form__item--50d">
-                        <label for="" class="form__label">Costo de cita virtual</label>
-                        <input type="text" class="form__input">
+                        <label for="costs-virtual" class="form__label">Costo de cita virtual</label>
+                        <input type="text" class="form__input" id="costs-virtual">
                     </div>
                     <div class="form__item">
-                        <label for="" class="form__label">Mi resumen</label>
-                        <textarea name="" id="" cols="30" rows="10" class="form__textarea"></textarea>
+                        <label for="my-summary" class="form__label">Mi resumen</label>
+                        <textarea name="" id="my-summary" cols="30" rows="10" class="form__textarea"></textarea>
                     </div>
                     <div class="form-controls form-controls__right">
                         <button class="button button--red button--medium">
@@ -136,7 +136,7 @@
                 </form>
             </div>
         @endslot
-    @endcomponent --}}
+    @endcomponent
 
     @component('components.modal.modal', [ 'dataLink' => 'modal-attach' ])
         @slot('modal_body')
@@ -152,9 +152,9 @@
                     <div class="form-attach-list">
                         <span class="form-attach-list__title">Nombre del adjunto</span>
                         <ul>
-                            <li><span>Imagen.jpg</span><button><span>eliminar</span></button></li>
-                            <li><span>Imagen.jpg</span><button><span>eliminar</span></button></li>
-                            <li><span>Imagen.jpg</span><button><span>eliminar</span></button></li>
+                            <li><a href="#" target='_blank'>Imagen.jpg</a><button><span>eliminar</span></button></li>
+                            <li><a href="#" target='_blank'>Imagen.jpg</a><button><span>eliminar</span></button></li>
+                            <li><a href="#" target='_blank'>Imagen.jpg</a><button><span>eliminar</span></button></li>
                         </ul>
                     </div>
 
@@ -187,6 +187,5 @@
 @endsection
 
 @push('scripts')
-    
-    
+    <link rel="stylesheet" href={{ mix('js/social-networks.js') }}>
 @endpush

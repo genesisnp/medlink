@@ -17,7 +17,7 @@
             </div>
             <div class="form__item">
                 <label for="type-document" class="form__label">Tipo de Documento</label>
-                <select name="" id="" class="form__select" id="type-document" disabled>
+                <select name="" class="form__select" id="type-document" disabled>
                     <option value="">Carnet de extrangería</option>
                     <option value="">Dni</option>
                 </select>

@@ -33228,6 +33228,31 @@ module.exports = function(module) {
 
 /***/ }),
 
+/***/ "./resources/js/accordion.js":
+/*!***********************************!*\
+  !*** ./resources/js/accordion.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+//$('.accordion > li:eq(0) a').addClass('active').next().slideDown();
+$('.accordion a').click(function (j) {
+  var dropDown = $(this).closest('li').find('p');
+  $(this).closest('.accordion').find('p').not(dropDown).slideUp();
+
+  if ($(this).hasClass('active')) {
+    $(this).removeClass('active');
+  } else {
+    $(this).closest('.accordion').find('a.active').removeClass('active');
+    $(this).addClass('active');
+  }
+
+  dropDown.stop(false, true).slideToggle();
+  j.preventDefault();
+});
+
+/***/ }),
+
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -33240,6 +33265,8 @@ window.$ = window.jQuery = __webpack_require__(/*! jquery */ "./node_modules/jqu
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! slick-carousel */ "./node_modules/slick-carousel/slick/slick.js");
+
+__webpack_require__(/*! ./accordion */ "./resources/js/accordion.js");
 
 /***/ }),
 

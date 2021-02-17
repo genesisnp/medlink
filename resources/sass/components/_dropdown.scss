@@ -41,13 +41,16 @@
                 button {
                     background-color: transparent;
                     border: 0;
+                    width: 100%;
                 }
-                a {
+                a, button {
                     text-decoration: none;
                     padding: 8px 5px;
                     text-align: center;
                     display: block;
                     color: $color-blue-green;
+                    font-size: 10px;
+                    font-family: $font-poppins-light;
                 }
             }
         }

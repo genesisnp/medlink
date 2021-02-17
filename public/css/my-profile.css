@@ -301,27 +301,33 @@
   margin-bottom: 32px;
 }
 
-.form-attach-list ul li > span {
+.form-attach-list ul li > a {
   font-family: "poppinslight";
+  text-decoration: none;
+  color: #000;
   font-size: 14px;
 }
 
 @media (min-width: 46.25em) {
-  .form-attach-list ul li > span {
+  .form-attach-list ul li > a {
     font-size: 15px;
   }
 }
 
 @media (min-width: 61.25em) {
-  .form-attach-list ul li > span {
+  .form-attach-list ul li > a {
     font-size: 16px;
   }
 }
 
 @media (min-width: 81.25em) {
-  .form-attach-list ul li > span {
+  .form-attach-list ul li > a {
     font-size: 18px;
   }
+}
+
+.form-attach-list ul li > a:hover {
+  text-decoration: underline;
 }
 
 .form-attach-list ul li button {

@@ -32,25 +32,37 @@
   }
 }
 
-.tabs-appointment .tabs-content__item:nth-of-type(2) tr th,
-.tabs-appointment .tabs-content__item:nth-of-type(2) tr td {
-  width: 11%;
+.tabs-appointment .tabs-content__item:nth-child(2) tr th,
+.tabs-appointment .tabs-content__item:nth-child(2) tr td {
+  width: auto;
 }
 
-.tabs-appointment .tabs-content__item:nth-of-type(2) tr th:first-of-type,
-.tabs-appointment .tabs-content__item:nth-of-type(2) tr th:last-of-type,
-.tabs-appointment .tabs-content__item:nth-of-type(2) tr td:first-of-type,
-.tabs-appointment .tabs-content__item:nth-of-type(2) tr td:last-of-type {
+.tabs-appointment .tabs-content__item:nth-child(2) tr th:first-child,
+.tabs-appointment .tabs-content__item:nth-child(2) tr th:last-child,
+.tabs-appointment .tabs-content__item:nth-child(2) tr td:first-child,
+.tabs-appointment .tabs-content__item:nth-child(2) tr td:last-child {
   text-align: left;
-  width: 15%;
+  width: auto;
 }
 
-.tabs-appointment .tabs-content__item:nth-of-type(2) tr th:last-of-type,
-.tabs-appointment .tabs-content__item:nth-of-type(2) tr td:last-of-type {
+.tabs-appointment .tabs-content__item:nth-child(2) tr th:last-child,
+.tabs-appointment .tabs-content__item:nth-child(2) tr td:last-child {
   text-align: center;
 }
 
-.tabs-appointment .tabs-content__item:nth-of-type(2) tr td .button:last-child {
+.tabs-appointment .tabs-content__item:nth-child(2) tr td a {
+  text-decoration: none;
+}
+
+.tabs-appointment .tabs-content__item:nth-child(2) tr td a strong {
+  color: #00588E;
+}
+
+.tabs-appointment .tabs-content__item:nth-child(2) tr td a:hover {
+  text-decoration: underline;
+}
+
+.tabs-appointment .tabs-content__item:nth-child(2) tr td .button:last-child {
   width: 144px;
 }
 
@@ -77,16 +89,16 @@
   width: 22%;
 }
 
-.table-appointment tr th:first-of-type,
-.table-appointment tr th:last-of-type,
-.table-appointment tr td:first-of-type,
-.table-appointment tr td:last-of-type {
+.table-appointment tr th:first-child,
+.table-appointment tr th:last-child,
+.table-appointment tr td:first-child,
+.table-appointment tr td:last-child {
   text-align: left;
   width: 27%;
 }
 
-.table-appointment tr th:last-of-type,
-.table-appointment tr td:last-of-type {
+.table-appointment tr th:last-child,
+.table-appointment tr td:last-child {
   text-align: center;
 }
 

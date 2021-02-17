@@ -16,11 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
 Route::get('/summary', function () {
     return view('health_worker.summary');
 });
-
 Route::get('/calendar', function () {
     return view('health_worker.calendar');
 });
@@ -41,5 +39,8 @@ Route::get('/public-profile', function () {
 });
 Route::get('/patients', function () {
     return view('health_worker.patients');
+});
+Route::get('/clinic-history', function () {
+    return view('health_worker.clinic-history');
 });
 

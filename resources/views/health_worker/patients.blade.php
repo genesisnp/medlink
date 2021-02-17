@@ -14,7 +14,7 @@
             <div class="patients-page__heading">
                 <form action="#" class="patients-page-search">
                     <label for="search" class="hidden-visually">Search</label>
-                    <input type="search" class="patients-page-search__input">
+                    <input type="search" id="search" class="patients-page-search__input">
                     <button class="patients-page-search__button">
                         <span>Buscar</span>
                     </button>

@@ -223,9 +223,14 @@
         margin-top: 20px;
         li {
             margin-bottom: 32px;
-            >span {
+            >a {
                 font-family: $font-poppins-light;
-                @include font-increment(14px, 18px)
+                text-decoration: none;
+                color: $color-black;
+                @include font-increment(14px, 18px);
+                &:hover {
+                    text-decoration: underline;
+                }
             }
             button {
                 background: transparent;

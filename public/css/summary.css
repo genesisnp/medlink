@@ -369,3 +369,116 @@
   }
 }
 
+.diary-table {
+  padding: 17px 16px;
+  width: 100%;
+}
+
+@media (min-width: 61.25em) {
+  .diary-table {
+    padding: 17px 29px;
+  }
+}
+
+@media (max-width: 46.24em) {
+  .diary-table__title--desktop {
+    display: none;
+  }
+}
+
+.diary-table__title--mobile {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 46.25em) {
+  .diary-table__title--mobile {
+    display: none;
+  }
+}
+
+.diary-table__table {
+  width: 100%;
+  border-spacing: 0;
+  margin-top: 24px;
+}
+
+.diary-table__table tr th {
+  color: #7D8FA3;
+  font-size: 20px;
+  font-weight: 500;
+  height: 45px;
+}
+
+.diary-table__table tr td {
+  text-align: center;
+  font-family: "poppinslight";
+  font-size: 12px;
+  width: 200px;
+  height: 39px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  border-right: 1px dashed rgba(0, 0, 0, 0.2);
+}
+
+.diary-table__table tr td:first-of-type {
+  font-family: "poppinsregular";
+  font-size: 20px;
+  color: #7D8FA3;
+  text-align: left;
+  font-weight: 500;
+  border-right: 0;
+  width: 100px;
+}
+
+.diary-table__table tr td:last-of-type {
+  border-right: 0;
+}
+
+.diary-table__table tr:last-of-type td {
+  border-bottom: 0;
+}
+
+@media (max-width: 61.24em) {
+  .diary-table__table {
+    display: none;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .diary-table-list {
+    display: none;
+  }
+}
+
+.diary-table-list-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.diary-table-list__item {
+  width: 50%;
+  line-height: 1.7;
+}
+
+.diary-table-list__item span {
+  font-size: 11px;
+}
+
+.diary-table-list__time {
+  font-weight: 600;
+}
+
+@media (max-width: 61.24em) {
+  .diary-table__controls {
+    display: none;
+  }
+}
+
+.diary-table__controls .button {
+  font-size: 14px;
+}
+
+.diary-table__controls .button:last-child {
+  margin-left: 15px;
+}
+

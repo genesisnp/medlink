@@ -81,37 +81,36 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./resources/views/components/tabs/tabs.js":
-/*!*************************************************!*\
-  !*** ./resources/views/components/tabs/tabs.js ***!
-  \*************************************************/
+/***/ "./resources/js/social-networks.js":
+/*!*****************************************!*\
+  !*** ./resources/js/social-networks.js ***!
+  \*****************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-$('.tabs-header .tabs-header-link').click(function () {
-  var tab_id = $(this).attr('data-tab');
-  $('.tabs-header .tabs-header-link').removeClass('current');
-  $('.tabs-content__item').removeClass('current');
-  $(this).addClass('current');
-  $("#" + tab_id).addClass('current');
-  $('.tabs-timetable__content').slick('setPosition');
-});
+var share = document.querySelector('.share');
+setTimeout(function () {
+  share.classList.add("hover");
+}, 1000);
+setTimeout(function () {
+  share.classList.remove("hover");
+}, 3000);
 
 /***/ }),
 
-/***/ 2:
-/*!*******************************************************!*\
-  !*** multi ./resources/views/components/tabs/tabs.js ***!
-  \*******************************************************/
+/***/ 1:
+/*!***********************************************!*\
+  !*** multi ./resources/js/social-networks.js ***!
+  \***********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\tabs\tabs.js */"./resources/views/components/tabs/tabs.js");
+module.exports = __webpack_require__(/*! C:\laragon\www\medlink\resources\js\social-networks.js */"./resources/js/social-networks.js");
 
 
 /***/ })

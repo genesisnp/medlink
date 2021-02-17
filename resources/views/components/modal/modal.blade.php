@@ -1,6 +1,6 @@
-@push('styles')
+@pushonce('styles')
     <link rel="stylesheet" href={{ mix('css/modal.css') }}>
-@endpush
+@endpushonce
 <div class="modal {{ $dataLink }}">
     <div class="modal__container">
         <div class="modal__body">
@@ -12,6 +12,6 @@
         
     </div>
 </div>
-@push('scripts')
+@pushonce('scripts')
     <script src={{ mix('js/modal.js') }}></script>
-@endpush
+@endpushonce

@@ -6,7 +6,7 @@
 @endpush
 
 @section('content')
-    @component('components.header.header', [ 'title' => 'Citas', 'showCenterLogo' => false ])
+    @component('components.header.header', [ 'title' => 'Citas', 'showCenterLogo' => false , 'showButtonModal' => true])
     @endcomponent
 
     <div class="tabs-appointment">
@@ -82,7 +82,7 @@
                                         <label for="drop">Acciones</label>
                                         <ul class="content">
                                           <li><a href="#">Historia Médica</a></li>
-                                          <li><button>Revisar Pago</button></li>  
+                                          <li><button><span>Revisar Pago</span></button></li>  
                                           <li><a href="#">Atender</a></li>     
                                         </ul>
                                     </div>
@@ -116,12 +116,14 @@
                             <th>Nombre del paciente</th>
                             <th>Fecha y Hora</th>
                             <th>Modalidad</th>
+                            <th>Receta</th>
                             <th>Acciones</th>
                         </tr>
                         <tr>
                             <td>Rodrigo Alfonso Murillo Ruales</td>
                             <td>31/12/21 - 10:00 am</td>
                             <td>Modalidad</td>
+                            <td>Enviada</td>
                             <td>
                                 <a href="#" class="button button--blue button--medium"><span class="button__text">Historia Clínica</span></a>
                                 <button class="button button--blue button--medium"><span class="button__text">Agendar control</span></button>
@@ -131,6 +133,7 @@
                             <td>Rodrigo Alfonso Murillo Ruales</td>
                             <td>31/12/21 - 10:00 am</td>
                             <td>Virtual</td>
+                            <td><a href="#"><strong>Enviar</strong></a></td>
                             <td>
                                 <a href="#" class="button button--blue-whale button--medium"><span class="button__text">Historia Clínica</span></a>
                                 <a href="#" class="button button--blue button--medium"><span class="button__text">Agendar control</span></a>
@@ -140,6 +143,7 @@
                             <td>Rodrigo Alfonso Murillo Ruales</td>
                             <td>31/12/21 - 10:00 am</td>
                             <td>Virtual</td>
+                            <td><a href="#"><strong>Enviar</strong></a></td>
                             <td>
                                 <a href="#" class="button button--blue-whale button--medium"><span class="button__text">Historia Clínica</span></a>
                                 <a href="#" class="button button--blue-whale button--medium"><span class="button__text">Agendar control</span></a>
@@ -149,6 +153,7 @@
                             <td>Rodrigo Alfonso Murillo Ruales</td>
                             <td>31/12/21 - 10:00 am</td>
                             <td>Virtual</td>
+                            <td>Enviada</td>
                             <td>
                                 <a href="#" class="button button--blue-whale button--medium"><span class="button__text">Historia Clínica</span></a>
                                 <button class="button button--blue button--medium"><span class="button__text">Agendar control</span></button>
@@ -158,6 +163,7 @@
                             <td>Rodrigo Alfonso Murillo Ruales</td>
                             <td>31/12/21 - 10:00 am</td>
                             <td>Virtual</td>
+                            <td>Enviada</td>
                             <td>
                                 <a href="#" class="button button--blue-whale button--medium"><span class="button__text">Historia Clínica</span></a>
                                 <a href="#" class="button button--blue button--medium"><span class="button__text">Agendar control</span></a>
@@ -242,6 +248,9 @@
                 </div>
             </div>
         @endslot
+    @endcomponent
+
+    @component('components.modal-appointment.modal-appointment')   
     @endcomponent
 
 @endsection

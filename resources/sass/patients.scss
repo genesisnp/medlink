@@ -8,7 +8,7 @@
     &__heading {
         display: flex;
         justify-content: space-between;
-        width: 100%;
+        
         margin: 0 7px 0;
         @include mq($from: tablet) {
            width: 96%;

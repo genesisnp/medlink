@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -96,6 +96,8 @@
 $('.open-modal').on('click', function () {
   var modalTarget = $(this).data('modal-link');
   var modal = document.querySelector('.' + modalTarget);
+  console.log(modalTarget);
+  console.log(modal);
   $(modal).toggleClass('is-show');
 });
 $('.modal-close').on('click', function () {
@@ -104,7 +106,7 @@ $('.modal-close').on('click', function () {
 
 /***/ }),
 
-/***/ 6:
+/***/ 7:
 /*!*********************************************************!*\
   !*** multi ./resources/views/components/modal/modal.js ***!
   \*********************************************************/

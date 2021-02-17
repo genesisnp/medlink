@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -124,7 +124,7 @@ $('.tabs-timetable__content').slick({
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /*!***********************************************************!*\
   !*** multi ./resources/views/components/tabs/carousel.js ***!
   \***********************************************************/

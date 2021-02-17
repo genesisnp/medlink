@@ -12,6 +12,7 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
+    .js('resources/js/social-networks.js', 'public/js')
     .js('resources/views/components/tabs/tabs.js', 'public/js')
     .js('resources/views/components/tabs/carousel.js', 'public/js')
     .js('resources/views/components/form-profile/form-profile.js', 'public/js')
