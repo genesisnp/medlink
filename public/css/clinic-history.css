@@ -1,0 +1,114 @@
+/*******************
+    FONTS
+*******************/
+
+/*************
+    COLORS
+*************/
+
+.clinic-history {
+  width: 100%;
+  padding: 0 10px;
+}
+
+.clinic-history__controls {
+  text-align: right;
+  margin: 20px 0 30px;
+}
+
+@media (min-width: 61.25em) {
+  .clinic-history__controls {
+    margin: 0 0 20px;
+  }
+}
+
+.clinic-history__controls .button:last-child {
+  margin-left: 14px;
+}
+
+.clinic-history__table {
+  width: 100%;
+  text-align: center;
+  border-spacing: 7px;
+}
+
+@media (max-width: 61.24em) {
+  .clinic-history__table {
+    display: none !important;
+  }
+}
+
+.clinic-history__table tr th {
+  height: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #5E728A;
+}
+
+@media (min-width: 46.25em) {
+  .clinic-history__table tr th {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .clinic-history__table tr th {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 81.25em) {
+  .clinic-history__table tr th {
+    font-size: 20px;
+  }
+}
+
+.clinic-history__table tr td {
+  font-size: 17px;
+}
+
+.clinic-history__table tr td a {
+  text-decoration: none;
+}
+
+.clinic-history__table tr td a strong {
+  color: #00588E;
+  font-family: "poppinsbold";
+}
+
+.clinic-history__table tr td a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 61.25em) {
+  .clinic-history__table-mobile {
+    display: none;
+  }
+}
+
+.clinic-history__table-mobile h3 {
+  color: #5E728A;
+  font-size: 14px;
+}
+
+.clinic-history__table-mobile span {
+  font-size: 12px;
+}
+
+.clinic-history__table-mobile_item {
+  border-bottom: 1px solid rgba(94, 114, 138, 0.3);
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.clinic-history__table-mobile_item:last-child {
+  border: 0;
+}
+
+.clinic-history__table-mobile_item .dropdwn {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+

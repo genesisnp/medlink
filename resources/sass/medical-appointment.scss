@@ -1,0 +1,206 @@
+@import 'utils/variables';
+@import './node_modules/sass-mq/mq';
+@import 'utils/mixins';
+
+.medical-appointment {
+    width: 100%;
+
+    &__item {
+        padding: 20px 24px;
+        margin: 0 7px 30px;
+        &--border {
+            background-color: $color-white;
+            box-shadow: 0px 10px 15px rgba(94, 114, 138, 0.1);
+            border-radius: 31px;
+
+        }
+        @include mq($from: desktop) {
+            padding: 20px 42px;
+        }
+    }
+    &-info {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        background-color: rgba(204, 220, 232, 0);
+        @include mq($until: 1250px) {
+            display: none;
+        }
+       
+
+        &__item {
+            position: relative;
+
+            &:before {
+                content: "";
+                width: 100%;
+                position: absolute;
+                border: 1px dashed rgba(0, 0, 0, 0.2);
+                width: 40px;
+                left: 103%;
+                top: 9px;
+                @include mq($from: wide) {
+                    width: 60px;
+                    left: 104%;
+                }
+                @include mq($until: 1250px) {
+                    display: none;
+                }
+            }
+            &:last-child {
+                &:before {
+                    display: none;
+                }
+            }
+            p {
+                font-size: 17px;
+                margin-bottom: 5px;
+                @include font-increment(10px, 17px)
+            }
+            span {
+                color: rgba(94, 114, 138, 0.5);
+                font-family: $font-poppins-extrabold;
+                font-size: 14px;
+                @include font-increment(10px, 14px)
+            }
+        }
+    }
+    &-heading {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        &__title {
+            color: $color-blue-green;
+            font-family: $font-poppins-bold;
+            @include font-increment(15px , 25px);
+        }
+        .button {
+            border-radius: 5px;
+            margin-left: 23px;
+        }
+    }
+
+    &__controls {
+        display: flex;
+        flex-wrap: wrap;
+        .button {
+            margin-right: 10px; 
+            margin-bottom: 10px;
+            border-radius: 5px;
+            @include mq($from: desktop){
+                margin-right: 15px; 
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            
+        }
+    }
+    .form-file {
+        margin: 0;
+        label {
+            @include font-increment(10px ,15px);
+            width: auto;
+            padding: 5px 8px;
+            //height: 35px;
+
+            span {
+                @include font-increment(10px ,15px);
+            }
+        }
+    }
+    &__dropdown {
+        >li {
+            position: relative;
+        }
+        ul {
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 9px; 
+            position: absolute;
+            background: $color-white;
+            width: 94%;
+            top: 79%;
+            height: 0;
+            display: none;
+            transition: 1s ease-in-out;
+            >li {
+                padding: 8px 10px;
+                a {
+                    @include font-increment(10px , 12px);
+                    font-family: $font-poppins-light;
+                    color: $color-grey3;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        &:hover {
+            ul {
+                height: auto;
+                display: block;
+            }
+        }
+    }
+
+    .button-opacity {
+        opacity: .5;
+    }
+}
+
+.medical-appointment__share {
+    position: relative;
+
+    .share {
+        margin-left: 0;
+        > div {
+            height: 23px;
+            padding: 0px 8px 0px 8px;
+            @include mq($from: desktop) {
+                height: 35px;
+            }
+            
+            span {
+                font-size: 10px !important;
+                @include mq($from: desktop) {
+                    font-size: 15px !important;
+                }
+                &:last-child {
+                    display: table-cell;
+                }
+            }
+
+            .icon-share {
+                padding: 5px;
+            }
+        }
+        nav {
+            top: 0;
+            a {
+                height: 23px;
+                @include mq($from: desktop) {
+                    height: 35px;
+                }
+                
+            }  
+                   
+
+        }
+        &:hover a, &.hover a {
+            height: 23px;
+            padding: 0px 8px 0px 8px;
+            width: auto;
+            @include mq($from: desktop) {
+                height: 35px;
+            }
+        }
+        &:hover nav .share__text, 
+        &.hover nav .share__text {
+            @include mq($until: desktop) {
+                display: table-cell;
+                font-size: 10px;
+            }
+        }
+    }
+}

@@ -8,7 +8,6 @@
     &__heading {
         display: flex;
         justify-content: space-between;
-        
         margin: 0 7px 0;
         @include mq($from: tablet) {
            width: 96%;
@@ -80,12 +79,16 @@
                     display: none;
                 }
             }
+            &:last-child {
+                @include mq($from: 1250px) {
+                    margin-left: 7px;
+                }
+            }
         }
     }
 }
 
 .patients-page-table {
-
     margin: 0px 7px 22px;
     @include mq($from: 1250px) {
         width: 100%;
@@ -96,6 +99,7 @@
         @include mq($until: 1250px) {
             background-color: transparent;
             box-shadow: none;
+            margin: 0 0 30px;
         }
     }
 
@@ -111,6 +115,7 @@
         width: 91%;
         margin: auto;
         text-align: center;
+        border-spacing: 7px;
         @include mq($until: 1250px) {
             width: 100%;
         }

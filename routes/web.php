@@ -43,4 +43,16 @@ Route::get('/patients', function () {
 Route::get('/clinic-history', function () {
     return view('health_worker.clinic-history');
 });
+Route::get('/custom-input-index', function () {
+    return view('health_worker.custom-inputs.index');
+});
+Route::get('/custom-input-create', function () {
+    return view('health_worker.custom-inputs.create-edit');
+});
+Route::get('/medical-appointment', function () {
+    return view('health_worker.medical-appointment');
+});
+Route::get('/video-room', function () {
+    return view('health_worker.video-room.video-room');
+});
 

@@ -1,0 +1,183 @@
+@import 'utils/variables';
+@import './node_modules/sass-mq/mq';
+@import 'utils/mixins';
+
+.video-room {
+    position: relative;
+
+    @include mq($from: 1250px){
+        padding-bottom: 34vh;
+    }
+    &__wrapper {
+        max-width: 1366px;
+        margin: auto;
+    }
+    .header {
+        @include mq($until: desktop){
+            display: none;
+        }
+    }
+    .header__title-text {
+        @include font-increment(16px, 28px)
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    &__item {
+
+        @include mq($from: 1250px){
+            max-width: 718px;
+            margin-left: auto;
+        }
+        
+    }
+    &__video {
+        height: 245px;
+        background-color: $color-blue-whale;
+        width: 100%;
+        margin-bottom: 67px;
+        @include mq($from: tablet){
+            height: 300px;
+            margin-bottom: 15px;
+        }
+        @include mq($from: 1250px){
+            height: 483px;
+        }
+    }
+    &__accordion {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        @include mq($from: 1250px) {
+            position: absolute;
+            width: 38%;
+        }
+        @include mq($from: 1366px) {
+            position: absolute;
+            width: 43%;
+        }
+
+        .accordion__item {
+            h2 {
+                @include font-increment(15px, 25px)
+            }
+        }
+        .form__label, .form legend {
+            @include font-increment(15px, 18px)
+        }
+        .form__textarea, .form__input, .form__select{
+            @include font-increment(11px, 14px)
+        }
+        .accordion > li {
+            margin-bottom: 27px;
+            border-radius: 25px;
+            @include mq($until: tablet){
+                margin-bottom: 18px;
+            }
+        }
+        
+    }
+    &__prescripcion {
+        label {
+            @include font-increment(12px , 15px)
+        }
+        select, input {
+            @include font-increment(11px , 14px)
+        }
+        .prescription {
+            &__text {
+                @include font-increment(11px , 14px)
+            }
+
+            &-card {
+                .accordion {
+                    &__item {
+                        h2 {
+                            @include font-increment(12px , 18px)
+                        }
+                        
+                    }
+                    &__info {
+                        ul {
+                            li {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                    &__delete {
+                       span {
+                        @include font-increment(12px , 13px)
+                       }
+                    }
+
+                }
+            }
+        }
+        .prescription .form__controls--add {
+            padding-top: 30px;
+        }
+
+        .button--small {
+            height: 28px !important;
+            font-size: 12px;
+        }
+        
+    }
+    &__controls {
+        text-align: right;
+        @include mq($until: tablet){
+            position: absolute;
+            top: 263px;
+            text-align: center;
+            left: 0;
+            right: 0;
+            .button {
+                height: 31px;
+            }
+        }
+    }
+
+
+
+    .query-data-form__item textarea, 
+    .query-data-form__item > div {
+        padding: 14px 10px;
+        background-color: $color-white;
+        border: 1px solid rgba(0, 0, 0, 0.2);;
+    }
+    .query-data-form {
+        margin-top: 0;
+    }
+    .query-data-form__item label {
+        @include font-increment(15px, 18px)
+    }
+
+    .clinic-history__controls {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .button {
+            margin-left: 15px;
+            border-radius: 5px;
+            @include mq($until: tablet){
+                margin-left: 8px;
+            }
+        }
+    }
+    .form-file__label  {
+        box-shadow: none;
+        @include font-increment(10px, 15px);
+        
+    }
+    .form-file {
+        @include mq($until: tablet){
+            margin: 5px 0;
+        }
+    }
+    .clinic-history {
+        padding: 0;
+    }
+}

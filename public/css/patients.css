@@ -125,6 +125,12 @@
   }
 }
 
+@media (min-width: 78.125em) {
+  .patients-page-controls .button:last-child {
+    margin-left: 7px;
+  }
+}
+
 .patients-page-table {
   margin: 0px 7px 22px;
 }
@@ -140,6 +146,7 @@
   .patients-page-table .bg-white {
     background-color: transparent;
     box-shadow: none;
+    margin: 0 0 30px;
   }
 }
 
@@ -158,6 +165,7 @@
   width: 91%;
   margin: auto;
   text-align: center;
+  border-spacing: 7px;
 }
 
 @media (max-width: 78.125em) {

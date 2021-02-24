@@ -1,0 +1,135 @@
+/*******************
+    FONTS
+*******************/
+
+/*************
+    COLORS
+*************/
+
+.share {
+  display: inline-block;
+  align-items: center;
+  margin-left: 12px;
+}
+
+.share div {
+  display: inline-block;
+  opacity: 1;
+  text-align: center;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+  background-color: #00588E;
+  border-radius: 5px;
+  color: #fff;
+  width: auto;
+  padding: 12px 8px 12px 15px;
+  display: table;
+}
+
+@media (max-width: 81.24em) {
+  .share div {
+    height: 26px;
+    padding: 0;
+  }
+}
+
+.share div span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.share div span:first-child {
+  font-size: 23px;
+}
+
+@media (max-width: 81.24em) {
+  .share div span:last-child {
+    display: none;
+  }
+
+  .share div span:first-child {
+    font-size: 16px;
+  }
+}
+
+.share nav {
+  font-size: 0;
+  display: flex;
+  position: absolute;
+  z-index: 0;
+  top: 7px;
+}
+
+.share a {
+  text-align: center;
+  display: inline-block;
+  background-color: #00588E;
+  color: #fff;
+  overflow: hidden;
+  height: 42px;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.share a:nth-child(1) {
+  margin-left: 0;
+}
+
+.share a:nth-child(1):hover {
+  background-color: #00588E;
+}
+
+.share a:nth-child(2) {
+  background-color: #1E9800;
+}
+
+.share a:nth-child(3) {
+  background-color: #363636;
+}
+
+.share:hover div,
+.share.hover div {
+  opacity: 0;
+  z-index: 0;
+}
+
+.share:hover a,
+.share.hover a {
+  color: #fff;
+  font-size: 15px;
+  margin-right: 13px;
+  width: 154px;
+}
+
+.share:hover span:first-child,
+.share.hover span:first-child {
+  padding-right: 5px;
+  font-size: 18px;
+}
+
+@media (max-width: 81.24em) {
+  .share:hover nav .share__text,
+  .share.hover nav .share__text {
+    display: none;
+  }
+
+  .share:hover nav .share__icon,
+  .share.hover nav .share__icon {
+    padding-right: 0;
+    font-size: 13px;
+  }
+
+  .share:hover nav a,
+  .share.hover nav a {
+    width: 26px;
+    height: 26px;
+    margin-right: 6px;
+  }
+}
+

@@ -1,0 +1,127 @@
+@import './node_modules/sass-mq/mq';
+@import '../../../sass/utils/mixins';
+@import '../../../sass/utils/variables';
+
+.share {
+    display: inline-block;
+    align-items: center;
+    margin-left: 12px;
+
+
+    div {
+        display: inline-block;
+        opacity: 1;
+        text-align: center;
+        transition: opacity 0.3s ease-in-out;
+        pointer-events: none;
+        background-color: $color-blue-cian;
+        border-radius: 5px;
+        color: $color-white;
+        width: auto;
+        padding: 12px 8px 12px 15px;
+        display: table;
+        @include mq($until: wide) {
+            //width: 26px;
+            height: 26px;
+            padding: 0;
+        }
+        span {
+            display: table-cell;
+            vertical-align: middle;
+            &:first-child {
+                font-size: 23px;
+            }
+            @include mq($until: wide) {
+                &:last-child {
+                    display: none;
+                }
+                &:first-child {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+  
+    nav {
+        font-size: 0;
+        display: flex;
+        position: absolute;
+        z-index: 0;
+        top: 7px;
+    }
+  
+    a {
+        text-align: center;
+        display: inline-block;
+        background-color:$color-blue-cian;
+        color: $color-white;
+        overflow: hidden;
+        height: 42px;
+        opacity: 1;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+  
+        &:nth-child(1) {
+            margin-left: 0;
+
+            &:hover {
+                background-color: $color-blue-cian;
+            }
+        }
+    
+        &:nth-child(2) {
+            background-color: $color-green;
+        }
+    
+        &:nth-child(3) {
+            background-color:$color-gray;
+        }
+    
+        }
+  
+    &:hover, &.hover {
+        div {
+            opacity: 0;
+            z-index: 0;
+        }
+  
+        a {
+            color: $color-white;
+            font-size: 15px;
+            margin-right: 13px;
+            width: 154px;
+            
+        }
+        span {
+            &:first-child {
+                padding-right: 5px;
+                font-size: 18px;
+            }
+            
+        }
+        @include mq($until: wide) {
+            
+            nav {
+                .share__text {
+                    display: none;
+                }
+                .share__icon {
+                    padding-right: 0;
+                    font-size: 13px;
+                }
+                a {
+                    width: 26px;
+                    height: 26px;
+                    margin-right: 6px;
+                }
+                
+            }
+        }
+        
+    }
+}

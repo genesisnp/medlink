@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -115,7 +115,7 @@ $('.card-profile-image__input').on('change', function () {
 
 /***/ }),
 
-/***/ 6:
+/***/ 7:
 /*!***********************************************************************!*\
   !*** multi ./resources/views/components/card-profile/card-profile.js ***!
   \***********************************************************************/

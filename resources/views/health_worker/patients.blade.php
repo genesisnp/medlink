@@ -20,16 +20,16 @@
                     </button>
                 </form>
                 <div class="patients-page-controls">
-                    <button class="button button--blue-cian button--small">
+                    <button class="button button--blue-cian button--small open-modal" data-modal-link="form-appointment">
                         <span class="button__icon icon-add"></span>
                         <span class="button__text button__text--desktop">Registrar Nueva Historia</span>
                         <span class="button__text button__text--mobile">Nueva historia</span>
                     </button>
-                    <button class="button button--blue-cian button--small">
+                    <a href="#" class="button button--blue-cian button--small">
                         <span class="button__icon icon-add"></span>
                         <span class="button__text button__text--desktop">Personalizar Historia Clínica</span>
                         <span class="button__text button__text--mobile">Agregar campos</span>
-                    </button>
+                    </a>
                 </div>
             </div>
 
@@ -83,6 +83,9 @@
             </div>
         </div>
     </div>
+
+    @component('components.modal-appointment.modal-appointment')
+    @endcomponent
 
 @endsection
 

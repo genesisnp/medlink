@@ -33236,15 +33236,17 @@ module.exports = function(module) {
 /***/ (function(module, exports) {
 
 //$('.accordion > li:eq(0) a').addClass('active').next().slideDown();
-$('.accordion a').click(function (j) {
-  var dropDown = $(this).closest('li').find('p');
-  $(this).closest('.accordion').find('p').not(dropDown).slideUp();
+$('.accordion .accordion__item').click(function (j) {
+  var dropDown = $(this).closest('li').find('.accordion__info');
+  $(this).closest('.accordion').find('.accordion__info').not(dropDown).slideUp();
 
   if ($(this).hasClass('active')) {
     $(this).removeClass('active');
+    $(this).closest('li').find('.accordion__delete').removeClass('active');
   } else {
-    $(this).closest('.accordion').find('a.active').removeClass('active');
+    $(this).closest('.accordion').find('.accordion__item.active').removeClass('active');
     $(this).addClass('active');
+    $(this).closest('li').find('.accordion__delete').addClass('active');
   }
 
   dropDown.stop(false, true).slideToggle();
@@ -33335,6 +33337,17 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/sass/custom-inputs.scss":
+/*!*******************************************!*\
+  !*** ./resources/sass/custom-inputs.scss ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/finances.scss":
 /*!**************************************!*\
   !*** ./resources/sass/finances.scss ***!
@@ -33350,6 +33363,17 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*!****************************************!*\
   !*** ./resources/sass/indicators.scss ***!
   \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/sass/medical-appointment.scss":
+/*!*************************************************!*\
+  !*** ./resources/sass/medical-appointment.scss ***!
+  \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -33401,6 +33425,17 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/sass/video-room.scss":
+/*!****************************************!*\
+  !*** ./resources/sass/video-room.scss ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/views/components/card-digital/card-digital.scss":
 /*!*******************************************************************!*\
   !*** ./resources/views/components/card-digital/card-digital.scss ***!
@@ -33423,10 +33458,32 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/views/components/clinic-history/clinic-history.scss":
+/*!***********************************************************************!*\
+  !*** ./resources/views/components/clinic-history/clinic-history.scss ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/views/components/form-profile/form-profile.scss":
 /*!*******************************************************************!*\
   !*** ./resources/views/components/form-profile/form-profile.scss ***!
   \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/views/components/form-query-data/form-query-data.scss":
+/*!*************************************************************************!*\
+  !*** ./resources/views/components/form-query-data/form-query-data.scss ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -33467,6 +33524,28 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/views/components/prescription/prescription.scss":
+/*!*******************************************************************!*\
+  !*** ./resources/views/components/prescription/prescription.scss ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/views/components/share/share.scss":
+/*!*****************************************************!*\
+  !*** ./resources/views/components/share/share.scss ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/views/components/tabs-timetable/tabs-timetable.scss":
 /*!***********************************************************************!*\
   !*** ./resources/views/components/tabs-timetable/tabs-timetable.scss ***!
@@ -33490,9 +33569,9 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /***/ }),
 
 /***/ 0:
-/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/my-profile.scss ./resources/sass/appointments.scss ./resources/sass/public-profile.scss ./resources/sass/indicators.scss ./resources/sass/calendar.scss ./resources/sass/summary.scss ./resources/sass/finances.scss ./resources/sass/patients.scss ./resources/views/components/header/header.scss ./resources/views/components/tabs/tabs.scss ./resources/views/components/tabs-timetable/tabs-timetable.scss ./resources/views/components/patients-attended/patients-attended.scss ./resources/views/components/form-profile/form-profile.scss ./resources/views/components/card-digital/card-digital.scss ./resources/views/components/card-profile/card-profile.scss ./resources/views/components/modal/modal.scss ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/my-profile.scss ./resources/sass/appointments.scss ./resources/sass/public-profile.scss ./resources/sass/indicators.scss ./resources/sass/calendar.scss ./resources/sass/summary.scss ./resources/sass/finances.scss ./resources/sass/patients.scss ./resources/sass/custom-inputs.scss ./resources/sass/medical-appointment.scss ./resources/sass/video-room.scss ./resources/views/components/header/header.scss ./resources/views/components/tabs/tabs.scss ./resources/views/components/tabs-timetable/tabs-timetable.scss ./resources/views/components/patients-attended/patients-attended.scss ./resources/views/components/form-profile/form-profile.scss ./resources/views/components/card-digital/card-digital.scss ./resources/views/components/card-profile/card-profile.scss ./resources/views/components/modal/modal.scss ./resources/views/components/clinic-history/clinic-history.scss ./resources/views/components/prescription/prescription.scss ./resources/views/components/form-query-data/form-query-data.scss ./resources/views/components/share/share.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -33506,6 +33585,9 @@ __webpack_require__(/*! C:\laragon\www\medlink\resources\sass\calendar.scss */".
 __webpack_require__(/*! C:\laragon\www\medlink\resources\sass\summary.scss */"./resources/sass/summary.scss");
 __webpack_require__(/*! C:\laragon\www\medlink\resources\sass\finances.scss */"./resources/sass/finances.scss");
 __webpack_require__(/*! C:\laragon\www\medlink\resources\sass\patients.scss */"./resources/sass/patients.scss");
+__webpack_require__(/*! C:\laragon\www\medlink\resources\sass\custom-inputs.scss */"./resources/sass/custom-inputs.scss");
+__webpack_require__(/*! C:\laragon\www\medlink\resources\sass\medical-appointment.scss */"./resources/sass/medical-appointment.scss");
+__webpack_require__(/*! C:\laragon\www\medlink\resources\sass\video-room.scss */"./resources/sass/video-room.scss");
 __webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\header\header.scss */"./resources/views/components/header/header.scss");
 __webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\tabs\tabs.scss */"./resources/views/components/tabs/tabs.scss");
 __webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\tabs-timetable\tabs-timetable.scss */"./resources/views/components/tabs-timetable/tabs-timetable.scss");
@@ -33513,7 +33595,11 @@ __webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\patien
 __webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\form-profile\form-profile.scss */"./resources/views/components/form-profile/form-profile.scss");
 __webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\card-digital\card-digital.scss */"./resources/views/components/card-digital/card-digital.scss");
 __webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\card-profile\card-profile.scss */"./resources/views/components/card-profile/card-profile.scss");
-module.exports = __webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\modal\modal.scss */"./resources/views/components/modal/modal.scss");
+__webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\modal\modal.scss */"./resources/views/components/modal/modal.scss");
+__webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\clinic-history\clinic-history.scss */"./resources/views/components/clinic-history/clinic-history.scss");
+__webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\prescription\prescription.scss */"./resources/views/components/prescription/prescription.scss");
+__webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\form-query-data\form-query-data.scss */"./resources/views/components/form-query-data/form-query-data.scss");
+module.exports = __webpack_require__(/*! C:\laragon\www\medlink\resources\views\components\share\share.scss */"./resources/views/components/share/share.scss");
 
 
 /***/ })

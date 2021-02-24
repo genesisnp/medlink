@@ -1,0 +1,290 @@
+/*******************
+    FONTS
+*******************/
+
+/*************
+    COLORS
+*************/
+
+.prescription {
+  background-color: #fff;
+  box-shadow: 0px 10px 15px rgba(94, 114, 138, 0.1);
+  border-radius: 31px;
+  margin: 0 7px 30px;
+  padding: 20px 24px;
+  width: 100%;
+}
+
+@media (min-width: 61.25em) {
+  .prescription {
+    padding: 20px 42px;
+  }
+}
+
+.prescription__heading {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.prescription__heading h2 {
+  color: #5E728A;
+  font-family: "poppinsbold";
+  font-size: 15px;
+}
+
+@media (min-width: 46.25em) {
+  .prescription__heading h2 {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .prescription__heading h2 {
+    font-size: 21px;
+  }
+}
+
+@media (min-width: 81.25em) {
+  .prescription__heading h2 {
+    font-size: 25px;
+  }
+}
+
+.prescription__heading .button {
+  margin-left: 21px;
+}
+
+@media (max-width: 61.24em) {
+  .prescription__heading .button:last-child {
+    display: none;
+  }
+}
+
+.prescription__title {
+  font-family: "poppinsbold";
+  color: #5E728A;
+  font-size: 13.5px;
+  margin-bottom: 17px;
+}
+
+@media (min-width: 46.25em) {
+  .prescription__title {
+    font-size: 16.5px;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .prescription__title {
+    font-size: 19.5px;
+  }
+}
+
+@media (min-width: 81.25em) {
+  .prescription__title {
+    font-size: 22px;
+  }
+}
+
+.prescription__text {
+  max-width: 690px;
+  margin: 18px 0;
+  font-size: 11px;
+}
+
+@media (min-width: 46.25em) {
+  .prescription__text {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .prescription__text {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 81.25em) {
+  .prescription__text {
+    font-size: 16px;
+  }
+}
+
+.prescription-card .accordion {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.prescription-card .accordion > li {
+  border: 1px solid #99C2DB;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  width: 100%;
+}
+
+@media (min-width: 46.25em) {
+  .prescription-card .accordion > li {
+    width: calc(50% - 30px);
+  }
+}
+
+@media (min-width: 61.25em) {
+  .prescription-card .accordion > li {
+    margin-bottom: 19px;
+  }
+}
+
+.prescription-card .accordion__info {
+  padding: 7px 12px 10px;
+}
+
+@media (min-width: 61.25em) {
+  .prescription-card .accordion__info {
+    padding: 7px 20px 10px;
+  }
+}
+
+.prescription-card .accordion__info ul li {
+  margin-bottom: 7px;
+  font-size: 11px;
+}
+
+@media (min-width: 46.25em) {
+  .prescription-card .accordion__info ul li {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .prescription-card .accordion__info ul li {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 81.25em) {
+  .prescription-card .accordion__info ul li {
+    font-size: 18px;
+  }
+}
+
+.prescription-card .accordion__info ul li strong {
+  font-family: "poppinsbold";
+}
+
+.prescription-card .accordion__item {
+  padding: 5px 12px;
+  background-color: #99C2DB;
+}
+
+@media (min-width: 61.25em) {
+  .prescription-card .accordion__item {
+    padding: 0 20px;
+  }
+}
+
+.prescription-card .accordion__item h2 {
+  color: #525252;
+  font-size: 12px;
+  line-height: 2 !important;
+}
+
+@media (min-width: 46.25em) {
+  .prescription-card .accordion__item h2 {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .prescription-card .accordion__item h2 {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 81.25em) {
+  .prescription-card .accordion__item h2 {
+    font-size: 22px;
+  }
+}
+
+.prescription-card .accordion__item.active {
+  border-radius: 10px;
+}
+
+.prescription-card .accordion__delete {
+  width: 100%;
+  border: 0;
+  background-color: #C70000;
+  color: #fff;
+  line-height: 2;
+  cursor: pointer;
+}
+
+.prescription-card .accordion__delete span {
+  font-family: "poppinslight";
+  font-size: 12px;
+}
+
+@media (min-width: 46.25em) {
+  .prescription-card .accordion__delete span {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .prescription-card .accordion__delete span {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 81.25em) {
+  .prescription-card .accordion__delete span {
+    font-size: 22px;
+  }
+}
+
+.prescription-card .accordion__delete.active {
+  border-radius: 10px;
+}
+
+.prescription .form__div {
+  min-height: 44px;
+  background: rgba(196, 196, 196, 0.3);
+  border-radius: 10px;
+  padding: 5px 22px;
+  margin-top: 7px;
+}
+
+.prescription .form__controls--add {
+  max-width: 526px;
+  padding-top: 15px;
+}
+
+@media (min-width: 46.25em) {
+  .prescription .form__controls--add {
+    padding-top: 50px;
+  }
+}
+
+.prescription .form__controls--add .button {
+  margin: 0 12px 10px 0;
+}
+
+@media (min-width: 46.25em) {
+  .prescription .form__controls--add .button {
+    margin: 0 23px 15px 0;
+  }
+}
+
+.prescription .button {
+  height: 31px;
+}
+
+@media (min-width: 46.25em) {
+  .prescription .button {
+    height: 35px;
+  }
+}
+

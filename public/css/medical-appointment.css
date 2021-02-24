@@ -1,0 +1,359 @@
+/*******************
+    FONTS
+*******************/
+
+/*************
+    COLORS
+*************/
+
+.medical-appointment {
+  width: 100%;
+}
+
+.medical-appointment__item {
+  padding: 20px 24px;
+  margin: 0 7px 30px;
+}
+
+.medical-appointment__item--border {
+  background-color: #fff;
+  box-shadow: 0px 10px 15px rgba(94, 114, 138, 0.1);
+  border-radius: 31px;
+}
+
+@media (min-width: 61.25em) {
+  .medical-appointment__item {
+    padding: 20px 42px;
+  }
+}
+
+.medical-appointment-info {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  background-color: rgba(204, 220, 232, 0);
+}
+
+@media (max-width: 78.125em) {
+  .medical-appointment-info {
+    display: none;
+  }
+}
+
+.medical-appointment-info__item {
+  position: relative;
+}
+
+.medical-appointment-info__item:before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  border: 1px dashed rgba(0, 0, 0, 0.2);
+  width: 40px;
+  left: 103%;
+  top: 9px;
+}
+
+@media (min-width: 81.25em) {
+  .medical-appointment-info__item:before {
+    width: 60px;
+    left: 104%;
+  }
+}
+
+@media (max-width: 78.125em) {
+  .medical-appointment-info__item:before {
+    display: none;
+  }
+}
+
+.medical-appointment-info__item:last-child:before {
+  display: none;
+}
+
+.medical-appointment-info__item p {
+  font-size: 17px;
+  margin-bottom: 5px;
+  font-size: 10px;
+}
+
+@media (min-width: 46.25em) {
+  .medical-appointment-info__item p {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .medical-appointment-info__item p {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 81.25em) {
+  .medical-appointment-info__item p {
+    font-size: 17px;
+  }
+}
+
+.medical-appointment-info__item span {
+  color: rgba(94, 114, 138, 0.5);
+  font-family: "poppinsextrabold";
+  font-size: 14px;
+  font-size: 10px;
+}
+
+@media (min-width: 46.25em) {
+  .medical-appointment-info__item span {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .medical-appointment-info__item span {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 81.25em) {
+  .medical-appointment-info__item span {
+    font-size: 14px;
+  }
+}
+
+.medical-appointment-heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.medical-appointment-heading__title {
+  color: #5E728A;
+  font-family: "poppinsbold";
+  font-size: 15px;
+}
+
+@media (min-width: 46.25em) {
+  .medical-appointment-heading__title {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .medical-appointment-heading__title {
+    font-size: 21px;
+  }
+}
+
+@media (min-width: 81.25em) {
+  .medical-appointment-heading__title {
+    font-size: 25px;
+  }
+}
+
+.medical-appointment-heading .button {
+  border-radius: 5px;
+  margin-left: 23px;
+}
+
+.medical-appointment__controls {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.medical-appointment__controls .button {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+@media (min-width: 61.25em) {
+  .medical-appointment__controls .button {
+    margin-right: 15px;
+  }
+}
+
+.medical-appointment__controls .button:last-child {
+  margin-right: 0;
+}
+
+.medical-appointment .form-file {
+  margin: 0;
+}
+
+.medical-appointment .form-file label {
+  font-size: 10px;
+  width: auto;
+  padding: 5px 8px;
+}
+
+@media (min-width: 46.25em) {
+  .medical-appointment .form-file label {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .medical-appointment .form-file label {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 81.25em) {
+  .medical-appointment .form-file label {
+    font-size: 15px;
+  }
+}
+
+.medical-appointment .form-file label span {
+  font-size: 10px;
+}
+
+@media (min-width: 46.25em) {
+  .medical-appointment .form-file label span {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .medical-appointment .form-file label span {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 81.25em) {
+  .medical-appointment .form-file label span {
+    font-size: 15px;
+  }
+}
+
+.medical-appointment__dropdown > li {
+  position: relative;
+}
+
+.medical-appointment__dropdown ul {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  position: absolute;
+  background: #fff;
+  width: 94%;
+  top: 79%;
+  height: 0;
+  display: none;
+  transition: 1s ease-in-out;
+}
+
+.medical-appointment__dropdown ul > li {
+  padding: 8px 10px;
+}
+
+.medical-appointment__dropdown ul > li a {
+  font-size: 10px;
+  font-family: "poppinslight";
+  color: #838383;
+  text-decoration: none;
+}
+
+@media (min-width: 46.25em) {
+  .medical-appointment__dropdown ul > li a {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .medical-appointment__dropdown ul > li a {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 81.25em) {
+  .medical-appointment__dropdown ul > li a {
+    font-size: 12px;
+  }
+}
+
+.medical-appointment__dropdown ul > li a:hover {
+  text-decoration: underline;
+}
+
+.medical-appointment__dropdown:hover ul {
+  height: auto;
+  display: block;
+}
+
+.medical-appointment .button-opacity {
+  opacity: 0.5;
+}
+
+.medical-appointment__share {
+  position: relative;
+}
+
+.medical-appointment__share .share {
+  margin-left: 0;
+}
+
+.medical-appointment__share .share > div {
+  height: 23px;
+  padding: 0px 8px 0px 8px;
+}
+
+@media (min-width: 61.25em) {
+  .medical-appointment__share .share > div {
+    height: 35px;
+  }
+}
+
+.medical-appointment__share .share > div span {
+  font-size: 10px !important;
+}
+
+@media (min-width: 61.25em) {
+  .medical-appointment__share .share > div span {
+    font-size: 15px !important;
+  }
+}
+
+.medical-appointment__share .share > div span:last-child {
+  display: table-cell;
+}
+
+.medical-appointment__share .share > div .icon-share {
+  padding: 5px;
+}
+
+.medical-appointment__share .share nav {
+  top: 0;
+}
+
+.medical-appointment__share .share nav a {
+  height: 23px;
+}
+
+@media (min-width: 61.25em) {
+  .medical-appointment__share .share nav a {
+    height: 35px;
+  }
+}
+
+.medical-appointment__share .share:hover a,
+.medical-appointment__share .share.hover a {
+  height: 23px;
+  padding: 0px 8px 0px 8px;
+  width: auto;
+}
+
+@media (min-width: 61.25em) {
+  .medical-appointment__share .share:hover a,
+  .medical-appointment__share .share.hover a {
+    height: 35px;
+  }
+}
+
+@media (max-width: 61.24em) {
+  .medical-appointment__share .share:hover nav .share__text,
+  .medical-appointment__share .share.hover nav .share__text {
+    display: table-cell;
+    font-size: 10px;
+  }
+}
+

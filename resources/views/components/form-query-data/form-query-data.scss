@@ -1,0 +1,29 @@
+@import './node_modules/sass-mq/mq';
+@import '../../../sass/utils/mixins';
+@import '../../../sass/utils/variables';
+
+.query-data-form {
+    margin-top: 32px;
+    &__item {
+        margin-bottom: 15px;
+        label {
+            display: block;
+            font-family: $font-poppins-bold;
+            @include font-increment(12px , 22px);
+            color: $color-blue-green;
+            margin-bottom: 6px;
+        }
+        textarea, >div {
+            background-color: rgba(196, 196, 196, 0.3);
+            border-radius: 10px;
+            padding: 14px 27px;
+            border: 0;
+            width: 100%;
+            min-height: 46px;
+            @include font-increment(12px , 16px);
+            color: rgba(0, 0, 0, 0.7);
+            font-family: $font-poppins-light;
+            resize: none;
+        }
+    }
+}

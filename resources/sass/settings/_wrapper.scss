@@ -5,6 +5,7 @@
    
     .wrapper {
         margin-left:  114px;
+        min-height: 76vh;
         width: calc(100% - 114px);
         margin-top: 0;
         background-color: $color-blue-light;
@@ -24,6 +25,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+            position: relative;
 
             @include mq($from: 575px) {
                 padding-left: 15px;
@@ -48,6 +50,14 @@
             @include mq($until: tablet) {
                 padding: 0;
             }
+        }
+    }
+
+    .container {
+        background: rgba(204, 220, 232, 0.25);
+        padding: 8px 10px 15px 10px;
+        @include mq($from: desktop) {
+            padding: 8px 43px 15px 10px;
         }
     }
 

@@ -1,57 +1,94 @@
 .accordion{
-    max-width: 560px;
-	margin: 0 auto 100px;
-	border-top: 10px;
-	
-	li{
-        border-bottom: 10px;
+	width: 100%;
+	>li {
 		position: relative;
-
-		p {
-            display: none;
-			padding: 10px 25px 30px;
-        }
-			
+		background-color: $color-white;
+		border-radius: 31px;
+		box-shadow: 0px 10px 15px rgba(94, 114, 138, 0.1);
+		padding: 5px 12px;
+		margin-bottom: 11px;
+		@include mq($from: desktop) {
+			padding: 0 30px;
+			margin-bottom: 41px;
+		}
     }
-		
-			
-	
-	a{
-        width: 100%;
-		display: block;
+	&__info {
+		display: none;
+		padding: 18px 0 30px;
+		@include mq($from: desktop) {
+			padding: 10px 0 30px;
+		}
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+		position: relative;
 		cursor: pointer;
-		font-weight: 600;
-		line-height: 3;
-		font-size:14px;
-		text-indent: 15px;
-		user-select: none;
+		h2 {
+			display: block;
+			color: $color-blue-green;
+			@include font-increment(15px, 30px);
+			line-height: 2.3;
+			font-family: $font-poppins-bold;
+			margin-right: 15px;
+			
+			@include mq($from: desktop) {
+				line-height: 2.8;
+			}
+		}
+		.button {
+			margin: 0 7px;
+			transition: 1s ease-in-out;
+			display: none;
+			@include mq($until: desktop) {
+				&:first-child {
+					display: none;
+				}
+			}
+			
+		}
 
 		&:after {
-			border-right: 1px solid red;
-			border-bottom: 1px solid red;
 			position: absolute;
-			right: 10px;
-			content: " ";
-			top: 17px;
-			transform: rotate(-45deg);
-			transition: all, 0.2s, ease-in-out;
-        }
-			
-    }
+			right: 0px;
+			content: url('../../assets/images/icon/icon-arrow.svg');
+			margin: auto;
+			transform: rotate(180deg) scale(.8);
+			transition: transform .5s ease-in-out;
+			@include mq($from: desktop) {
+				transform: rotate(180deg) scale(1);
+				right: 30px;
+			}
+
+		}
+		&.active {
+			.button {
+				&:first-child {
+					display: none;
+					
+				}
+				&:last-child {
+					display: inline-flex;
+				}
+				@include mq($from: desktop) {
+					display: inline-flex !important;
+				}
+				@include mq($until: desktop) {
+					.button__icon {
+						margin-right: 5px;
+					}
+				}
+				
+			}
+			&:after {
+				transform: rotate(0deg) scale(.8);
+				@include mq($from: desktop) {
+					transform: rotate(0deg) scale(1);
+				}
 		
-
-	p{
-		font-size:13px;
-		line-height: 2;
-		padding: 10px;
-    }
-
-
-a.active:after {
-	transform: rotate(45deg);
-	transition: all, 0.2s, ease-in-out
-}
-
+			}
+		}
+	}
 }
 
 	
